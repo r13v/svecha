@@ -6,14 +6,28 @@ mkdir -p .tools/checks
 export AGENT_BROWSER_SESSION=svecha-web-check
 python3 -m http.server 8788 --bind 127.0.0.1 --directory builds/web > .tools/checks/web-server.log 2>&1 &
 TASK_SERVER_PID=$!
-trap 'agent-browser console --json > .tools/checks/web-console.json; agent-browser errors --json > .tools/checks/web-errors.json; agent-browser screenshot "$TASK_ROOT/.tools/checks/web-browser-final.png" || true; agent-browser close; kill "$TASK_SERVER_PID"' EXIT
+trap 'agent-browser console --json > .tools/checks/web-console.json; agent-browser errors --json > .tools/checks/web-errors.json; agent-browser close; kill "$TASK_SERVER_PID"' EXIT
 if [ "$(uname -s)" = Linux ]; then
-	agent-browser --webgpu --headed open http://127.0.0.1:8788
+	agent-browser --headed --args '--use-gl=angle,--use-angle=swiftshader' open http://127.0.0.1:8788
 else
 	agent-browser --headed open http://127.0.0.1:8788
 fi
 agent-browser set viewport 640 360
 agent-browser wait --fn '!document.getElementById("status")' --timeout 120000
+agent-browser console --json > .tools/checks/web-console.json
+agent-browser errors --json > .tools/checks/web-errors.json
+python3 - <<'PY'
+import json
+from pathlib import Path
+console = json.loads(Path('.tools/checks/web-console.json').read_text())['data']['messages']
+errors = json.loads(Path('.tools/checks/web-errors.json').read_text())['data']['errors']
+assert not errors, errors
+assert not [entry for entry in console if entry['type'] == 'error'], console
+PY
+# Сервер без GPU проверяет загрузку; управление проверяется на рабочем столе.
+if [ "${1:-}" = --load-only ]; then
+	exit 0
+fi
 agent-browser press Enter
 agent-browser wait --fn 'document.pointerLockElement !== null'
 # Пять секунд ходьбы приводят от старта к двери по обычным коллизиям.

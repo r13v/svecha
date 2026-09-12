@@ -34,8 +34,8 @@ jobs:
         run: |
           npm install --global agent-browser@0.37.1
           agent-browser install --with-deps
-      - name: Проверить WebGL, вход, мышь и паузу
-        run: xvfb-run -a ./tools/check_web.sh
+      - name: Проверить загрузку WebGL и журнал браузера
+        run: xvfb-run -a ./tools/check_web.sh --load-only
       - name: Сохранить кадры и журналы
         if: always()
         uses: actions/upload-artifact@v4
