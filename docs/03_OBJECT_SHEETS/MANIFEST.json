@@ -1,0 +1,81 @@
+{
+  "project": "Свеча",
+  "date": "2026-09-12",
+  "mode": "built-in image_gen",
+  "status": "complete",
+  "selected_image_count": 1,
+  "total_saved_images": 3,
+  "images": [
+    {
+      "id": "01_interactive_church_props",
+      "image": "generated_images/01_interactive_church_props_v3.png",
+      "prompt": "prompts/01_interactive_church_props_v3.txt",
+      "mode": "edit",
+      "references": [
+        "generated_images/01_interactive_church_props_v2.png"
+      ],
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-27d184a5-dd20-4b93-9a03-648bf4633906.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4d219a5da86b36246aeff0d38b2244243d65ad170022410845fe5d01b05d038b",
+      "status": "reviewed",
+      "groups": [
+        "Свеча",
+        "Подсвечник",
+        "Дверь",
+        "Столик"
+      ],
+      "review_notes": [
+        "Визуально проверены четыре группы предметов и четыре момента жизни свечи: новая, горит, догорает, погасла.",
+        "В конечном состоянии нет пламени, дыма или целого стержня: виден небольшой остаток воска с обгоревшим фитилём.",
+        "Сохранены тонкие свечи, форма отдельной правой створки и детали подсвечника/столика.",
+        "Это статические опорные состояния; в игре расход должен быть непрерывным и конечным, в масштабе времени 1:1. Точное время и геометрия проверяются в реализации."
+      ],
+      "previous_versions": [
+        {
+          "id": "01_interactive_church_props_original",
+          "image": "generated_images/01_interactive_church_props.png",
+          "prompt": "prompts/01_interactive_church_props.txt",
+          "mode": "generate",
+          "references": [
+            "../02_CONCEPT_ART/generated_images/02_opening_the_door.png",
+            "../02_CONCEPT_ART/generated_images/04_taking_a_candle.png",
+            "../02_CONCEPT_ART/generated_images/06_at_the_candle_stand.png",
+            "../02_CONCEPT_ART/generated_images/01_church_approach.png"
+          ],
+          "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-e195a620-dadc-41e6-bcbc-b3e20ac448d4.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "0492ecd8ad3bb493a14f8c64ed0361608317d82548221b972c3e38feaa6cb32a"
+        },
+        {
+          "id": "01_interactive_church_props_v2",
+          "image": "generated_images/01_interactive_church_props_v2.png",
+          "prompt": "prompts/01_interactive_church_props_v2.txt",
+          "mode": "edit",
+          "references": [
+            "generated_images/01_interactive_church_props.png"
+          ],
+          "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-196b81ec-c5bb-41a4-badb-b2b47de0ccb7.png",
+          "width": 1672,
+          "height": 941,
+          "sha256": "fde82154a5f9d2a10f61d018c23a49cb42828186a973813c47b8f84602a9920a",
+          "status": "reviewed",
+          "groups": [
+            "Свеча",
+            "Подсвечник",
+            "Дверь",
+            "Столик"
+          ],
+          "review_notes": [
+            "Все четыре группы присутствуют; предметы изолированы на нейтральном фоне, заголовки читаемы.",
+            "У свечи показаны незажжённое, зажжённое и укороченное горящее состояния.",
+            "У подсвечника видны полная опора, лоток сверху и отдельное гнездо; у двери — отдельная створка, ось петель и фурнитура.",
+            "В версии v2 уменьшена толщина свечей и исправлен изгиб верхней части отдельной правой створки.",
+            "Виды не в едином метрическом масштабе. Размеры, число/посадка гнёзд, коллизии и точная конструкция будут проверены в Blender/Godot."
+          ]
+        }
+      ]
+    }
+  ]
+}

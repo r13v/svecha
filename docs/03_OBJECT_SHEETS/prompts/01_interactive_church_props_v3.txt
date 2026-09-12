@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Input image 1 is the EDIT TARGET: the four-group object sheet for "Candle".
+Update only the TOP-LEFT quadrant, "01 СВЕЧА", to clearly communicate the complete real-time candle lifecycle, including complete burnout.
+Keep the existing three thin candles and their heights, materials, slender proportions and locations. They show: new unlit taper; full-length burning taper; partly consumed shorter burning taper.
+Add a FOURTH final-state object in the currently empty space to the right of the shorter candle, centered around x=44% of the full image, with its base on the SAME ground line as the three candle bases. It is NOT another standing candle. Show only a small low honey-yellow cooled wax remnant/puddle with a tiny black charred wick nub; the usable candle shaft is completely gone. Make it clearly visible but physically small compared with the full taper, roughly 1 cm high at the displayed scale. NO flame, ember glow, smoke or steam on this final state.
+Below each of the four lifecycle objects, above the horizontal divider, add one small clean dark-gray Russian caption in the same sans-serif design as the headings. Exact captions in order: "НОВАЯ", "ГОРИТ", "ДОГОРАЕТ", "ПОГАСЛА". The last caption must be centered below the wax remnant. Avoid overlapping captions or objects.
+Keep the full sheet's composition, canvas size, all four large group headings, separators, neutral background and studio lighting. Keep the entire TOP-RIGHT candle stand quadrant and both bottom quadrants pixel-identical: do not change the stand, top view, sockets, door, hinge, ring pull, table or tray.
+No clocks, durations, percentages, progress bars or arrows. These are four reference moments from continuous consumption, not interchangeable skins. No other edits.
+

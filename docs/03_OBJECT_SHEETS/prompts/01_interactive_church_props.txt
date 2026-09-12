@@ -1,0 +1,29 @@
+Use case: stylized-concept
+Asset type: one production object sheet for the first-person 3D game "Candle", for modeling separate interactive props in Blender and importing them into Godot.
+Primary request: turn the already established church props from the four reference images into a clear, complete, coordinated object sheet. This is a NEW reference sheet, not an edit of a screenshot.
+
+Input images:
+Image 1: door interaction concept; reference for the walnut door panels, iron ring pull, weathering and joinery.
+Image 2: candle pickup concept; reference for honey-yellow wax, walnut table and the shallow wooden tray.
+Image 3: brass candle stand concept; reference for the round tray, low rim, concentric socket arrangement and turned pedestal.
+Image 4: church exterior; reference for the arched silhouette of the two-leaf entrance door.
+Use only the props from these references. Do not copy their environment, human hands, religious paintings or cinematic composition.
+
+Layout: a single high-resolution landscape sheet, approximately 16:9. Four clearly separated generous groups in a clean two-by-two layout on a uniform warm light-gray/ivory studio background. Thin understated divider lines and ample negative space. Every prop fully visible, no cropped bases or overlapping silhouettes. Mostly orthographic front/top views, with restrained three-quarter views where these explain construction. Each group uses its own sensible display scale, with consistent proportions between that group's views. This is a visual modeling reference, not a dimensioned engineering drawing.
+
+Top-left group, heading exactly "01  СВЕЧА":
+Three isolated thin straight honey-yellow beeswax tapers shown upright at the same scale: (a) full-length unlit candle, short black wick, no flame; (b) the same full-length candle with a tiny natural flame at its TOP; (c) a noticeably shorter partly-burned candle with modest wax drips and a small top flame. Full-length candle proportions about 25 cm tall and 7 mm diameter; elegant slender tapers, not thick pillar candles. Bases visible. No candle holders in this group.
+
+Top-right group, heading exactly "02  ПОДСВЕЧНИК":
+The distinctive aged-brass candle stand from reference 3: one COMPLETE front/three-quarter view including the entire broad circular stable foot, slender turned pedestal and wide shallow circular tray with low rim. Several older thin candles are upright in sockets; a socket at the FRONT edge remains clearly empty. Beside it, an unobstructed orthographic TOP view of the SAME tray WITHOUT candles so its concentric rows of sockets are easy to inspect. A small enlarged isolated socket detail shows a short flared brass cup, a visible narrow hollow bore that can support the thin taper, and a modest attachment base. Consistent brass form language in all views. Clearly distinguish the display enlargement of the socket from its actual size on the tray. No bowl of sand. The stand's complete view must include its base; do not crop it.
+
+Bottom-left group, heading exactly "03  ДВЕРЬ":
+Show the dark walnut two-leaf arched entrance door from reference 4 in a clean front view, separated from masonry. Preserve the worn rectangular wood panel divisions, restrained original ornament and dark iron ring handles from reference 1. Next to it show ONE separated matching door leaf in a slight three-quarter view, enough to see panel thickness and hinged construction; retain its portion of the curved upper silhouette. Hinges run on the OUTER jamb-side edge, opposite the central meeting edge where the handle is located. Add a subtle dashed vertical pivot line through the hinge pins, with no writing or numbers. Also include two enlarged isolated hardware details: the hanging dark iron ring pull on its long shaped backing plate with fasteners, and a functional iron hinge with visible knuckle/pin and mounting leaves. These are details of this door, not unrelated new designs.
+
+Bottom-right group, heading exactly "04  СТОЛИК":
+Show the same modest dark walnut candle table as reference 2, in a clear three-quarter view, fully visible including four simple square legs and sensible low stretchers; restrained joinery, worn wooden top, no extra carving. The tabletop holds the shallow rectangular walnut tray containing a tidy row of unlit beeswax tapers. Beside it show the SAME tray separately, from a shallow top-down angle, with an open unobstructed view of its low sides, base and aligned candles. Do not add flowers, bowls, money, drawers, books or shop equipment.
+
+Style and materials: premium stylized realistic 3D, simplified but believable silhouettes and restrained bevels, matching the reference game's physical materials. Warm wax, deep walnut with visible grain and edge wear, aged brass with restrained reflectivity, dark forged iron. Consistent soft neutral studio lighting, short soft contact shadows, readable midtones. No dramatic sunset illumination, shallow depth of field or dark atmospheric fog; keep all reference views in focus.
+
+Text: ONLY the four exact Russian group headings above, in a neat dark-gray sans-serif typeface. No other words, measurements, labels, brand marks, logo, watermark, decorative frame or UI.
+Constraints: one sheet with all four groups. Show distinct reusable objects and construction details, not an assembled church. No people, hands, icons, architectural walls, environment background, coins, game HUD, fantasy additions or extra prop categories. Treat flames as appearance references; keep them small and separate from the solid candle body.

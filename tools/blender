@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+binary="${BLENDER_BIN:-/Applications/Blender.app/Contents/MacOS/Blender}"
+if [[ ! -x "$binary" ]]; then
+  binary="$(command -v blender || true)"
+fi
+[[ -n "$binary" ]] || { echo 'Blender not found. Set BLENDER_BIN to the executable.' >&2; exit 1; }
+exec "$binary" "$@"

@@ -1,0 +1,121 @@
+{
+  "blender_version": "5.2.1 LTS",
+  "status": "first_pass",
+  "assets": [
+    {
+      "asset": "candle",
+      "source": "art/blender/candle.blend",
+      "model": "game/assets/models/candle.glb",
+      "triangles": 384,
+      "blender_bounds_m": [
+        [
+          -0.0035000001080334187,
+          0.0035000001080334187
+        ],
+        [
+          -0.0035000001080334187,
+          0.0035000001080334187
+        ],
+        [
+          0.0,
+          0.2540000081062317
+        ]
+      ],
+      "nodes": [
+        "Candle",
+        "Wax",
+        "WickAnchor",
+        "FlameAnchor",
+        "Wick"
+      ]
+    },
+    {
+      "asset": "candle_remnant",
+      "source": "art/blender/candle_remnant.blend",
+      "model": "game/assets/models/candle_remnant.glb",
+      "triangles": 424,
+      "blender_bounds_m": [
+        [
+          -0.0038481687661260366,
+          0.003866499988362193
+        ],
+        [
+          -0.0037184820976108313,
+          0.003932999912649393
+        ],
+        [
+          0.0,
+          0.0044999998062849045
+        ]
+      ],
+      "nodes": [
+        "CandleRemnant",
+        "WaxResidue",
+        "WickRemnant"
+      ]
+    },
+    {
+      "asset": "candle_stand",
+      "source": "art/blender/candle_stand.blend",
+      "model": "game/assets/models/candle_stand.glb",
+      "triangles": 20024,
+      "blender_bounds_m": [
+        [
+          -0.2800000011920929,
+          0.2800000011920929
+        ],
+        [
+          -0.2800000011920929,
+          0.2800000011920929
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "nodes": [
+        "CandleStand",
+        "Pedestal",
+        "Seat00",
+        "Seat01",
+        "Seat02",
+        "Seat03",
+        "Seat04",
+        "Seat05",
+        "Seat06",
+        "Seat07",
+        "Seat08",
+        "Seat09",
+        "Seat10",
+        "Seat11",
+        "Seat12",
+        "Seat13",
+        "Seat14",
+        "Seat15",
+        "Seat16",
+        "Seat17",
+        "Seat18",
+        "Socket00",
+        "Socket01",
+        "Socket02",
+        "Socket03",
+        "Socket04",
+        "Socket05",
+        "Socket06",
+        "Socket07",
+        "Socket08",
+        "Socket09",
+        "Socket10",
+        "Socket11",
+        "Socket12",
+        "Socket13",
+        "Socket14",
+        "Socket15",
+        "Socket16",
+        "Socket17",
+        "Socket18",
+        "Tray"
+      ]
+    }
+  ]
+}

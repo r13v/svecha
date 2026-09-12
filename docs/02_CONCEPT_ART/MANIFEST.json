@@ -1,0 +1,179 @@
+{
+  "project": "Свеча",
+  "date": "2026-09-12",
+  "mode": "built-in image_gen",
+  "status": "complete",
+  "style_anchor": "03_first_interior_view",
+  "images": [
+    {
+      "id": "01_church_approach",
+      "title": "Подход к храму",
+      "prompt": "prompts/01_church_approach.txt",
+      "image": "generated_images/01_church_approach.png",
+      "references": [
+        "generated_images/03_first_interior_view.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-8c62db2a-87f4-4323-9081-89fa9233dfd8.png",
+      "sha256": "93a85f8f288cfec576e8dbe33e78fc63ef7ea9d67abff870f045f1f08d961d8c",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "02_opening_the_door",
+      "title": "Открыть дверь",
+      "prompt": "prompts/02_opening_the_door.txt",
+      "image": "generated_images/02_opening_the_door.png",
+      "references": [
+        "generated_images/03_first_interior_view.png",
+        "generated_images/01_church_approach.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-e8b183be-52d4-4ed0-abb3-c2b116f1bcf2.png",
+      "sha256": "5cb6e5fb75b0835f4e15faca06a9e254aa715d93f7234facedda17c9aa11b828",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "03_first_interior_view",
+      "title": "Первый взгляд на интерьер",
+      "prompt": "prompts/03_first_interior_view.txt",
+      "image": "generated_images/03_first_interior_view.png",
+      "references": [],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-a9426631-4de6-4b22-9412-65ce5a88ac7e.png",
+      "sha256": "5ae29a25302663d2a97e6608a9f8d8302c74dfb5554acedcf67446c7ec4202ef",
+      "width": 1672,
+      "height": 941,
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D.",
+      "mode": "generate"
+    },
+    {
+      "id": "04_taking_a_candle",
+      "title": "Взять свечу",
+      "prompt": "prompts/04_taking_a_candle.txt",
+      "image": "generated_images/04_taking_a_candle.png",
+      "references": [
+        "generated_images/03_first_interior_view.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-3acc8667-6d43-41bb-b240-b04bdc4a9662.png",
+      "sha256": "673a96d8e1f8b5a061d91e40ba38138fbf72da9da615b4208b6d432122ddfbc7",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "05_walking_through_nave",
+      "title": "Пройти через храм",
+      "prompt": "prompts/05_walking_through_nave.txt",
+      "image": "generated_images/05_walking_through_nave.png",
+      "references": [
+        "generated_images/03_first_interior_view.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-8882640f-cd3f-4b37-acbb-ab4505e8c934.png",
+      "sha256": "da5aec796e81c1fdf71f09eaa2597bd7baf75a9c3d8b667d64fb59253fbed832",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "06_at_the_candle_stand",
+      "title": "Перед подсвечником",
+      "prompt": "prompts/06_at_the_candle_stand.txt",
+      "image": "generated_images/06_at_the_candle_stand.png",
+      "references": [
+        "generated_images/03_first_interior_view.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-95257859-e8b5-47b0-bcea-9310cab3a664.png",
+      "sha256": "394135c2a4c42c0e9f527beb9538750c61c3d9441c6f0883b12962ab5f714333",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "07_lighting_the_candle",
+      "title": "Зажечь свечу",
+      "prompt": "prompts/07_lighting_the_candle_v2.txt",
+      "image": "generated_images/07_lighting_the_candle_v2.png",
+      "references": [
+        "generated_images/07_lighting_the_candle.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-386b1a06-9510-43bd-a5fa-d0735c24e19b.png",
+      "sha256": "df091616fab6cdee8523fd0e6bc336f17bc1819dff559493b38ed7f8a92f4ecf",
+      "width": 1672,
+      "height": 941,
+      "previous_versions": [
+        {
+          "id": "07_lighting_the_candle_original",
+          "prompt": "prompts/07_lighting_the_candle.txt",
+          "image": "generated_images/07_lighting_the_candle.png",
+          "references": [
+            "generated_images/03_first_interior_view.png",
+            "generated_images/06_at_the_candle_stand.png"
+          ],
+          "status": "generated",
+          "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-abeb0503-fef8-4da7-bfc0-f261284a4992.png",
+          "sha256": "8f523374779c49378ebc1fcdb83b45cfe4f6363426ad6a8a7309671a46987d36",
+          "width": 1672,
+          "height": 941,
+          "mode": "generate"
+        }
+      ],
+      "mode": "edit",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "08_placing_the_candle",
+      "title": "Поставить свечу",
+      "prompt": "prompts/08_placing_the_candle.txt",
+      "image": "generated_images/08_placing_the_candle.png",
+      "references": [
+        "generated_images/03_first_interior_view.png",
+        "generated_images/06_at_the_candle_stand.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-01a020a5-c2c5-4f86-a1ee-7a106dbf87fa.png",
+      "sha256": "b6a526d79cf2687d7b0ccf70a016df0bbcd82584fbb61e1531bacadb71d6fe3d",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    },
+    {
+      "id": "09_a_moment_of_stillness",
+      "title": "Свеча остаётся гореть",
+      "prompt": "prompts/09_a_moment_of_stillness.txt",
+      "image": "generated_images/09_a_moment_of_stillness.png",
+      "references": [
+        "generated_images/03_first_interior_view.png",
+        "generated_images/08_placing_the_candle.png"
+      ],
+      "status": "reviewed",
+      "source_file": "/Users/user/.codex/generated_images/01a0956d-f3f5-7ba0-a390-d256c96b6e74/exec-7d03eba0-2e9e-4c27-abb6-cb00825d4ddc.png",
+      "sha256": "72e7a002dba02249943702522904c94c625e9ebbb7dc6e9d852c264e450437db",
+      "width": 1672,
+      "height": 941,
+      "mode": "generate",
+      "review": "Визуально проверены сюжетный момент, состояние свечи, вид от первого лица и единые материалы/свет. Точные размеры и конструкция уточняются в 3D."
+    }
+  ],
+  "selected_image_count": 9,
+  "total_saved_images": 10,
+  "review_notes": [
+    "Все 9 сюжетных кадров созданы и визуально просмотрены.",
+    "Кадр 03 — основа для общего окружения.",
+    "Кадр 07 выбран в версии v2; исходник и промпт правки сохранены.",
+    "Вариации декоративных элементов, гнёзд и фоновых свечей допустимы для концептов; итоговую конструкцию зафиксировать на object sheet."
+  ]
+}

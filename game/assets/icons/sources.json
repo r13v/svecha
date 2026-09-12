@@ -1,0 +1,46 @@
+[
+  {
+    "file": "game/assets/icons/christ_sinai.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Christ_Icon_Sinai_6th_century.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Christ_Icon_Sinai_6th_century.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 1538908,
+    "author": "Unknown",
+    "rights": "Public domain; PD-Art / PD-old-100 on the linked Commons file page",
+    "changes": "Unmodified original file; aspect ratio preserved on the 3D panel",
+    "accessed": "2026-09-12",
+    "sha256": "68bbdad0ca440804d1821cd288912e42084b006efad88b9f14777830ee2f51ee"
+  },
+  {
+    "file": "game/assets/icons/theotokos_vladimir.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Vladimirskaya.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Vladimirskaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 226882,
+    "author": "Unknown",
+    "rights": "Public domain; PD-Art / PD-old-100 on the linked Commons file page",
+    "changes": "Unmodified original file; aspect ratio preserved on the 3D panel",
+    "accessed": "2026-09-12",
+    "sha256": "3383df179d2b8367a8ba22aa7efd18e977440c163a2b6c1c1e91b05ba48bd495"
+  },
+  {
+    "file": "game/assets/icons/nicholas_sinai.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:St_Nicholas_Icon_Sinai_13th_century.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/St_Nicholas_Icon_Sinai_13th_century.jpg",
+    "size": 1621953,
+    "author": "Unknown",
+    "rights": "Public domain; PD-Art / PD-old-100 on the linked Commons file page",
+    "changes": "Unmodified original file; aspect ratio preserved on the 3D panel",
+    "accessed": "2026-09-12",
+    "sha256": "c89cc206156ea4a1c105d281a1d98f54a65dfffd09187cc4c6b9f534858cc58d"
+  },
+  {
+    "file": "game/assets/icons/john_baptist.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Icon_of_John_the_Baptist_%28Yaroslavl%2C_XVI_c.%29.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Icon_of_John_the_Baptist_%28Yaroslavl%2C_XVI_c.%29.jpg",
+    "size": 205644,
+    "author": "Unknown",
+    "rights": "Public domain; PD-Art / PD-old-100 on the linked Commons file page",
+    "changes": "Unmodified original file; aspect ratio preserved on the 3D panel",
+    "accessed": "2026-09-12",
+    "sha256": "a442fa9989495a62e1470e103f1a18a20c243024fa97a8cfc841460036eec4e4"
+  }
+]

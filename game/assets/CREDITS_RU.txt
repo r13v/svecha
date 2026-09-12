@@ -1,0 +1,22 @@
+Свеча — прототип 0.1.0
+
+Геометрия, процедурные текстуры, интерфейс и синтезированные звуки созданы для этого проекта. Храм — художественная композиция, а не реконструкция конкретного здания.
+
+Исторические иконы. Авторы неизвестны. Изображения на Wikimedia Commons отмечены как public domain / PD-Art / PD-old-100:
+
+Христос Синайский, VI век. Монастырь Святой Екатерины, Синай; источник репродукции K. Weitzmann, «Die Ikone».
+https://commons.wikimedia.org/wiki/File:Christ_Icon_Sinai_6th_century.jpg
+
+Владимирская Богоматерь, XII век. Государственная Третьяковская галерея.
+https://commons.wikimedia.org/wiki/File:Vladimirskaya.jpg
+
+Святитель Николай, первая половина XIII века. Монастырь Святой Екатерины, Синай; K. Weitzmann, «Die Ikone».
+https://commons.wikimedia.org/wiki/File:St_Nicholas_Icon_Sinai_13th_century.jpg
+
+Иоанн Предтеча, Ангел Пустыни, XVI век. Ярославский художественный музей; источник icon-art.info.
+https://commons.wikimedia.org/wiki/File:Icon_of_John_the_Baptist_(Yaroslavl,_XVI_c.).jpg
+
+Файлы репродукций сохранены без ретуши и кадрирования; в моделях сохраняются исходные пропорции. Визуальный стиль разных эпох объединён для прототипа.
+
+Godot Engine 4.7.2 — MIT. Полные сведения о движке и встроенных компонентах: GODOT_LICENSES.txt.
+https://godotengine.org/license/

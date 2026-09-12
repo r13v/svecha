@@ -1,0 +1,12 @@
+.DS_Store
+.tools/
+.codex/config.toml
+**/.godot/
+**/__pycache__/
+*.pyc
+*.blend1
+*.blend2
+builds/
+.env
+.env.*
+!.env.example
