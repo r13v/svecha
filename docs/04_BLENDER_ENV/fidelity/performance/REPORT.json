@@ -1,0 +1,41 @@
+[
+  {
+    "adapter": "Apple M3 (Apple9)",
+    "frames": 180,
+    "median_fps": 51.4350375475774,
+    "median_ms": 19.442,
+    "p95_ms": 19.631,
+    "renderer": "Forward+",
+    "resolution": "(1920.0, 1080.0)",
+    "view": "outside",
+    "version": "0.2.1",
+    "source": "Exported PCK via native Godot",
+    "date": "2026-09-13"
+  },
+  {
+    "adapter": "Apple M3 (Apple9)",
+    "frames": 180,
+    "median_fps": 60.690659707471,
+    "median_ms": 16.477,
+    "p95_ms": 16.792,
+    "renderer": "Forward+",
+    "resolution": "(1920.0, 1080.0)",
+    "view": "inside",
+    "version": "0.2.1",
+    "source": "Exported PCK via native Godot",
+    "date": "2026-09-13"
+  },
+  {
+    "adapter": "Apple M3 (Apple9)",
+    "frames": 180,
+    "median_fps": 61.7665225447807,
+    "median_ms": 16.19,
+    "p95_ms": 16.405,
+    "renderer": "Forward+",
+    "resolution": "(1920.0, 1080.0)",
+    "view": "hand",
+    "version": "0.2.1",
+    "source": "Exported PCK via native Godot",
+    "date": "2026-09-13"
+  }
+]

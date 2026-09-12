@@ -1,0 +1,789 @@
+[gd_scene format=3 uid="uid://c4gkoptpb1gud"]
+
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/be9475cddf01d003.res" id="1_d1xi7"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4c5b83f0a7e42939.res" id="2_fi3mh"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/fd129fad075932ab.res" id="3_ye5we"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/b00499e6255226ee.res" id="4_hbsft"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/522db57255ae281e.res" id="5_58ytm"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/b550ff2fd94c36d2.res" id="6_ni6rv"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/102231c0ae596cc2.res" id="7_5obk4"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/fe836c7901e7ebb2.res" id="8_lykm8"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/8823f639c7f45e05.res" id="9_fwb4l"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/bb25eda1362f5643.res" id="10_r3mhl"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/d61921ce273bdaf5.res" id="11_3wr8x"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/abfc16283936fae3.res" id="12_rmql5"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/58afd6f3af32cfba.res" id="13_7vmsa"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/e714218223114a9c.res" id="14_po5ac"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/5ef26ba54c265de5.res" id="15_wdp12"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/5d25d1d7b05c1c7d.res" id="16_vpdd4"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/9a52c6cb86152a25.res" id="17_yl303"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/8add79033d2c6565.res" id="18_cqs7v"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a909217780632c10.res" id="19_fp6ea"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/61bfb80c90172b1b.res" id="20_1heav"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/9c43107340141971.res" id="21_pswqi"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/6726d1719f19e731.res" id="22_474lm"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/338f384bf6beac63.res" id="23_xoh5v"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c36c5681b46d2149.res" id="24_xttrb"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/e446872f888dc168.res" id="25_e5g7n"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4df78f9c43a998c0.res" id="26_ddvau"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/49c09d8d9c2d537f.res" id="27_164v4"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c53b43cbeee38e16.res" id="28_v34nq"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/96574c5335651223.res" id="29_ck8g2"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a9072701cd737e0d.res" id="30_6mw81"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a1ca72892ada903a.res" id="31_gw2uh"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/108d19e5f19f3f9f.res" id="32_plkrp"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/adf988136ed75234.res" id="33_8y8l5"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/81cc51d73058d938.res" id="34_fhu7v"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4d6a5dc4a0bc143a.res" id="35_7qneu"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/267b278732a4a5d5.res" id="36_nk1hv"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/68057c2bc7c7528f.res" id="37_p2bpa"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/06c55c42926e05cf.res" id="38_2e6gq"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/715255e1a83962da.res" id="39_pm3uh"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/361a6335a25e0fbd.res" id="40_mqlj3"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c341bd6126fed1b6.res" id="41_gdm5p"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/768c153340510941.res" id="42_eutfv"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/d622a05f3f6cd05f.res" id="43_bpitb"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/cad22001a1cc49b7.res" id="44_v4jkl"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/febc1abc2245411d.res" id="45_b25mt"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/6aac6fb25893b25a.res" id="46_3d4qw"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/f3674e0095570628.res" id="47_dp3fa"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/2e69d35b7ee710ab.res" id="48_hnrrc"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/640e182065e6dcef.res" id="49_he0qt"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/371e48cbc65a2e97.res" id="50_4dhx3"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/de4368e8548b0b1b.res" id="51_qv5n5"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/82f619675fc90210.res" id="52_3xt47"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/fddcc242b8c2b1f3.res" id="53_v6tiw"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/39c6d3feb60825e4.res" id="54_qeqgh"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/ed7d8f6a33caa8e6.res" id="55_5q2h0"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/fb798646e851f556.res" id="56_erfho"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/fe46e5988304f0be.res" id="57_8fy30"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/216ee7421aebf3a1.res" id="58_2suhb"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c2cf9f567b1c36c0.res" id="59_mhjfm"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/49a5520de92f8875.res" id="60_ga6fo"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/0be813d0e370a02e.res" id="61_jn87i"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/115e3c1e20cc6908.res" id="62_a127q"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c7ba7cd69f820d1a.res" id="63_1rg4u"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c954f1e4aa9aba4d.res" id="64_jio4i"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/6d5d2f12b3b14ab6.res" id="65_1buec"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/be0f4ade3ab196b9.res" id="66_jij23"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/63f89094b833885b.res" id="67_bvsys"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/bf82e6ce530bc4c6.res" id="68_8r13k"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/11172fd6463e37e5.res" id="69_ui3ac"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/3ac3024d06988c77.res" id="70_a08c4"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/855cb982a0823a16.res" id="71_38tpb"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c90ab2b5b1e078c9.res" id="72_nb1ka"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a22c9d899271483d.res" id="73_1jokl"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/0953526cc93d470f.res" id="74_nvm8n"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/34d160d1a6f98f0e.res" id="75_xyn0k"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4f23e5f7680ec95a.res" id="76_lw37o"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/927547d465f12000.res" id="77_to488"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/74808619c9520b62.res" id="78_g4cg3"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/c9c57df92d6f6e85.res" id="79_mklrd"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/5a2b3610d81f2a58.res" id="80_dnhut"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/915befe856168807.res" id="81_bogvm"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/df3cbd9b9f1e73d8.res" id="82_hfapx"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/df57f0336290224e.res" id="83_ejnt8"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/d5ba7a1bb5ec14b9.res" id="84_4vhk0"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/7fdc6bc301cc1b09.res" id="85_ioi4b"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a8c36a33405eab08.res" id="86_h45rl"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/5169e0fc2709d6a8.res" id="87_bava3"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a81b5d2505cf8818.res" id="88_r134o"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/72dda132ea25e0cd.res" id="89_ho8ak"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/aa4e41f8a6fef0e0.res" id="90_r7040"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4326a3fb2aded1e0.res" id="91_7fvp8"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/da240f6031f9b80b.res" id="92_jl8ro"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/997947c7ab99a33f.res" id="93_iskt0"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/a0293857d13d8058.res" id="94_itaoy"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/12cb2fd72781b476.res" id="95_rt7lr"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/30a4c6ec3005bd88.res" id="96_a6pkk"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/7de81fb9f143ca80.res" id="97_oqgp1"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/ed959fe63d26e19e.res" id="98_4mef4"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/952a6b8d03716d1d.res" id="99_0e658"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4c99350c659b0333.res" id="100_sxfbc"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4f325ce096ef5409.res" id="101_6ei6e"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/e4791218ea2da29b.res" id="102_mapsi"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/b6467dc2c1e090ac.res" id="103_phlk6"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/8182e91c1a35bc9d.res" id="104_pdfum"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/578eefffbde3f858.res" id="105_cdagp"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/931435a1f5434ea2.res" id="106_fwppl"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/f716fd3a67563441.res" id="107_mq7bx"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/b9ca42b1db03ebb9.res" id="108_8lvun"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/52241f3cf5d23202.res" id="109_qflcw"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/64dee5323eb65a24.res" id="110_2mnsy"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/4d3eaff5a8fca551.res" id="111_qnjan"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/015435152455f046.res" id="112_0xd1n"]
+[ext_resource type="ArrayMesh" path="res://assets/lighting/meshes/b610cca862a8fedd.res" id="113_v8o8a"]
+[ext_resource type="Texture2D" uid="uid://wbc3cj4j3cfr" path="res://assets/sky/partly_cloudy.hdr" id="114_liotr"]
+[ext_resource type="LightmapGIData" uid="uid://j005wdj5ut1w" path="res://assets/lighting/nave.lmbake" id="115_fi3mh"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j2m46"]
+panorama = ExtResource("114_liotr")
+energy_multiplier = 0.65
+
+[sub_resource type="Sky" id="Sky_8v05p"]
+sky_material = SubResource("PanoramaSkyMaterial_j2m46")
+
+[sub_resource type="Environment" id="Environment_jqeit"]
+background_mode = 2
+sky = SubResource("Sky_8v05p")
+ambient_light_source = 3
+ambient_light_energy = 0.1
+reflected_light_source = 2
+tonemap_mode = 3
+ssao_enabled = true
+ssao_radius = 0.65
+ssao_intensity = 1.4
+glow_enabled = true
+glow_intensity = 0.35
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.003
+volumetric_fog_albedo = Color(0.9019608, 0.89411765, 0.8627451, 1)
+volumetric_fog_anisotropy = 0.55
+
+[node name="NaveBake" type="Node3D" unique_id=1683119285]
+
+[node name="ChurchShell00" type="Node3D" parent="." unique_id=1920690064]
+
+[node name="ChurchShell" type="Node3D" parent="ChurchShell00" unique_id=596990584]
+
+[node name="FloorStoneSurface" type="MeshInstance3D" parent="ChurchShell00/ChurchShell" unique_id=610762801]
+mesh = ExtResource("1_d1xi7")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="ChurchShell00/ChurchShell" unique_id=969562333]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 3.53, 0)
+mesh = ExtResource("2_fi3mh")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="ChurchShell00/ChurchShell" unique_id=1016579185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2, 1.86, 5.5)
+mesh = ExtResource("3_ye5we")
+
+[node name="ChurchVault00" type="Node3D" parent="." unique_id=1139136907]
+
+[node name="ChurchVault" type="Node3D" parent="ChurchVault00" unique_id=1086068406]
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="ChurchVault00/ChurchVault" unique_id=1213449426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.56, 0)
+mesh = ExtResource("4_hbsft")
+
+[node name="ChurchRoof00" type="Node3D" parent="." unique_id=1139519581]
+
+[node name="ChurchRoof" type="Node3D" parent="ChurchRoof00" unique_id=1842483493]
+
+[node name="DarkWindowSurface" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=570430604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.35, 4.374)
+mesh = ExtResource("5_58ytm")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=1621367781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09, 6.5950003, 4.374)
+mesh = ExtResource("6_ni6rv")
+
+[node name="PatinatedCopperSurface" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=294495916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.0699997, 3.9)
+mesh = ExtResource("7_5obk4")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=1106783866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.0699997, 3.9)
+mesh = ExtResource("8_lykm8")
+
+[node name="RoofSlateSurface" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=1916693996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.57, 0)
+mesh = ExtResource("9_fwb4l")
+
+[node name="RoofSlateSurface_001" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=1910351667]
+transform = Transform3D(0.8386924, -0.54460543, 0, 0.54460543, 0.8386924, 0, 0, 0, 1, -0.1203125, 6.2605977, 5.801)
+mesh = ExtResource("10_r3mhl")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="ChurchRoof00/ChurchRoof" unique_id=1246824368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.57, 0)
+mesh = ExtResource("11_3wr8x")
+
+[node name="WindowBay00" type="Node3D" parent="." unique_id=668927145]
+
+[node name="WindowBay" type="Node3D" parent="WindowBay00" unique_id=1154401056]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="WindowBay00/WindowBay" unique_id=270089604]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.69, 1.74, -3)
+mesh = ExtResource("12_rmql5")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="WindowBay00/WindowBay" unique_id=1510554835]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.46, 1.23, -3)
+mesh = ExtResource("13_7vmsa")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="WindowBay00/WindowBay" unique_id=1207412337]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0.16, -3)
+mesh = ExtResource("14_po5ac")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WindowBay00/WindowBay" unique_id=511386127]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.69, 0.16, -3)
+mesh = ExtResource("15_wdp12")
+
+[node name="WindowBay01" type="Node3D" parent="." unique_id=851836367]
+
+[node name="WindowBay" type="Node3D" parent="WindowBay01" unique_id=1780172173]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="WindowBay01/WindowBay" unique_id=997792802]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.69, 1.74, 8.305164e-09)
+mesh = ExtResource("16_vpdd4")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="WindowBay01/WindowBay" unique_id=1900185136]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.46, 1.23, -1.7484555e-09)
+mesh = ExtResource("17_yl303")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="WindowBay01/WindowBay" unique_id=2137434513]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0.16, 0)
+mesh = ExtResource("18_cqs7v")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WindowBay01/WindowBay" unique_id=2140732630]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.69, 0.16, 8.305164e-09)
+mesh = ExtResource("19_fp6ea")
+
+[node name="WindowBay02" type="Node3D" parent="." unique_id=78710331]
+
+[node name="WindowBay" type="Node3D" parent="WindowBay02" unique_id=1473956926]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="WindowBay02/WindowBay" unique_id=47673265]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.69, 1.74, 3)
+mesh = ExtResource("20_1heav")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="WindowBay02/WindowBay" unique_id=536909325]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.46, 1.23, 3)
+mesh = ExtResource("21_pswqi")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="WindowBay02/WindowBay" unique_id=1450784872]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0.16, 3)
+mesh = ExtResource("22_474lm")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WindowBay02/WindowBay" unique_id=560804233]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.69, 0.16, 3)
+mesh = ExtResource("23_xoh5v")
+
+[node name="WindowBay03" type="Node3D" parent="." unique_id=375717464]
+
+[node name="WindowBay" type="Node3D" parent="WindowBay03" unique_id=413729416]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="WindowBay03/WindowBay" unique_id=836707968]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.69, 1.74, -3)
+mesh = ExtResource("24_xttrb")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="WindowBay03/WindowBay" unique_id=1991766757]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.46, 1.23, -3)
+mesh = ExtResource("25_e5g7n")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="WindowBay03/WindowBay" unique_id=821014989]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.5, 0.16, -3)
+mesh = ExtResource("26_ddvau")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WindowBay03/WindowBay" unique_id=519763734]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.69, 0.16, -3)
+mesh = ExtResource("27_164v4")
+
+[node name="WindowBay04" type="Node3D" parent="." unique_id=700511650]
+
+[node name="WindowBay" type="Node3D" parent="WindowBay04" unique_id=1750128538]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="WindowBay04/WindowBay" unique_id=1315391446]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.69, 1.74, 8.305164e-09)
+mesh = ExtResource("28_v34nq")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="WindowBay04/WindowBay" unique_id=2112159330]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.46, 1.23, -1.7484555e-09)
+mesh = ExtResource("29_ck8g2")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="WindowBay04/WindowBay" unique_id=783639609]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.5, 0.16, 0)
+mesh = ExtResource("30_6mw81")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WindowBay04/WindowBay" unique_id=1905479204]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.69, 0.16, 8.305164e-09)
+mesh = ExtResource("31_gw2uh")
+
+[node name="WindowBay05" type="Node3D" parent="." unique_id=849169487]
+
+[node name="WindowBay" type="Node3D" parent="WindowBay05" unique_id=1241243204]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="WindowBay05/WindowBay" unique_id=1408928554]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.69, 1.74, 3)
+mesh = ExtResource("32_plkrp")
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="WindowBay05/WindowBay" unique_id=857497277]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.46, 1.23, 3)
+mesh = ExtResource("33_8y8l5")
+
+[node name="PlasterSurface" type="MeshInstance3D" parent="WindowBay05/WindowBay" unique_id=1660949494]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.5, 0.16, 3)
+mesh = ExtResource("34_fhu7v")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WindowBay05/WindowBay" unique_id=67670910]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.69, 0.16, 3)
+mesh = ExtResource("35_7qneu")
+
+[node name="StoneFacade00" type="Node3D" parent="." unique_id=34702846]
+
+[node name="StoneFacade" type="Node3D" parent="StoneFacade00" unique_id=265654643]
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="StoneFacade00/StoneFacade" unique_id=1905196565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.73)
+mesh = ExtResource("36_nk1hv")
+
+[node name="EntrySteps00" type="Node3D" parent="." unique_id=531243115]
+
+[node name="EntrySteps" type="Node3D" parent="EntrySteps00" unique_id=231230177]
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="EntrySteps00/EntrySteps" unique_id=1739875613]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12799999, 6.1600003)
+mesh = ExtResource("37_p2bpa")
+
+[node name="FlowerVase00" type="Node3D" parent="." unique_id=328388024]
+
+[node name="FlowerVase" type="Node3D" parent="FlowerVase00" unique_id=666891714]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="FlowerVase00/FlowerVase" unique_id=1581356389]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -1.58, -0.188, 6)
+mesh = ExtResource("38_2e6gq")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="FlowerVase00/FlowerVase" unique_id=2105036986]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -1.363742, 0.6539874, 6)
+mesh = ExtResource("39_pm3uh")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="FlowerVase00/FlowerVase" unique_id=818789652]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -1.58, -0.188, 6)
+mesh = ExtResource("40_mqlj3")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="FlowerVase00/FlowerVase" unique_id=2021933353]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -1.58, -0.188, 6)
+mesh = ExtResource("41_gdm5p")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="FlowerVase00/FlowerVase" unique_id=819007308]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -1.6880429, 0.68010855, 5.8885646)
+mesh = ExtResource("42_eutfv")
+
+[node name="FlowerVase01" type="Node3D" parent="." unique_id=99570741]
+
+[node name="FlowerVase" type="Node3D" parent="FlowerVase01" unique_id=814994592]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="FlowerVase01/FlowerVase" unique_id=1605026397]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.58, -0.188, 6)
+mesh = ExtResource("43_bpitb")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="FlowerVase01/FlowerVase" unique_id=1466980438]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.7962581, 0.6539874, 6)
+mesh = ExtResource("44_v4jkl")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="FlowerVase01/FlowerVase" unique_id=464835413]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.58, -0.188, 6)
+mesh = ExtResource("45_b25mt")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="FlowerVase01/FlowerVase" unique_id=1223240254]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.58, -0.188, 6)
+mesh = ExtResource("46_3d4qw")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="FlowerVase01/FlowerVase" unique_id=1204698728]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.4719572, 0.68010855, 5.8885646)
+mesh = ExtResource("47_dp3fa")
+
+[node name="CandleTable00" type="Node3D" parent="." unique_id=118752039]
+
+[node name="CandleTable" type="Node3D" parent="CandleTable00" unique_id=1112413792]
+
+[node name="TrayAnchor" type="Node3D" parent="CandleTable00/CandleTable" unique_id=151339213]
+
+[node name="CandleTray00" type="Node3D" parent="CandleTable00/CandleTable/TrayAnchor" unique_id=1081904777]
+
+[node name="CandleTray" type="Node3D" parent="CandleTable00/CandleTable/TrayAnchor/CandleTray00" unique_id=632676845]
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="CandleTable00/CandleTable/TrayAnchor/CandleTray00/CandleTray" unique_id=1164301338]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38, 1.0320001, 3.2)
+mesh = ExtResource("48_hnrrc")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="CandleTable00/CandleTable" unique_id=654394107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.902, 3.405)
+mesh = ExtResource("49_he0qt")
+
+[node name="FlowerVase04" type="Node3D" parent="CandleTable00" unique_id=708295785]
+
+[node name="FlowerVase" type="Node3D" parent="CandleTable00/FlowerVase04" unique_id=654482961]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="CandleTable00/FlowerVase04/FlowerVase" unique_id=173646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.81, 1.0245, 3.13)
+mesh = ExtResource("50_4dhx3")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="CandleTable00/FlowerVase04/FlowerVase" unique_id=1738323820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9372106, 1.5197867, 3.13)
+mesh = ExtResource("51_qv5n5")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="CandleTable00/FlowerVase04/FlowerVase" unique_id=571743826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.81, 1.0245, 3.13)
+mesh = ExtResource("52_3xt47")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="CandleTable00/FlowerVase04/FlowerVase" unique_id=1167289668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.81, 1.0245, 3.13)
+mesh = ExtResource("53_v6tiw")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="CandleTable00/FlowerVase04/FlowerVase" unique_id=2293798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7464454, 1.5351521, 3.0644498)
+mesh = ExtResource("54_qeqgh")
+
+[node name="IconCase00" type="Node3D" parent="." unique_id=1271234570]
+
+[node name="IconCase" type="Node3D" parent="IconCase00" unique_id=2035472513]
+
+[node name="TheotokosIconSurface" type="MeshInstance3D" parent="IconCase00/IconCase" unique_id=97432901]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.03, 1.542, 1.5)
+mesh = ExtResource("55_5q2h0")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="IconCase00/IconCase" unique_id=1542913437]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.28, 0.23200001, 1.5)
+mesh = ExtResource("56_erfho")
+
+[node name="Iconostasis00" type="Node3D" parent="." unique_id=1464743710]
+
+[node name="Iconostasis" type="Node3D" parent="Iconostasis00" unique_id=1740781898]
+
+[node name="FeastIcon_001Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=811498772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.28, 2.9919999, -4.43)
+mesh = ExtResource("57_8fy30")
+
+[node name="FeastIcon_002Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=595871589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61, 2.9919999, -4.43)
+mesh = ExtResource("58_2suhb")
+
+[node name="FeastIcon_003Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1873109671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.94, 2.9919999, -4.43)
+mesh = ExtResource("59_mhjfm")
+
+[node name="FeastIcon_004Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1570220341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9919999, -4.43)
+mesh = ExtResource("60_ga6fo")
+
+[node name="FeastIcon_005Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=986164538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94, 2.9919999, -4.43)
+mesh = ExtResource("61_jn87i")
+
+[node name="FeastIcon_006Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=924563340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.61, 2.9919999, -4.43)
+mesh = ExtResource("62_a127q")
+
+[node name="FeastIcon_007Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1179151840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28, 2.9919999, -4.43)
+mesh = ExtResource("63_1rg4u")
+
+[node name="FeastIcon_008Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1312633901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95, 2.9919999, -4.43)
+mesh = ExtResource("64_jio4i")
+
+[node name="FeastIconSurface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=238994239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95, 2.9919999, -4.43)
+mesh = ExtResource("65_1buec")
+
+[node name="MainIcon_001Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1360465896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49, 1.312, -4.45)
+mesh = ExtResource("66_jij23")
+
+[node name="MainIcon_002Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1587150485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49, 1.312, -4.45)
+mesh = ExtResource("67_bvsys")
+
+[node name="MainIcon_003Surface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1505505138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 1.312, -4.45)
+mesh = ExtResource("68_8r13k")
+
+[node name="MainIconSurface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1461578978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.65, 1.312, -4.45)
+mesh = ExtResource("69_ui3ac")
+
+[node name="WalnutBoardsSurface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1458365679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.062, -4.7349997)
+mesh = ExtResource("70_a08c4")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="Iconostasis00/Iconostasis" unique_id=1327371678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.65, 0.412, -4.4199996)
+mesh = ExtResource("71_38tpb")
+
+[node name="ChancelSteps00" type="Node3D" parent="." unique_id=1301040311]
+
+[node name="ChancelSteps" type="Node3D" parent="ChancelSteps00" unique_id=1555419810]
+
+[node name="LimestoneSurface" type="MeshInstance3D" parent="ChancelSteps00/ChancelSteps" unique_id=1160790659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21200001, -4.1749997)
+mesh = ExtResource("72_nb1ka")
+
+[node name="ChancelCarpet00" type="Node3D" parent="." unique_id=798493168]
+
+[node name="ChancelCarpet" type="Node3D" parent="ChancelCarpet00" unique_id=942733961]
+
+[node name="BurgundyWoolSurface" type="MeshInstance3D" parent="ChancelCarpet00/ChancelCarpet" unique_id=770565910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, -4.7)
+mesh = ExtResource("73_1jokl")
+
+[node name="WallBench00" type="Node3D" parent="." unique_id=1431606711]
+
+[node name="WallBench" type="Node3D" parent="WallBench00" unique_id=75320391]
+
+[node name="WalnutBoardsSurface" type="MeshInstance3D" parent="WallBench00/WallBench" unique_id=2033605834]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2, 0.832, 2)
+mesh = ExtResource("74_nvm8n")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WallBench00/WallBench" unique_id=1979186098]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.87, 0.782, 2.66)
+mesh = ExtResource("75_xyn0k")
+
+[node name="SideTable00" type="Node3D" parent="." unique_id=1228467121]
+
+[node name="SideTable" type="Node3D" parent="SideTable00" unique_id=1367822684]
+
+[node name="VaseAnchor" type="Node3D" parent="SideTable00/SideTable" unique_id=1922800625]
+
+[node name="FlowerVase02" type="Node3D" parent="SideTable00/SideTable/VaseAnchor" unique_id=1035534582]
+
+[node name="FlowerVase" type="Node3D" parent="SideTable00/SideTable/VaseAnchor/FlowerVase02" unique_id=1834381766]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase" unique_id=511781088]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.93, 0.93299997, 0.4)
+mesh = ExtResource("76_lw37o")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase" unique_id=1709077896]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.93, 1.4282867, 0.27278936)
+mesh = ExtResource("77_to488")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase" unique_id=1391349348]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.93, 0.93299997, 0.4)
+mesh = ExtResource("78_g4cg3")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase" unique_id=1163030517]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.93, 0.93299997, 0.4)
+mesh = ExtResource("79_mklrd")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase" unique_id=2073379595]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.9955504, 1.443652, 0.46355462)
+mesh = ExtResource("80_dnhut")
+
+[node name="WalnutBoardsSurface" type="MeshInstance3D" parent="SideTable00/SideTable" unique_id=453223527]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.93, 0.912, 0.4)
+mesh = ExtResource("81_bogvm")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="SideTable00/SideTable" unique_id=378916407]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.785, 0.82199997, 0.4)
+mesh = ExtResource("82_hfapx")
+
+[node name="SideTable01" type="Node3D" parent="." unique_id=154417461]
+
+[node name="SideTable" type="Node3D" parent="SideTable01" unique_id=954577673]
+
+[node name="VaseAnchor" type="Node3D" parent="SideTable01/SideTable" unique_id=238900233]
+
+[node name="FlowerVase03" type="Node3D" parent="SideTable01/SideTable/VaseAnchor" unique_id=1714313722]
+
+[node name="FlowerVase" type="Node3D" parent="SideTable01/SideTable/VaseAnchor/FlowerVase03" unique_id=254331074]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase" unique_id=1750690913]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.9, 0.93299997, -2.1)
+mesh = ExtResource("83_ejnt8")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase" unique_id=478202687]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.9, 1.4282867, -1.9727893)
+mesh = ExtResource("84_4vhk0")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase" unique_id=1020534054]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.9, 0.93299997, -2.1)
+mesh = ExtResource("85_ioi4b")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase" unique_id=1174461438]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.9, 0.93299997, -2.1)
+mesh = ExtResource("86_h45rl")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase" unique_id=556110265]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.9655504, 1.443652, -2.1635544)
+mesh = ExtResource("87_bava3")
+
+[node name="WalnutBoardsSurface" type="MeshInstance3D" parent="SideTable01/SideTable" unique_id=747820345]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.9, 0.912, -2.1)
+mesh = ExtResource("88_r134o")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="SideTable01/SideTable" unique_id=1147194766]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.755, 0.82199997, -2.1)
+mesh = ExtResource("89_ho8ak")
+
+[node name="FlowerVase05" type="Node3D" parent="." unique_id=1862355963]
+
+[node name="FlowerVase" type="Node3D" parent="FlowerVase05" unique_id=1779244693]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="FlowerVase05/FlowerVase" unique_id=414759108]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 3.24, 1.29, 3)
+mesh = ExtResource("90_r7040")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="FlowerVase05/FlowerVase" unique_id=213832247]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 3.335408, 1.6614649, 3)
+mesh = ExtResource("91_7fvp8")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="FlowerVase05/FlowerVase" unique_id=850951584]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 3.24, 1.29, 3)
+mesh = ExtResource("92_jl8ro")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="FlowerVase05/FlowerVase" unique_id=827163843]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 3.24, 1.29, 3)
+mesh = ExtResource("93_iskt0")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="FlowerVase05/FlowerVase" unique_id=621184317]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 3.192334, 1.672989, 2.9508374)
+mesh = ExtResource("94_itaoy")
+
+[node name="FlowerVase06" type="Node3D" parent="." unique_id=1010655090]
+
+[node name="FlowerVase" type="Node3D" parent="FlowerVase06" unique_id=1391412965]
+
+[node name="AgedCeramicSurface" type="MeshInstance3D" parent="FlowerVase06/FlowerVase" unique_id=1630120699]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -3.22, 1.29, 0)
+mesh = ExtResource("95_rt7lr")
+
+[node name="DriedLavenderSurface" type="MeshInstance3D" parent="FlowerVase06/FlowerVase" unique_id=1347730021]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -3.124592, 1.6614649, 0)
+mesh = ExtResource("96_a6pkk")
+
+[node name="DryStemSurface" type="MeshInstance3D" parent="FlowerVase06/FlowerVase" unique_id=429349702]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -3.22, 1.29, 0)
+mesh = ExtResource("97_oqgp1")
+
+[node name="OliveLeafSurface" type="MeshInstance3D" parent="FlowerVase06/FlowerVase" unique_id=197495747]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -3.22, 1.29, 0)
+mesh = ExtResource("98_4mef4")
+
+[node name="TinyWhiteFlowerSurface" type="MeshInstance3D" parent="FlowerVase06/FlowerVase" unique_id=1430806647]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -3.267666, 1.672989, -0.049162738)
+mesh = ExtResource("99_0e658")
+
+[node name="Chandelier00" type="Node3D" parent="." unique_id=65115976]
+
+[node name="Chandelier" type="Node3D" parent="Chandelier00" unique_id=303738577]
+
+[node name="ForgedIronSurface" type="MeshInstance3D" parent="Chandelier00/Chandelier" unique_id=1184638780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8, 0.7)
+mesh = ExtResource("100_sxfbc")
+
+[node name="HangingLamp00" type="Node3D" parent="." unique_id=1145273885]
+
+[node name="HangingLamp" type="Node3D" parent="HangingLamp00" unique_id=1220389992]
+
+[node name="RubyGlassSurface" type="MeshInstance3D" parent="HangingLamp00/HangingLamp" unique_id=1842892720]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.94, 2.06, 1.5)
+mesh = ExtResource("101_6ei6e")
+
+[node name="WallIcon00" type="Node3D" parent="." unique_id=2092330568]
+
+[node name="WallIcon" type="Node3D" parent="WallIcon00" unique_id=739109943]
+
+[node name="ChristIconSurface" type="MeshInstance3D" parent="WallIcon00/WallIcon" unique_id=2131152729]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.035, 1.61, 1.5)
+mesh = ExtResource("102_mapsi")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WallIcon00/WallIcon" unique_id=2011338243]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.175, 1.855, 1.677)
+mesh = ExtResource("103_phlk6")
+
+[node name="WallIcon01" type="Node3D" parent="." unique_id=1093469078]
+
+[node name="WallIcon" type="Node3D" parent="WallIcon01" unique_id=1908147730]
+
+[node name="ChristIconSurface" type="MeshInstance3D" parent="WallIcon01/WallIcon" unique_id=140146456]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.035, 1.76, -1.5)
+mesh = ExtResource("104_pdfum")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WallIcon01/WallIcon" unique_id=490100967]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.175, 2.0049999, -1.323)
+mesh = ExtResource("105_cdagp")
+
+[node name="WallIcon02" type="Node3D" parent="." unique_id=2049705041]
+
+[node name="WallIcon" type="Node3D" parent="WallIcon02" unique_id=840594169]
+
+[node name="ChristIconSurface" type="MeshInstance3D" parent="WallIcon02/WallIcon" unique_id=200228412]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.035, 1.72, -1.5)
+mesh = ExtResource("106_fwppl")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="WallIcon02/WallIcon" unique_id=2068910755]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.175, 1.965, -1.677)
+mesh = ExtResource("107_mq7bx")
+
+[node name="HangingBanner00" type="Node3D" parent="." unique_id=559248545]
+
+[node name="HangingBanner" type="Node3D" parent="HangingBanner00" unique_id=789921229]
+
+[node name="BannerIconSurface" type="MeshInstance3D" parent="HangingBanner00/HangingBanner" unique_id=1930856440]
+transform = Transform3D(0.98722726, 0, 0.15931821, 0, 1, 0, -0.15931821, 0, 0.98722726, -2.9561024, 2.29, -3.501916)
+mesh = ExtResource("108_8lvun")
+
+[node name="BurgundyClothSurface" type="MeshInstance3D" parent="HangingBanner00/HangingBanner" unique_id=1480563454]
+transform = Transform3D(0.98722726, 0, 0.15931821, 0, 1, 0, -0.15931821, 0, 0.98722726, -2.98, 1.88, -3.65)
+mesh = ExtResource("109_qflcw")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="HangingBanner00/HangingBanner" unique_id=454739538]
+transform = Transform3D(0.98722726, 0, 0.15931821, 0, 1, 0, -0.15931821, 0, 0.98722726, -3.1334014, 2.49, -3.615115)
+mesh = ExtResource("110_2mnsy")
+
+[node name="HangingBanner01" type="Node3D" parent="." unique_id=412794414]
+
+[node name="HangingBanner" type="Node3D" parent="HangingBanner01" unique_id=786517199]
+
+[node name="BannerIconSurface" type="MeshInstance3D" parent="HangingBanner01/HangingBanner" unique_id=409335153]
+transform = Transform3D(0.98722726, 0, -0.15931821, 0, 1, 0, 0.15931821, 0, 0.98722726, 2.9561024, 2.29, -3.501916)
+mesh = ExtResource("111_qnjan")
+
+[node name="BurgundyClothSurface" type="MeshInstance3D" parent="HangingBanner01/HangingBanner" unique_id=1122520791]
+transform = Transform3D(0.98722726, 0, -0.15931821, 0, 1, 0, 0.15931821, 0, 0.98722726, 2.98, 1.88, -3.65)
+mesh = ExtResource("112_0xd1n")
+
+[node name="WalnutSurface" type="MeshInstance3D" parent="HangingBanner01/HangingBanner" unique_id=1414468804]
+transform = Transform3D(0.98722726, 0, -0.15931821, 0, 1, 0, 0.15931821, 0, 0.98722726, 2.8234122, 2.49, -3.6651409)
+mesh = ExtResource("113_v8o8a")
+
+[node name="_WorldEnvironment_3" type="WorldEnvironment" parent="." unique_id=263454107]
+environment = SubResource("Environment_jqeit")
+
+[node name="_DirectionalLight3D_4" type="DirectionalLight3D" parent="." unique_id=1793039205]
+transform = Transform3D(0.42261824, -0.43938673, 0.7926747, 0, 0.8746197, 0.4848096, -0.9063078, -0.20488939, 0.36963025, 0, 0, 0)
+light_color = Color(1, 0.8666667, 0.65882355, 1)
+light_energy = 1.2
+light_cull_mask = 3
+shadow_enabled = true
+directional_shadow_mode = 1
+directional_shadow_max_distance = 30.0
+
+[node name="@OmniLight3D@336" type="OmniLight3D" parent="." unique_id=982504871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, -3)
+light_color = Color(0.9647059, 0.9137255, 0.8392157, 1)
+light_energy = 0.35
+light_size = 1.2
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 5.8
+omni_attenuation = 0.8
+
+[node name="@OmniLight3D@337" type="OmniLight3D" parent="." unique_id=242393122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, 0)
+light_color = Color(0.9647059, 0.9137255, 0.8392157, 1)
+light_energy = 0.35
+light_size = 1.2
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 5.8
+omni_attenuation = 0.8
+
+[node name="@OmniLight3D@338" type="OmniLight3D" parent="." unique_id=47100145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9, 3)
+light_color = Color(0.9647059, 0.9137255, 0.8392157, 1)
+light_energy = 0.35
+light_size = 1.2
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 5.8
+omni_attenuation = 0.8
+
+[node name="NaveLightmap" type="LightmapGI" parent="." unique_id=404061560]
+layers = 3
+bounces = 4
+directional = true
+use_texture_for_bounces = false
+max_texture_size = 2048
+environment_mode = 2
+environment_custom_sky = SubResource("Sky_8v05p")
+environment_custom_energy = 2.0
+light_data = ExtResource("115_fi3mh")

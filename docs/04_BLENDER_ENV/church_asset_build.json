@@ -2,215 +2,6 @@
   "blender_version": "5.2.1 LTS",
   "assets": [
     {
-      "asset": "church_door",
-      "source": "art/blender/church_door.blend",
-      "model": "game/assets/models/church_door.glb",
-      "triangles": 3156,
-      "blender_bounds_m": [
-        [
-          -0.8500000238418579,
-          0.8500000238418579
-        ],
-        [
-          -0.11800000071525574,
-          0.10999999940395355
-        ],
-        [
-          0.0,
-          2.8499999046325684
-        ]
-      ],
-      "nodes": [
-        "ChurchDoor",
-        "ArchedFrame",
-        "Jamb",
-        "Jamb.001",
-        "LeftHinge",
-        "CrossRail",
-        "CrossRail.001",
-        "CrossRail.002",
-        "HingePin",
-        "HingePin.001",
-        "InsetPanel",
-        "InsetPanel.001",
-        "InsetPanel.002",
-        "LeftHandle",
-        "HandlePlate",
-        "RingPull",
-        "LeftLeaf",
-        "RightHinge",
-        "CrossRail.003",
-        "CrossRail.004",
-        "CrossRail.005",
-        "HingePin.002",
-        "HingePin.003",
-        "InsetPanel.003",
-        "InsetPanel.004",
-        "InsetPanel.005",
-        "RightHandle",
-        "HandlePlate.001",
-        "RingPull.001",
-        "RightLeaf"
-      ]
-    },
-    {
-      "asset": "candle_table",
-      "source": "art/blender/candle_table.blend",
-      "model": "game/assets/models/candle_table.glb",
-      "triangles": 1080,
-      "blender_bounds_m": [
-        [
-          -0.4749999940395355,
-          0.4749999940395355
-        ],
-        [
-          -0.25,
-          0.25
-        ],
-        [
-          0.0,
-          0.8524999618530273
-        ]
-      ],
-      "nodes": [
-        "CandleTable",
-        "Apron",
-        "Apron.001",
-        "CrossStretcher",
-        "Leg",
-        "Leg.001",
-        "Leg.002",
-        "Leg.003",
-        "Stretcher",
-        "Stretcher.001",
-        "Top",
-        "TrayAnchor"
-      ]
-    },
-    {
-      "asset": "candle_tray",
-      "source": "art/blender/candle_tray.blend",
-      "model": "game/assets/models/candle_tray.glb",
-      "triangles": 540,
-      "blender_bounds_m": [
-        [
-          -0.21000000834465027,
-          0.21000000834465027
-        ],
-        [
-          -0.1600000113248825,
-          0.1600000113248825
-        ],
-        [
-          0.0,
-          0.054999999701976776
-        ]
-      ],
-      "nodes": [
-        "CandleTray",
-        "Bottom",
-        "End",
-        "End.001",
-        "PickupAnchor",
-        "Side",
-        "Side.001"
-      ]
-    },
-    {
-      "asset": "window_bay",
-      "source": "art/blender/window_bay.blend",
-      "model": "game/assets/models/window_bay.glb",
-      "triangles": 1492,
-      "blender_bounds_m": [
-        [
-          -1.5,
-          1.5
-        ],
-        [
-          -0.3199999928474426,
-          0.2900000214576721
-        ],
-        [
-          0.0,
-          3.4000000953674316
-        ]
-      ],
-      "nodes": [
-        "WindowBay",
-        "Mullion",
-        "MullionHorizontal",
-        "OpeningArch",
-        "WallAbove",
-        "WallBelow",
-        "WallSide",
-        "WallSide.001",
-        "WindowFrame",
-        "WindowFrame.001",
-        "WindowFrameArch",
-        "WindowSill"
-      ]
-    },
-    {
-      "asset": "church_vault",
-      "source": "art/blender/church_vault.blend",
-      "model": "game/assets/models/church_vault.glb",
-      "triangles": 96,
-      "blender_bounds_m": [
-        [
-          -3.5,
-          3.5
-        ],
-        [
-          -5.599999904632568,
-          5.599999904632568
-        ],
-        [
-          0.0,
-          1.7000000476837158
-        ]
-      ],
-      "nodes": [
-        "ChurchVault",
-        "VaultInterior"
-      ]
-    },
-    {
-      "asset": "icon_case",
-      "source": "art/blender/icon_case.blend",
-      "model": "game/assets/models/icon_case.glb",
-      "triangles": 1342,
-      "blender_bounds_m": [
-        [
-          -0.5400000214576721,
-          0.5400000214576721
-        ],
-        [
-          -0.17099998891353607,
-          0.15000000596046448
-        ],
-        [
-          0.0,
-          2.740000009536743
-        ]
-      ],
-      "nodes": [
-        "IconCase",
-        "Back",
-        "Base",
-        "Cabinet",
-        "Cornice",
-        "Crown",
-        "IconFrame",
-        "FramePost",
-        "FramePost.001",
-        "FrameRail",
-        "FrameRail.001",
-        "GiltEdge",
-        "GiltEdge.001",
-        "TheotokosIcon"
-      ]
-    },
-    {
       "asset": "hand_grip",
       "source": "art/blender/hand_grip.blend",
       "model": "game/assets/models/hand_grip.glb",
@@ -234,220 +25,6 @@
         "GripAnchor",
         "HandSkin",
         "Sleeve"
-      ]
-    },
-    {
-      "asset": "church_shell",
-      "source": "art/blender/church_shell.blend",
-      "model": "game/assets/models/church_shell.glb",
-      "triangles": 12648,
-      "blender_bounds_m": [
-        [
-          -3.744999885559082,
-          3.744999885559082
-        ],
-        [
-          -5.75,
-          5.699999809265137
-        ],
-        [
-          0.0,
-          5.260000228881836
-        ]
-      ],
-      "nodes": [
-        "ChurchShell",
-        "Cornice",
-        "Cornice.001",
-        "EntryArch",
-        "EntrySide",
-        "EntrySide.001",
-        "EntryStoneJamb",
-        "EntryStoneJamb.001",
-        "EntryTop",
-        "Flagstone",
-        "Flagstone.001",
-        "Flagstone.002",
-        "Flagstone.003",
-        "Flagstone.004",
-        "Flagstone.005",
-        "Flagstone.006",
-        "Flagstone.007",
-        "Flagstone.008",
-        "Flagstone.009",
-        "Flagstone.010",
-        "Flagstone.011",
-        "Flagstone.012",
-        "Flagstone.013",
-        "Flagstone.014",
-        "Flagstone.015",
-        "Flagstone.016",
-        "Flagstone.017",
-        "Flagstone.018",
-        "Flagstone.019",
-        "Flagstone.020",
-        "Flagstone.021",
-        "Flagstone.022",
-        "Flagstone.023",
-        "Flagstone.024",
-        "Flagstone.025",
-        "Flagstone.026",
-        "Flagstone.027",
-        "Flagstone.028",
-        "Flagstone.029",
-        "Flagstone.030",
-        "Flagstone.031",
-        "Flagstone.032",
-        "Flagstone.033",
-        "Flagstone.034",
-        "Flagstone.035",
-        "Flagstone.036",
-        "Flagstone.037",
-        "Flagstone.038",
-        "Flagstone.039",
-        "Flagstone.040",
-        "Flagstone.041",
-        "Flagstone.042",
-        "Flagstone.043",
-        "Flagstone.044",
-        "Flagstone.045",
-        "Flagstone.046",
-        "Flagstone.047",
-        "Flagstone.048",
-        "Flagstone.049",
-        "Flagstone.050",
-        "Flagstone.051",
-        "Flagstone.052",
-        "Flagstone.053",
-        "Flagstone.054",
-        "Flagstone.055",
-        "Flagstone.056",
-        "Flagstone.057",
-        "Flagstone.058",
-        "Flagstone.059",
-        "Flagstone.060",
-        "Flagstone.061",
-        "Flagstone.062",
-        "Flagstone.063",
-        "Flagstone.064",
-        "Flagstone.065",
-        "Flagstone.066",
-        "Flagstone.067",
-        "Flagstone.068",
-        "Flagstone.069",
-        "Flagstone.070",
-        "Flagstone.071",
-        "Flagstone.072",
-        "Flagstone.073",
-        "Flagstone.074",
-        "Flagstone.075",
-        "Flagstone.076",
-        "Flagstone.077",
-        "Flagstone.078",
-        "Flagstone.079",
-        "Flagstone.080",
-        "Flagstone.081",
-        "Flagstone.082",
-        "Flagstone.083",
-        "Flagstone.084",
-        "Flagstone.085",
-        "Flagstone.086",
-        "Flagstone.087",
-        "Flagstone.088",
-        "Flagstone.089",
-        "Flagstone.090",
-        "Flagstone.091",
-        "Flagstone.092",
-        "Flagstone.093",
-        "Flagstone.094",
-        "Flagstone.095",
-        "Floor",
-        "Plinth",
-        "Plinth.001",
-        "RearWall",
-        "SideEnd",
-        "SideEnd.001",
-        "SideEnd.002",
-        "SideEnd.003",
-        "VaultEndWall",
-        "VaultEndWall.001"
-      ]
-    },
-    {
-      "asset": "iconostasis",
-      "source": "art/blender/iconostasis.blend",
-      "model": "game/assets/models/iconostasis.glb",
-      "triangles": 5128,
-      "blender_bounds_m": [
-        [
-          -3.200000047683716,
-          3.200000047683716
-        ],
-        [
-          -0.16099999845027924,
-          0.1599999964237213
-        ],
-        [
-          0.0,
-          3.369999885559082
-        ]
-      ],
-      "nodes": [
-        "Iconostasis",
-        "Base",
-        "ClosedRoyalDoors",
-        "DoorCross",
-        "DoorCross.001",
-        "DoorCrossbar",
-        "DoorCrossbar.001",
-        "IconPanel",
-        "FramePost",
-        "FramePost.001",
-        "FrameRail",
-        "FrameRail.001",
-        "GiltEdge",
-        "GiltEdge.001",
-        "Icon",
-        "IconPanel.001",
-        "FramePost.002",
-        "FramePost.003",
-        "FrameRail.002",
-        "FrameRail.003",
-        "GiltEdge.002",
-        "GiltEdge.003",
-        "Icon.001",
-        "IconPanel.002",
-        "FramePost.004",
-        "FramePost.005",
-        "FrameRail.004",
-        "FrameRail.005",
-        "GiltEdge.004",
-        "GiltEdge.005",
-        "Icon.002",
-        "IconPanel.003",
-        "FramePost.006",
-        "FramePost.007",
-        "FrameRail.006",
-        "FrameRail.007",
-        "GiltEdge.006",
-        "GiltEdge.007",
-        "Icon.003",
-        "LowerPanel",
-        "LowerPanel.001",
-        "LowerPanel.002",
-        "LowerPanel.003",
-        "Post",
-        "Post.001",
-        "Post.002",
-        "Post.003",
-        "Post.004",
-        "Post.005",
-        "Rail",
-        "Rail.001",
-        "Rail.002",
-        "RoyalDoorCrown",
-        "TopCross",
-        "TopCrossbar"
       ]
     },
     {
@@ -481,6 +58,326 @@
         "Eave",
         "Eave.001",
         "RoofBody"
+      ]
+    },
+    {
+      "asset": "church_door",
+      "source": "art/blender/church_door.blend",
+      "model": "game/assets/models/church_door.glb",
+      "triangles": 28500,
+      "blender_bounds_m": [
+        [
+          -0.8500000238418579,
+          0.8500000238418579
+        ],
+        [
+          -0.11800000071525574,
+          0.10999999940395355
+        ],
+        [
+          0.0,
+          2.8499999046325684
+        ]
+      ],
+      "nodes": [
+        "ChurchDoor",
+        "ArchedFrame",
+        "Jamb",
+        "Jamb.001",
+        "LeftHinge",
+        "CarvedPanel",
+        "CarvedScroll",
+        "CarvedScroll.001",
+        "CarvedScroll.002",
+        "CarvedScroll.003",
+        "DiamondRelief",
+        "PanelGround",
+        "Rosette",
+        "RoutedBorder",
+        "RoutedBorder.001",
+        "CarvedPanel.001",
+        "CarvedScroll.004",
+        "CarvedScroll.005",
+        "CarvedScroll.006",
+        "CarvedScroll.007",
+        "DiamondRelief.001",
+        "PanelGround.001",
+        "Rosette.001",
+        "RoutedBorder.002",
+        "RoutedBorder.003",
+        "CarvedPanel.002",
+        "CarvedScroll.008",
+        "CarvedScroll.009",
+        "CarvedScroll.010",
+        "CarvedScroll.011",
+        "DiamondRelief.002",
+        "PanelGround.002",
+        "Rosette.002",
+        "RoutedBorder.004",
+        "RoutedBorder.005",
+        "CrossRail",
+        "CrossRail.001",
+        "CrossRail.002",
+        "HingePin",
+        "HingePin.001",
+        "LeftHandle",
+        "HandlePlate",
+        "RingPull",
+        "LeftLeaf",
+        "RightHinge",
+        "CarvedPanel.003",
+        "CarvedScroll.012",
+        "CarvedScroll.013",
+        "CarvedScroll.014",
+        "CarvedScroll.015",
+        "DiamondRelief.003",
+        "PanelGround.003",
+        "Rosette.003",
+        "RoutedBorder.006",
+        "RoutedBorder.007",
+        "CarvedPanel.004",
+        "CarvedScroll.016",
+        "CarvedScroll.017",
+        "CarvedScroll.018",
+        "CarvedScroll.019",
+        "DiamondRelief.004",
+        "PanelGround.004",
+        "Rosette.004",
+        "RoutedBorder.008",
+        "RoutedBorder.009",
+        "CarvedPanel.005",
+        "CarvedScroll.020",
+        "CarvedScroll.021",
+        "CarvedScroll.022",
+        "CarvedScroll.023",
+        "DiamondRelief.005",
+        "PanelGround.005",
+        "Rosette.005",
+        "RoutedBorder.010",
+        "RoutedBorder.011",
+        "CrossRail.003",
+        "CrossRail.004",
+        "CrossRail.005",
+        "HingePin.002",
+        "HingePin.003",
+        "RightHandle",
+        "HandlePlate.001",
+        "RingPull.001",
+        "RightLeaf"
+      ]
+    },
+    {
+      "asset": "candle_table",
+      "source": "art/blender/candle_table.blend",
+      "model": "game/assets/models/candle_table.glb",
+      "triangles": 1080,
+      "blender_bounds_m": [
+        [
+          -0.4749999940395355,
+          0.4749999940395355
+        ],
+        [
+          -0.25,
+          0.2499999850988388
+        ],
+        [
+          0.0,
+          0.8524999618530273
+        ]
+      ],
+      "nodes": [
+        "CandleTable",
+        "TrayAnchor",
+        "WalnutSurface"
+      ]
+    },
+    {
+      "asset": "candle_tray",
+      "source": "art/blender/candle_tray.blend",
+      "model": "game/assets/models/candle_tray.glb",
+      "triangles": 540,
+      "blender_bounds_m": [
+        [
+          -0.21000000834465027,
+          0.21000000834465027
+        ],
+        [
+          -0.1600000113248825,
+          0.1600000113248825
+        ],
+        [
+          -4.656612873077393e-10,
+          0.054999999701976776
+        ]
+      ],
+      "nodes": [
+        "CandleTray",
+        "PickupAnchor",
+        "WalnutSurface"
+      ]
+    },
+    {
+      "asset": "window_bay",
+      "source": "art/blender/window_bay.blend",
+      "model": "game/assets/models/window_bay.glb",
+      "triangles": 1796,
+      "blender_bounds_m": [
+        [
+          -1.5,
+          1.5
+        ],
+        [
+          -0.4099999964237213,
+          0.33000001311302185
+        ],
+        [
+          0.0,
+          3.4000000953674316
+        ]
+      ],
+      "nodes": [
+        "WindowBay",
+        "ForgedIronSurface",
+        "LimestoneSurface",
+        "PlasterSurface",
+        "WalnutSurface"
+      ]
+    },
+    {
+      "asset": "iconostasis",
+      "source": "art/blender/iconostasis.blend",
+      "model": "game/assets/models/iconostasis.glb",
+      "triangles": 54790,
+      "blender_bounds_m": [
+        [
+          -3.3499999046325684,
+          3.3499999046325684
+        ],
+        [
+          -0.33799999952316284,
+          0.16999998688697815
+        ],
+        [
+          0.0,
+          4.359999656677246
+        ]
+      ],
+      "nodes": [
+        "Iconostasis",
+        "AgedBrassSurface",
+        "CarvedPanel",
+        "CarvedPanel.001",
+        "CarvedPanel.002",
+        "CarvedPanel.003",
+        "CarvedPanel.004",
+        "CarvedPanel.005",
+        "FeastFrame",
+        "FeastFrame.001",
+        "FeastFrame.002",
+        "FeastFrame.003",
+        "FeastFrame.004",
+        "FeastFrame.005",
+        "FeastFrame.006",
+        "FeastFrame.007",
+        "FeastFrame.008",
+        "FeastIcon.001Surface",
+        "FeastIcon.002Surface",
+        "FeastIcon.003Surface",
+        "FeastIcon.004Surface",
+        "FeastIcon.005Surface",
+        "FeastIcon.006Surface",
+        "FeastIcon.007Surface",
+        "FeastIcon.008Surface",
+        "FeastIconSurface",
+        "MainIcon.001Surface",
+        "MainIcon.002Surface",
+        "MainIcon.003Surface",
+        "MainIconFrame",
+        "MainIconFrame.001",
+        "MainIconFrame.002",
+        "MainIconFrame.003",
+        "MainIconSurface",
+        "WalnutBoardsSurface",
+        "WalnutSurface"
+      ]
+    },
+    {
+      "asset": "icon_case",
+      "source": "art/blender/icon_case.blend",
+      "model": "game/assets/models/icon_case.glb",
+      "triangles": 11634,
+      "blender_bounds_m": [
+        [
+          -0.5999999642372131,
+          0.5999999642372131
+        ],
+        [
+          -0.25,
+          0.1899999976158142
+        ],
+        [
+          0.0,
+          3.2079999446868896
+        ]
+      ],
+      "nodes": [
+        "IconCase",
+        "AgedBrassSurface",
+        "CarvedPanel",
+        "CarvedPanel.001",
+        "IconFrame",
+        "TheotokosIconSurface",
+        "WalnutSurface"
+      ]
+    },
+    {
+      "asset": "church_shell",
+      "source": "art/blender/church_shell.blend",
+      "model": "game/assets/models/church_shell.glb",
+      "triangles": 24456,
+      "blender_bounds_m": [
+        [
+          -3.744999885559082,
+          3.744999885559082
+        ],
+        [
+          -5.75,
+          5.699999809265137
+        ],
+        [
+          0.0,
+          5.059999942779541
+        ]
+      ],
+      "nodes": [
+        "ChurchShell",
+        "FloorStoneSurface",
+        "LimestoneSurface",
+        "PlasterSurface"
+      ]
+    },
+    {
+      "asset": "church_vault",
+      "source": "art/blender/church_vault.blend",
+      "model": "game/assets/models/church_vault.glb",
+      "triangles": 96,
+      "blender_bounds_m": [
+        [
+          -3.5,
+          3.5
+        ],
+        [
+          -5.599999904632568,
+          5.599999904632568
+        ],
+        [
+          0.0,
+          1.5
+        ]
+      ],
+      "nodes": [
+        "ChurchVault",
+        "PlasterSurface"
       ]
     }
   ]

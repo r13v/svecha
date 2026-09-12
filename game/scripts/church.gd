@@ -12,7 +12,8 @@ class PauseLayer:
 const Candle = preload("res://scripts/candle.gd")
 const Player = preload("res://scripts/player.gd")
 const FLOOR_Y: float = 0.172
-const HAND_REST := Vector3(0.19, -0.49, -0.43)
+const OUTSIDE_Y: float = FLOOR_Y - 0.36
+const HAND_REST := Player.HAND_REST
 
 @export var candle_lifetime_seconds: float = 1200.0
 var player: Player
@@ -42,6 +43,7 @@ var menu_canvas: CanvasLayer
 var tray_candles: Array[Node3D] = []
 var capture_mode: bool = false
 var quitting: bool = false
+var model_counts: Dictionary = {}
 
 
 func _ready() -> void:
@@ -50,9 +52,10 @@ func _ready() -> void:
 	_build_inputs()
 	_build_lighting()
 	_build_church()
+	_apply_lightmaps()
 	player = Player.new()
 	add_child(player)
-	player.position = Vector3(0, FLOOR_Y, 14.5)
+	player.position = Vector3(0, OUTSIDE_Y, 14.5)
 	_build_ui()
 	sound = AudioStreamPlayer3D.new()
 	sound.volume_db = -9.0
@@ -88,16 +91,13 @@ func _build_inputs() -> void:
 func _build_lighting() -> void:
 	var environment := Environment.new()
 	environment.background_mode = Environment.BG_SKY
-	var sky_material := ProceduralSkyMaterial.new()
-	sky_material.sky_top_color = Color("758b9d")
-	sky_material.sky_horizon_color = Color("dfd3b9")
-	sky_material.ground_bottom_color = Color("4c4b40")
-	sky_material.ground_horizon_color = Color("b3b09b")
+	var sky_material := PanoramaSkyMaterial.new()
+	sky_material.panorama = preload("res://assets/sky/partly_cloudy.hdr")
+	sky_material.energy_multiplier = 0.65
 	environment.sky = Sky.new()
 	environment.sky.sky_material = sky_material
-	environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	environment.ambient_light_color = Color("b6b6ad")
-	environment.ambient_light_energy = 0.32
+	environment.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
+	environment.ambient_light_energy = 0.10
 	environment.reflected_light_source = Environment.REFLECTION_SOURCE_SKY
 	environment.tonemap_mode = Environment.TONE_MAPPER_ACES
 	environment.ssao_enabled = true
@@ -106,34 +106,86 @@ func _build_lighting() -> void:
 	environment.glow_enabled = true
 	environment.glow_intensity = 0.35
 	environment.volumetric_fog_enabled = true
-	environment.volumetric_fog_density = 0.012
-	environment.volumetric_fog_albedo = Color("e4dac0")
+	environment.volumetric_fog_density = 0.003
+	environment.volumetric_fog_albedo = Color("e6e4dc")
 	environment.volumetric_fog_anisotropy = 0.55
 	var world := WorldEnvironment.new()
 	world.environment = environment
 	add_child(world)
 	var sun := DirectionalLight3D.new()
-	sun.rotation_degrees = Vector3(-29, 110, 0)
-	sun.light_color = Color("ffe1af")
-	sun.light_energy = 2.0
+	sun.rotation_degrees = Vector3(-29, 65, 0)
+	sun.light_color = Color("ffdda8")
+	sun.light_energy = 1.2
+	sun.light_cull_mask = 3
 	sun.shadow_enabled = true
-	sun.directional_shadow_max_distance = 45
+	sun.directional_shadow_max_distance = 30
+	sun.directional_shadow_mode = DirectionalLight3D.SHADOW_PARALLEL_2_SPLITS
 	add_child(sun)
-	# A restrained fill represents diffuse daylight without a baked lightmap.
-	for z: float in [-3.0, 0.0, 3.0]:
-		var fill := OmniLight3D.new()
-		fill.position = Vector3(2.8, 2.55, z)
-		fill.light_color = Color("ffdfb4")
-		fill.light_energy = 0.32
-		fill.omni_range = 5.0
-		add_child(fill)
 
 
 func model(slug: String, parent: Node3D, at: Vector3 = Vector3.ZERO) -> Node3D:
 	var instance := (load("res://assets/models/%s.glb" % slug) as PackedScene).instantiate() as Node3D
+	var serial: int = model_counts.get(slug, 0)
+	model_counts[slug] = serial + 1
+	instance.name = slug.to_pascal_case() + "%02d" % serial
 	parent.add_child(instance)
 	instance.position = at
+	for mesh: MeshInstance3D in instance.find_children("*", "MeshInstance3D", true, false):
+		if slug in ["church_door", "candle"]:
+			mesh.gi_mode = GeometryInstance3D.GI_MODE_DYNAMIC
+		elif slug == "courtyard_tree":
+			mesh.gi_mode = GeometryInstance3D.GI_MODE_DISABLED
+		for index in range(mesh.get_surface_override_material_count()):
+			var material := mesh.get_active_material(index) as StandardMaterial3D
+			if material == null:
+				continue
+			var label := material.resource_name
+			if label.begins_with("Plaster"):
+				material.albedo_color = Color(1.45, 1.45, 1.43)
+				material.uv1_triplanar = true
+				material.uv1_world_triplanar = true
+				material.uv1_scale = Vector3.ONE * 1.1
+				material.normal_scale = 0.3
+			elif label.begins_with("FloorStone"):
+				material.albedo_color = Color.WHITE
+				material.roughness = 0.76
+			elif label.begins_with("Walnut"):
+				material.albedo_color = Color(1.30, 1.22, 1.10)
+				material.roughness = 0.68
+			elif label.begins_with("RoofSlate"):
+				material.metallic = 0.0
+				material.roughness = 0.78
+			elif label.begins_with("AgedBrass"):
+				mesh.set_surface_override_material(index, preload("res://shaders/aged_brass.tres"))
+				mesh.gi_mode = GeometryInstance3D.GI_MODE_DYNAMIC
+				mesh.layers = 2
+			elif label.begins_with("tree_small_02_leaves"):
+				material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA_SCISSOR
+				material.alpha_scissor_threshold = 0.5
+				material.albedo_color = Color(1.0, 0.65, 0.24)
+			elif label.begins_with("RubyGlass") or label.begins_with("LanternGlass"):
+				material.emission_enabled = true
+				material.emission = Color("c73814")
+				material.emission_energy_multiplier = 0.4
 	return instance
+
+
+func _apply_lightmaps() -> void:
+	if "--stage-lightmaps" in OS.get_cmdline_user_args() or not ResourceLoader.exists("res://assets/lighting/nave.lmbake"):
+		return
+	var rows: Array = JSON.parse_string(FileAccess.get_file_as_string("res://assets/lighting/lightmap_meshes.json"))
+	for row: Dictionary in rows:
+		var mesh := get_node_or_null(NodePath(row["node_path"])) as MeshInstance3D
+		if mesh == null:
+			push_error("Lightmap geometry changed; rebuild lighting: " + str(row["node_path"]))
+			continue
+		mesh.mesh = load(row["mesh"])
+	var lightmaps := LightmapGI.new()
+	lightmaps.name = "NaveLightmap"
+	lightmaps.layers = 1
+	lightmaps.directional = true
+	lightmaps.light_data = load("res://assets/lighting/nave.lmbake")
+	add_child(lightmaps)
 
 
 func block(parent: Node3D, size: Vector3, at: Vector3, kind: String = "") -> StaticBody3D:
@@ -152,20 +204,6 @@ func block(parent: Node3D, size: Vector3, at: Vector3, kind: String = "") -> Sta
 	return body
 
 
-func visible_box(size: Vector3, at: Vector3, color: Color) -> MeshInstance3D:
-	var instance := MeshInstance3D.new()
-	var mesh := BoxMesh.new()
-	mesh.size = size
-	instance.mesh = mesh
-	var material := StandardMaterial3D.new()
-	material.albedo_color = color
-	material.roughness = 0.93
-	instance.material_override = material
-	add_child(instance)
-	instance.position = at
-	return instance
-
-
 func _build_church() -> void:
 	model("church_shell", self)
 	model("church_vault", self, Vector3(0, 3.56, 0))
@@ -173,61 +211,32 @@ func _build_church() -> void:
 	for x: float in [-3.5, 3.5]:
 		for z: float in [-3.0, 0.0, 3.0]:
 			var bay := model("window_bay", self, Vector3(x, 0.16, z))
-			bay.rotation.y = PI / 2.0 if x > 0 else -PI / 2.0
+			bay.rotation.y = -PI / 2.0 if x > 0 else PI / 2.0
 		block(self, Vector3(0.38, 3.4, 11.0), Vector3(x, 1.86, 0))
 	block(self, Vector3(7.4, 0.20, 11.4), Vector3(0, FLOOR_Y - 0.1, 0))
 	block(self, Vector3(7.4, 3.4, 0.38), Vector3(0, 1.86, -5.5))
 	for x: float in [-2.2, 2.2]:
 		block(self, Vector3(2.9, 3.4, 0.38), Vector3(x, 1.86, 5.5))
-	# A level stone approach avoids an invisible step at the threshold.
-	# Keep grass outside the building footprint, including the floor tile seams.
-	for x: float in [-21.85, 21.85]:
-		visible_box(Vector3(36.3, 0.2, 80), Vector3(x, FLOOR_Y - 0.106, 0), Color("70755b"))
-	for z: float in [-22.85, 22.85]:
-		visible_box(Vector3(7.4, 0.2, 34.3), Vector3(0, FLOOR_Y - 0.106, z), Color("70755b"))
-	block(self, Vector3(80, 0.2, 80), Vector3(0, FLOOR_Y - 0.1, 0))
-	visible_box(Vector3(2.5, 0.2, 13.5), Vector3(0, FLOOR_Y - 0.1, 11.25), Color("8a8370"))
-	block(self, Vector3(2.5, 0.2, 13.5), Vector3(0, FLOOR_Y - 0.1, 11.25))
-	for z: float in [6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5]:
-		visible_box(Vector3(2.48, 0.006, 0.012), Vector3(0, FLOOR_Y + 0.002, z), Color("645e51"))
-	for x: float in [-9.0, 9.0]:
-		visible_box(Vector3(0.35, 0.60, 30), Vector3(x, FLOOR_Y + 0.30, 5), Color("85816c"))
-		block(self, Vector3(0.35, 0.60, 30), Vector3(x, FLOOR_Y + 0.30, 5))
-	for z: float in [-10.0, 20.0]:
-		visible_box(Vector3(18.0, 0.60, 0.35), Vector3(0, FLOOR_Y + 0.30, z), Color("85816c"))
-		block(self, Vector3(18.0, 0.60, 0.35), Vector3(0, FLOOR_Y + 0.30, z))
-	for x: float in [-7.5, 7.5]:
-		for z: float in [-5.0, 0.0, 5.0, 11.0]:
-			_tree(Vector3(x, 0, z))
-	for position_and_size: Vector4 in [Vector4(-12, 0.8, -18, 9), Vector4(14, 0.9, -20, 11), Vector4(0, 0.7, -28, 17)]:
-		var hill := MeshInstance3D.new()
-		var sphere := SphereMesh.new()
-		sphere.radius = position_and_size.w
-		sphere.height = position_and_size.w * 0.6
-		hill.mesh = sphere
-		var mat := StandardMaterial3D.new()
-		mat.albedo_color = Color("6d755d")
-		hill.material_override = mat
-		hill.position = Vector3(position_and_size.x, position_and_size.y - 2.0, position_and_size.z)
-		add_child(hill)
+	_build_courtyard()
 	door = model("church_door", self, Vector3(0, FLOOR_Y, 5.5))
 	for pair: Array in [["LeftHinge", 0.35], ["RightHinge", -0.35]]:
 		var hinge := door.find_child(pair[0], true, false) as Node3D
 		block(hinge, Vector3(0.70, 2.65, 0.09), Vector3(pair[1], 1.325, 0), "door")
-	table = model("candle_table", self, Vector3(2.5, FLOOR_Y, 3.8))
+	table = model("candle_table", self, Vector3(2.5, FLOOR_Y, 3.2))
 	block(table, Vector3(0.95, 0.86, 0.5), Vector3(0, 0.43, 0), "table")
 	tray = model("candle_tray", table.find_child("TrayAnchor", true, false))
 	for i in range(12):
 		var c := model("candle", tray, Vector3(-0.16 + i * 0.029, 0.025, 0.12))
 		c.rotation.x = -PI / 2.0
 		tray_candles.append(c)
-	var case_node := model("icon_case", self, Vector3(2.5, FLOOR_Y, -3.25))
+	var case_node := model("icon_case", self, Vector3(3.28, FLOOR_Y, 1.5))
+	case_node.rotation.y = -PI / 2.0
 	block(case_node, Vector3(1.03, 2.74, 0.30), Vector3(0, 1.37, 0))
-	var screen := model("iconostasis", self, Vector3(0, FLOOR_Y, -4.70))
+	var screen := model("iconostasis", self, Vector3(0, FLOOR_Y + 0.24, -4.70))
 	block(screen, Vector3(6.4, 3.4, 0.35), Vector3(0, 1.7, 0))
-	stand = model("candle_stand", self, Vector3(2.5, FLOOR_Y, -2.65))
-	block(stand, Vector3(0.32, 0.95, 0.32), Vector3(0, 0.475, 0))
-	block(stand, Vector3(0.55, 0.065, 0.55), Vector3(0, 0.925, 0))
+	stand = model("candle_stand", self, Vector3(2.30, FLOOR_Y, 1.25))
+	block(stand, Vector3(0.36, 1.10, 0.36), Vector3(0, 0.55, 0))
+	block(stand, Vector3(0.67, 0.065, 0.67), Vector3(0, 1.087, 0))
 	seat = stand.find_child("Seat00", true, false)
 	var seat_target := Area3D.new()
 	seat_target.collision_layer = 4
@@ -248,25 +257,168 @@ func _build_church() -> void:
 		candle.location = Candle.Location.PLACED
 		stand.find_child("Seat%02d" % index, true, false).add_child(candle)
 		background_candles.append(candle)
+	_build_decor()
+	if "--no-reflections" not in OS.get_cmdline_user_args():
+		var reflection := ReflectionProbe.new()
+		reflection.position = Vector3(0, 2.3, 0)
+		reflection.size = Vector3(7.0, 4.5, 10.8)
+		reflection.interior = true
+		reflection.box_projection = true
+		reflection.enable_shadows = true
+		reflection.cull_mask = 1
+		reflection.update_mode = ReflectionProbe.UPDATE_ONCE
+		add_child(reflection)
+
+
+
+func _burning_candle(parent: Node3D, fraction: float) -> Candle:
+	var candle := Candle.new()
+	candle.burn_duration_seconds = candle_lifetime_seconds
+	candle.initial_fraction = fraction
+	candle.initially_burning = true
+	candle.location = Candle.Location.PLACED
+	parent.add_child(candle)
+	background_candles.append(candle)
+	return candle
+
+
+func _build_decor() -> void:
+	model("chancel_steps", self, Vector3(0, FLOOR_Y, -4.70))
+	model("chancel_carpet", self, Vector3(0, FLOOR_Y + 0.003, -4.70))
+	block(self, Vector3(6.65, 0.24, 1.05), Vector3(0, FLOOR_Y + 0.12, -4.18))
+	var bench := model("wall_bench", self, Vector3(-3.02, FLOOR_Y, 2.00))
+	bench.rotation.y = PI / 2.0
+	block(bench, Vector3(1.5, 0.96, 0.42), Vector3(0, 0.48, 0))
+	for at: Vector3 in [Vector3(-2.93, FLOOR_Y, 0.4), Vector3(2.90, FLOOR_Y, -2.1)]:
+		var cabinet := model("side_table", self, at)
+		cabinet.rotation.y = PI / 2.0 if at.x < 0 else -PI / 2.0
+		block(cabinet, Vector3(0.62, 0.76, 0.38), Vector3(0, 0.38, 0))
+		model("flower_vase", cabinet.find_child("VaseAnchor", true, false))
+	model("flower_vase", table, Vector3(0.31, 0.8525, -0.07))
+	tray.position.x = -0.12
+	for at: Vector3 in [Vector3(3.24, 1.29, 3), Vector3(-3.22, 1.29, 0)]:
+		var flowers := model("flower_vase", self, at)
+		flowers.scale = Vector3.ONE * 0.75
+	var chandelier := model("chandelier", self, Vector3(0, 3.80, 0.7))
+	for i in range(8):
+		_burning_candle(chandelier.find_child("CandleAnchor%02d" % i, true, false), 0.52 + float(i % 3) * 0.14)
+	var lamp := model("hanging_lamp", self, Vector3(2.94, 2.06, 1.50))
+	lamp.rotation.y = -PI / 2.0
+	for at: Vector3 in [Vector3(-3.22, 1.52, 1.5), Vector3(-3.22, 1.67, -1.5), Vector3(3.22, 1.63, -1.5)]:
+		var wall_icon := model("wall_icon", self, at)
+		wall_icon.rotation.y = PI / 2.0 if at.x < 0 else -PI / 2.0
+		var sconce := model("wall_sconce", wall_icon, Vector3(-0.37, 0.05, 0.06))
+		for anchor_name in ["CandleAnchorLeft", "CandleAnchorRight"]:
+			_burning_candle(sconce.find_child(anchor_name, true, false), 0.69)
+	for x: float in [-2.98, 2.98]:
+		var banner := model("hanging_banner", self, Vector3(x, 1.88, -3.65))
+		banner.rotation.y = 0.16 if x < 0 else -0.16
+	for at: Vector3 in [Vector3(-2.15, FLOOR_Y + 0.08, -3.90), Vector3(2.15, FLOOR_Y + 0.08, -3.90), Vector3(2.85, FLOOR_Y, -2.95)]:
+		var smaller := model("candle_stand", self, at)
+		block(smaller, Vector3(0.52, 1, 0.52), Vector3(0, 0.50, 0))
+		for i in [0, 2, 4, 6, 8, 10, 18]:
+			_burning_candle(smaller.find_child("Seat%02d" % i, true, false), 0.36 + float((i * 3) % 9) * 0.069)
+
+
+func _build_courtyard() -> void:
+	model("courtyard_ground", self, Vector3(0, OUTSIDE_Y - 0.035, 0))
+	model("stone_approach", self, Vector3(0, OUTSIDE_Y - 0.075, 0))
+	model("stone_facade", self, Vector3(0, OUTSIDE_Y, 0))
+	model("entry_steps", self, Vector3(0, OUTSIDE_Y, 5.55))
+	block(self, Vector3(80, 0.20, 80), Vector3(0, OUTSIDE_Y - 0.1, 0))
+	# A shallow ramp under the stone treads lets ordinary walking ascend the entry.
+	var ramp := StaticBody3D.new()
+	ramp.collision_layer = 1
+	ramp.collision_mask = 2
+	add_child(ramp)
+	var collider := CollisionShape3D.new()
+	var wedge := ConvexPolygonShape3D.new()
+	var points := PackedVector3Array()
+	for x: float in [-1.30, 1.30]:
+		points.append(Vector3(x, OUTSIDE_Y - 0.10, 5.55))
+		points.append(Vector3(x, FLOOR_Y, 5.55))
+		points.append(Vector3(x, FLOOR_Y, 5.89))
+		points.append(Vector3(x, OUTSIDE_Y, 6.77))
+		points.append(Vector3(x, OUTSIDE_Y - 0.10, 6.77))
+	wedge.points = points
+	collider.shape = wedge
+	ramp.add_child(collider)
+	for x: float in [-8.6, 8.6]:
+		for z: float in [-8, -6, -4, -2, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18]:
+			var wall := model("garden_wall", self, Vector3(x, OUTSIDE_Y, z))
+			wall.rotation.y = PI / 2.0
+		block(self, Vector3(0.45, 0.63, 29), Vector3(x, OUTSIDE_Y + 0.31, 5))
+	for z: float in [-9.3, 19.2]:
+		for x: float in [-7.5, -5.4, -3.3, -1.2, 0.9, 3, 5.1, 7.2]:
+			model("garden_wall", self, Vector3(x, OUTSIDE_Y, z))
+		block(self, Vector3(17.2, 0.63, 0.45), Vector3(0, OUTSIDE_Y + 0.31, z))
+	for x: float in [-4.4, 4.4]:
+		for z: float in [9.0, 11.1]:
+			var wall := model("garden_wall", self, Vector3(x, OUTSIDE_Y, z))
+			wall.rotation.y = PI / 2.0
+		block(self, Vector3(0.45, 0.63, 4.0), Vector3(x, OUTSIDE_Y + 0.31, 10.0))
+	for x: float in [-7.3, 7.3]:
+		for z: float in [-5.0, 1.0, 6.0, 12.0, 17.0]:
+			_tree(Vector3(x, OUTSIDE_Y, z))
+	for x: float in [-12.0, 12.0]:
+		for z: float in [-14.0, -4.0, 6.0, 16.0, 26.0]:
+			var distance := Vector2(x, z).length()
+			var ground := 0.003 + 0.023 * sin(x * 0.6) * sin(-z * 0.8) + 0.01 * sin(x * 2.3 - z * 0.27)
+			ground += clampf((distance - 18.0) / 30.0, 0, 1) * (2.5 + 1.3 * sin(x * 0.04) + 1.2 * cos(z * 0.035))
+			var tree := model("courtyard_tree", self, Vector3(x, OUTSIDE_Y + ground, z))
+			tree.rotation.y = x + z * 0.3
+			tree.scale = Vector3.ONE * (1.35 + absf(sin(z)) * 0.25)
+	for x: float in [-1.58, 1.58]:
+		var lantern := model("entrance_lantern", self, Vector3(x, 1.58, 5.78))
+		var glow := OmniLight3D.new()
+		glow.light_color = Color("ffbb64")
+		glow.light_energy = 0.08
+		glow.light_cull_mask = 3
+		glow.light_bake_mode = Light3D.BAKE_DISABLED
+		glow.omni_range = 1.0
+		lantern.find_child("LightAnchor", true, false).add_child(glow)
+		var pot := model("flower_vase", self, Vector3(x, OUTSIDE_Y, 6.0))
+		pot.scale = Vector3.ONE * 1.7
+	_build_grass()
+
+
+func _build_grass() -> void:
+	var sample := (load("res://assets/models/grass_tuft.glb") as PackedScene).instantiate() as Node3D
+	var mesh := (sample.find_children("*", "MeshInstance3D", true, false)[0] as MeshInstance3D).mesh
+	var batch := MultiMesh.new()
+	batch.transform_format = MultiMesh.TRANSFORM_3D
+	batch.use_custom_data = true
+	batch.mesh = mesh
+	batch.instance_count = 5800
+	sample.free()
+	var random := RandomNumberGenerator.new()
+	random.seed = 84021
+	for i in range(batch.instance_count):
+		var at := Vector3.ZERO
+		while true:
+			at = Vector3(random.randf_range(-8.3, 8.3), OUTSIDE_Y - 0.01, random.randf_range(-9, 19))
+			if absf(at.x) < 3.85 and absf(at.z) < 5.95:
+				continue
+			if absf(at.x) < 1.35 and at.z > 5.3:
+				continue
+			break
+		var size := random.randf_range(0.75, 1.6)
+		var basis := Basis(Vector3.UP, random.randf() * TAU).scaled(Vector3.ONE * size)
+		batch.set_instance_transform(i, Transform3D(basis, at))
+		batch.set_instance_custom_data(i, Color(random.randf_range(0.8, 1.2), random.randf_range(0.8, 1.1), random.randf_range(0.7, 1.0), random.randf()))
+	var grass := MultiMeshInstance3D.new()
+	grass.multimesh = batch
+	grass.material_override = preload("res://shaders/meadow_grass.tres")
+	grass.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	grass.gi_mode = GeometryInstance3D.GI_MODE_DISABLED
+	add_child(grass)
 
 
 func _tree(at: Vector3) -> void:
-	block(self, Vector3(0.22, 4.8, 0.22), at + Vector3(0, 2.4, 0))
-	visible_box(Vector3(0.18, 4.8, 0.18), at + Vector3(0, 2.4, 0), Color("4f4938"))
-	for i in range(3):
-		var mesh := MeshInstance3D.new()
-		var crown := SphereMesh.new()
-		crown.radius = 1.15 - i * 0.16
-		crown.height = 2.3 - i * 0.25
-		crown.radial_segments = 12
-		crown.rings = 6
-		mesh.mesh = crown
-		mesh.position = at + Vector3(sin(i * 2.0) * 0.5, 3.7 + i * 0.58, cos(i * 2.0) * 0.4)
-		var mat := StandardMaterial3D.new()
-		mat.albedo_color = Color("68734c").darkened(i * 0.04)
-		mat.roughness = 1.0
-		mesh.material_override = mat
-		add_child(mesh)
+	block(self, Vector3(0.24, 4.8, 0.24), at + Vector3(0, 2.4, 0))
+	var tree := model("courtyard_tree", self, at)
+	tree.rotation.y = at.x * 0.67 + at.z * 1.71
+	tree.scale = Vector3.ONE * (0.78 + absf(sin(at.x + at.z)) * 0.28)
 
 
 func _build_ui() -> void:
@@ -338,7 +490,7 @@ func _build_ui() -> void:
 	restart.pressed.connect(restart_game)
 	column.add_child(restart)
 	var credits := Label.new()
-	credits.text = "Иконы VI–XVI веков: Христос, Богоматерь,\nсвятитель Николай и Иоанн Предтеча.\nWikimedia Commons · public domain"
+	credits.text = "Исторические иконы VI–XVII веков.\nWikimedia Commons · public domain\nМатериалы: Poly Haven, MakeHuman · CC0"
 	credits.add_theme_font_size_override("font_size", 12)
 	credits.add_theme_color_override("font_color", Color("a7a495"))
 	column.add_child(credits)
@@ -435,43 +587,90 @@ func interact() -> void:
 	match str(target.get_meta("kind")):
 		"door":
 			door_open = true
+			player.set_grip(0.0)
+			player.hand.show()
+			player.hand.position = HAND_REST + Vector3(0, -0.20, 0)
+			var handle := door.find_child("LeftHandle", true, false) as Node3D
+			var grip := player.hand.find_child("GripAnchor", true, false) as Node3D
+			var ring := handle.find_child("RingPull", true, false) as Node3D
+			var hand_rotation := Vector3(0, -0.15, 0)
+			var hand_basis := player.camera.global_basis * Basis.from_euler(hand_rotation)
+			var contact := ring.global_position + handle.global_basis * Vector3(0, -0.03, 0.008)
+			var grasp := create_tween().set_parallel(true)
+			grasp.tween_property(player.hand, "global_position", contact - hand_basis * grip.position, 0.38).set_trans(Tween.TRANS_SINE)
+			grasp.tween_property(player.hand, "rotation", hand_rotation, 0.38).set_trans(Tween.TRANS_SINE)
+			grasp.tween_method(player.set_grip, 0.0, 1.0, 0.18).set_delay(0.20)
+			await grasp.finished
+			player.hand.reparent(handle, true)
 			play_sound("door", door.global_position + Vector3.UP)
 			var opening := create_tween().set_parallel(true)
 			opening.tween_property(door.find_child("LeftHinge", true, false), "rotation:y", PI * 0.53, 1.05).set_trans(Tween.TRANS_SINE)
 			opening.tween_property(door.find_child("RightHinge", true, false), "rotation:y", -PI * 0.53, 1.05).set_trans(Tween.TRANS_SINE)
+			await get_tree().create_timer(0.55, false).timeout
+			player.hand.reparent(player.camera, true)
+			var release := create_tween().set_parallel(true)
+			release.tween_property(player.hand, "position", HAND_REST + Vector3(0, -0.20, 0), 0.35)
+			release.tween_property(player.hand, "rotation", Vector3.ZERO, 0.35)
+			release.tween_method(player.set_grip, 1.0, 0.0, 0.15)
 			await opening.finished
+			player.hand.hide()
+			player.hand.position = HAND_REST
 		"table":
 			if held != null:
 				held.queue_free()
+				held = null
+			player.set_grip(0.0)
+			player.hand.show()
+			player.hand.position = HAND_REST + Vector3(0, -0.20, 0)
+			var grip := player.hand.find_child("GripAnchor", true, false) as Node3D
+			# Approach the lying candle with the pads downward and the wrist above the tray.
+			var pickup_basis := Basis(Vector3.RIGHT, -PI / 2.0)
+			var pickup_point := tray.global_position + Vector3(0, 0.045, 0)
+			var reach := create_tween().set_parallel(true)
+			reach.tween_property(player.hand, "global_position", pickup_point - pickup_basis * grip.position, 0.45).set_trans(Tween.TRANS_SINE)
+			reach.tween_property(player.hand, "global_rotation", pickup_basis.get_euler(), 0.45).set_trans(Tween.TRANS_SINE)
+			reach.tween_method(player.set_grip, 0.0, 1.0, 0.18).set_delay(0.27)
+			await reach.finished
 			held = Candle.new()
 			held.burn_duration_seconds = candle_lifetime_seconds
 			held.location = Candle.Location.HELD
 			player.hand.find_child("GripAnchor", true, false).add_child(held)
-			held.position.y = -0.045
-			player.hand.show()
-			player.hand.position = HAND_REST + Vector3(0, -0.3, 0)
+			held.position.y = -0.11
 			if not tray_candles.is_empty():
 				tray_candles.pop_back().queue_free()
 			play_sound("wax_contact", table.global_position + Vector3.UP)
-			var pickup := create_tween()
+			var pickup := create_tween().set_parallel(true)
 			pickup.tween_property(player.hand, "position", HAND_REST, 0.42).set_trans(Tween.TRANS_SINE)
+			pickup.tween_property(player.hand, "rotation", Vector3.ZERO, 0.42).set_trans(Tween.TRANS_SINE)
 			await pickup.finished
 		"fire":
 			var source: Candle = target.get_meta("candle")
-			var tip := held.wick_anchor.global_position
-			var destination := player.hand.global_position + source.wick_anchor.global_position - tip + Vector3(0.008, 0, 0)
-			var reach := create_tween()
+			var tip := player.hand.to_local(held.wick_anchor.global_position)
+			var lighting_rotation := Vector3(0, 0, 0.70)
+			var lighting_basis := player.camera.global_basis * Basis.from_euler(lighting_rotation)
+			var destination := source.wick_anchor.global_position + Vector3(0.006, 0, 0) - lighting_basis * tip
+			var reach := create_tween().set_parallel(true)
 			reach.tween_property(player.hand, "global_position", destination, 0.6).set_trans(Tween.TRANS_SINE)
+			reach.tween_property(player.hand, "rotation", lighting_rotation, 0.6).set_trans(Tween.TRANS_SINE)
 			await reach.finished
 			if source.burn_state == Candle.BurnState.BURNING:
 				held.ignite()
-			var withdraw := create_tween()
+			var withdraw := create_tween().set_parallel(true)
 			withdraw.tween_property(player.hand, "position", HAND_REST, 0.55).set_trans(Tween.TRANS_SINE)
+			withdraw.tween_property(player.hand, "rotation", Vector3.ZERO, 0.55).set_trans(Tween.TRANS_SINE)
 			await withdraw.finished
 		"seat":
-			var destination := player.hand.global_position + seat.global_position - held.global_position
-			var place := create_tween()
+			var wrist_tilt := -0.8
+			var place_basis := Basis(Vector3.UP, player.rotation.y) * Basis(Vector3.RIGHT, wrist_tilt)
+			var candle_position := Basis(Vector3.RIGHT, -wrist_tilt) * Vector3(0, -0.11, 0)
+			var grip := player.hand.find_child("GripAnchor", true, false) as Node3D
+			var candle_base := grip.position + candle_position
+			var destination := seat.global_position - place_basis * candle_base
+			var place := create_tween().set_parallel(true)
 			place.tween_property(player.hand, "global_position", destination, 0.65).set_trans(Tween.TRANS_SINE)
+			place.tween_property(player.hand, "global_rotation", place_basis.get_euler(), 0.65).set_trans(Tween.TRANS_SINE)
+			place.tween_property(held, "rotation", Vector3(-wrist_tilt, 0, 0), 0.65).set_trans(Tween.TRANS_SINE)
+			place.tween_property(held, "position", candle_position, 0.65).set_trans(Tween.TRANS_SINE)
 			await place.finished
 			# Recheck after the animation: a candle may have burned out during the reach.
 			if held.burn_state == Candle.BurnState.BURNING and placed == null:
@@ -484,7 +683,20 @@ func interact() -> void:
 				placed.update_visuals()
 				placement_completed = true
 				play_sound("wax_contact", seat.global_position)
+				var clear_rim := create_tween().set_parallel(true)
+				clear_rim.tween_property(player.hand, "global_position", player.hand.global_position + Vector3.UP * 0.05 + player.global_basis * Vector3(0, 0, 0.20), 0.18)
+				clear_rim.tween_method(player.set_grip, 1.0, 0.0, 0.18)
+				await clear_rim.finished
+				var withdraw := create_tween().set_parallel(true)
+				withdraw.tween_property(player.hand, "position", HAND_REST + Vector3(0, -0.20, 0), 0.4).set_trans(Tween.TRANS_SINE)
+				withdraw.tween_property(player.hand, "rotation", Vector3.ZERO, 0.4)
+				await withdraw.finished
 			player.hand.position = HAND_REST
+			player.hand.rotation = Vector3.ZERO
+			if held != null:
+				player.set_grip(1.0)
+				held.position = Vector3(0, -0.11, 0)
+				held.rotation = Vector3.ZERO
 			player.hand.visible = held != null
 	busy = false
 	player.enabled = not get_tree().paused
@@ -520,33 +732,79 @@ func _process(delta: float) -> void:
 		show_menu("Свеча поставлена", "Можно закончить здесь\nили вернуться и немного постоять в тишине.", "Вернуться в храм")
 
 
+func _capture_held(burning: bool) -> void:
+	player.set_grip(1.0)
+	held = Candle.new()
+	held.burn_duration_seconds = candle_lifetime_seconds
+	held.location = Candle.Location.HELD
+	held.initially_burning = burning
+	player.hand.find_child("GripAnchor", true, false).add_child(held)
+	held.position.y = -0.11
+	player.hand.show()
+
+
 func _capture(args: PackedStringArray) -> void:
-	if "--benchmark" in args:
+	if "--benchmark" in args or "--hd" in args:
 		get_window().size = Vector2i(1920, 1080)
 		get_window().content_scale_size = Vector2i(1920, 1080)
-	menu.hide()
-	crosshair.hide()
+	menu_canvas.hide()
 	started = true
 	player.enabled = false
 	player.set_physics_process(false)
 	var view_index := args.find("--view")
 	var view := args[view_index + 1] if view_index >= 0 else "outside"
-	if view == "inside" or view == "candle" or view == "hand":
+	if view not in ["outside", "door"]:
 		door_open = true
 		door.find_child("LeftHinge", true, false).rotation.y = PI * 0.53
 		door.find_child("RightHinge", true, false).rotation.y = -PI * 0.53
-		player.position = Vector3(-0.7, FLOOR_Y, 3.8) if view == "inside" else Vector3(2.35, FLOOR_Y, -1.70)
-		player.camera.look_at(Vector3(0.4, 1.75, -3.5) if view == "inside" else Vector3(2.5, 1.20, -2.63))
-	if view == "hand":
-		held = Candle.new()
-		held.location = Candle.Location.HELD
-		held.initially_burning = true
-		player.hand.find_child("GripAnchor", true, false).add_child(held)
-		held.position.y = -0.045
-		player.hand.show()
-	if view == "outside":
-		player.position = Vector3(-5.5, FLOOR_Y, 19.5)
-		player.camera.look_at(Vector3(0, 3.0, 0))
+	match view:
+		"outside":
+			player.position = Vector3(7.0, OUTSIDE_Y, 15.0)
+			player.camera.look_at(Vector3(0, 3.65, 0.8))
+		"door":
+			player.position = Vector3(0.12, OUTSIDE_Y + 0.15, 6.4)
+			player.camera.look_at(Vector3(-0.1, 1.4, 5.5))
+		"inside":
+			player.camera.fov = 60.0
+			player.position = Vector3(-0.35, FLOOR_Y, 5.45)
+			player.camera.look_at(Vector3(1.2, 1.85, -3.8))
+		"taking":
+			player.position = Vector3(2.15, FLOOR_Y, 4.00)
+			player.camera.look_at(table.global_position + Vector3(0, 0.86, 0))
+		"walk":
+			player.position = Vector3(0.35, FLOOR_Y, 3.15)
+			player.camera.look_at(Vector3(1.30, 1.65, -2.50))
+			_capture_held(false)
+		"candle", "stand", "hand":
+			player.position = Vector3(1.72, FLOOR_Y, 2.45)
+			player.camera.look_at(Vector3(2.55, 1.57, 1.15))
+			if view == "hand":
+				_capture_held(true)
+		"lighting":
+			player.position = Vector3(2.85, FLOOR_Y, 2.02)
+			player.camera.look_at(background_candles[0].wick_anchor.global_position)
+			_capture_held(false)
+		"placing", "still":
+			player.position = Vector3(2.30, FLOOR_Y, 2.4)
+			player.camera.look_at(seat.global_position + Vector3(0, 0.03, 0))
+			_capture_held(true)
+	await get_tree().physics_frame
+	await get_tree().physics_frame
+	if view in ["door", "taking", "lighting", "placing", "still"]:
+		if action_for(current_target()).is_empty():
+			push_error("Capture must use a reachable real interaction: " + view)
+			await quit_game(1)
+			return
+		interact()
+		if view == "still":
+			while busy:
+				await get_tree().process_frame
+			player.position = Vector3(1.73, FLOOR_Y, 2.4)
+			player.camera.look_at(Vector3(2.43, 1.57, 1.0))
+		else:
+			var moments := {"door": 0.85, "taking": 0.57, "lighting": 0.62, "placing": 0.67}
+			await get_tree().create_timer(moments[view], false).timeout
+			get_tree().paused = true
 	for frame in range(120 if "--benchmark" in args else 45):
 		await get_tree().process_frame
 	if "--benchmark" in args:
@@ -565,7 +823,7 @@ func _capture(args: PackedStringArray) -> void:
 	message.hide()
 	await RenderingServer.frame_post_draw
 	var error := get_viewport().get_texture().get_image().save_png(args[args.find("--capture") + 1])
-	print("CHURCH_CAPTURE ", view, " error=", error, " fps=", Engine.get_frames_per_second())
+	print("CHURCH_CAPTURE ", view, " error=", error, " fps=", Engine.get_frames_per_second(), " draws=", Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME), " primitives=", Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME))
 	await quit_game(error)
 
 
@@ -591,6 +849,11 @@ func quit_game(exit_code: int = 0) -> void:
 	air.queue_free()
 	sound.queue_free()
 	player.steps.queue_free()
+	for child in get_children():
+		if child is ReflectionProbe or child is VoxelGI:
+			child.queue_free()
 	get_tree().paused = false
 	await get_tree().create_timer(0.25).timeout
-	get_tree().quit(exit_code)
+	var tree := get_tree()
+	tree.create_timer(0.25).timeout.connect(tree.quit.bind(exit_code))
+	queue_free()

@@ -1,80 +1,74 @@
 # Ассеты и путь Blender → Godot
 
-**Созданы 13 моделей и проходимый прототип.** Исходники — `art/blender/`, отдельные GLB — `game/assets/models/`, игровые сцены и скрипты — `game/`. Задания и реальные проверочные изображения сохранены в этом разделе.
+В проекте 31 отдельная модель: исходники в `art/blender/`, GLB в `game/assets/models/`. Набор переработан по девяти концептам: резная столярка, оконные ниши, каменный пол, сланцевая кровля и глава, убранство, двор, растения и рука.
 
-![Интерьер в Godot](previews/church_inside_godot.png)
-
-[Внешний вид](previews/church_outside_godot.png) · [Рука, свеча и подсвечник](previews/church_hand_godot.png) · [Проверки и FPS](../07_PRODUCTION/VALIDATION_RU.md)
+[Сопоставление девяти ракурсов](fidelity/compare.html) · [Критерии художественной проверки](fidelity/FIDELITY_RU.md) · [Проверки игры](../07_PRODUCTION/VALIDATION_RU.md)
 
 ## Набор моделей
 
-| Ассет | Blender | GLB | Параметры |
-| --- | --- | --- | --- |
-| Свеча | [candle.blend](../../art/blender/candle.blend) | [candle.glb](../../game/assets/models/candle.glb) | Воск 250 × 7 мм; 384 треугольника; отдельные Wax, WickAnchor и FlameAnchor |
-| Негорящий остаток | [candle_remnant.blend](../../art/blender/candle_remnant.blend) | [candle_remnant.glb](../../game/assets/models/candle_remnant.glb) | Высота 4,5 мм; 424 треугольника; воск и обгоревший фитиль |
-| Подсвечник | [candle_stand.blend](../../art/blender/candle_stand.blend) | [candle_stand.glb](../../game/assets/models/candle_stand.glb) | Высота 1 м; лоток Ø 56 см; 19 гнёзд; 20 024 треугольника с экземплярами |
-| Дверь с фурнитурой | [church_door.blend](../../art/blender/church_door.blend) | [church_door.glb](../../game/assets/models/church_door.glb) | Рама 1,7 × 2,85 м; две створки с отдельными осями петель; 3156 треугольников |
-| Столик | [candle_table.blend](../../art/blender/candle_table.blend) | [candle_table.glb](../../game/assets/models/candle_table.glb) | 0,95 × 0,50 × 0,8525 м; TrayAnchor; 1080 треугольников |
-| Лоток | [candle_tray.blend](../../art/blender/candle_tray.blend) | [candle_tray.glb](../../game/assets/models/candle_tray.glb) | Около 0,42 × 0,32 × 0,055 м; свечи отдельными экземплярами; 540 треугольников |
-| Оконный модуль | [window_bay.blend](../../art/blender/window_bay.blend) | [window_bay.glb](../../game/assets/models/window_bay.glb) | Ширина 3 м; настоящее арочное отверстие 0,7 м; 1492 треугольника |
-| Оболочка храма | [church_shell.blend](../../art/blender/church_shell.blend) | [church_shell.glb](../../game/assets/models/church_shell.glb) | Интерьер около 7 × 11 м; пол, торцы, закрытие свода; 12 648 треугольников |
-| Свод | [church_vault.blend](../../art/blender/church_vault.blend) | [church_vault.glb](../../game/assets/models/church_vault.glb) | Подъём 1,7 м, нормали внутрь; 96 треугольников |
-| Кровля и глава | [church_roof.blend](../../art/blender/church_roof.blend) | [church_roof.glb](../../game/assets/models/church_roof.glb) | Отдельная кровля без плоского дна; глава и крест; 1926 треугольников |
-| Киот | [icon_case.blend](../../art/blender/icon_case.blend) | [icon_case.glb](../../game/assets/models/icon_case.glb) | Высота 2,74 м, изображение Богоматери; 1342 треугольника |
-| Иконостас | [iconostasis.blend](../../art/blender/iconostasis.blend) | [iconostasis.glb](../../game/assets/models/iconostasis.glb) | Ширина 6,4 м, закрытые центральные двери, четыре изображения; 5128 треугольников |
-| Рука | [hand_grip.blend](../../art/blender/hand_grip.blend) | [hand_grip.glb](../../game/assets/models/hand_grip.glb) | Одна поза, GripAnchor и рукав; 8374 треугольника |
+| Группа | Модели | Что сохранено |
+| --- | --- | --- |
+| Свеча | `candle`, `candle_remnant`, `candle_stand` | Отдельный воск, фитиль, потёки, остаток; 19 полых чашечек с узлами посадки |
+| Взаимодействие | `church_door`, `candle_table`, `candle_tray`, `hand_grip` | Оси створок, ручки, лоток, анатомическая кисть, морф `Grip`, рукав и точка хвата |
+| Архитектура | `church_shell`, `church_vault`, `window_bay`, `church_roof`, `stone_facade`, `entry_steps` | Замкнутый свод, глубокие арочные ниши, отдельные сланцевые плитки, глава с патиной, каменный портал и ступени |
+| Убранство | `iconostasis`, `icon_case`, `wall_bench`, `side_table`, `flower_vase`, `hanging_lamp`, `chandelier`, `chancel_steps`, `chancel_carpet`, `wall_icon`, `hanging_banner`, `wall_sconce` | Резьба и рамы, 14 исторических изображений, лампады, цветы, ковёр по ступеням |
+| Двор | `courtyard_ground`, `stone_approach`, `grass_tuft`, `courtyard_tree`, `garden_wall`, `entrance_lantern` | Рельеф, каменная дорожка, трава, дерево, кладка и фонари |
 
-Точные габариты, узлы и материалы: [первый набор](asset_build.json), [остальные модели](church_asset_build.json). Числа — параметры этого прототипа, не стандарты церковных предметов.
+Каждому имени соответствует `.blend` и `.glb`. Точные габариты, треугольники и узлы записаны в [asset_build.json](asset_build.json), [church_asset_build.json](church_asset_build.json) и отчётах `fidelity/*_build.json`. Это размеры художественной модели, не стандарты церковных предметов.
 
-`Seat00` — переднее свободное место игрока: `(0, 0.974, 0.228)` м относительно подсвечника в Godot. Точка задаёт дно гнезда. Остальные места — 12 по внешнему кольцу, 6 по внутреннему и одно центральное, включая Seat00. Диаметр отверстия 9 мм соответствует свече 7 мм.
+Свеча: воск **250 × 10 мм**, полный срок горения **1200 активных секунд**. Подсвечник: лоток Ø 680 мм, высота 1,14595 м, отверстие чашечки Ø 11 мм. `Seat00` — переднее свободное место игрока, `(0, 1.10495, 0.276857)` м в Godot. Точка задаёт дно гнезда. Раскладка: 12 мест снаружи, 6 внутри и одно по центру. Кисть держит свечу выше основания, чтобы ладонь оставалась над лотком.
 
-## Материалы и изображения
+Кисть имеет два состояния одной сетки: расслабленное и хват. `HandSkin` экспортирует один морф `Grip`; `player.set_grip()` плавно закрывает пальцы при взятии и открывает при отпускании. В `.blend` отдельно сохранены исходная сетка с весами и скелет для правки позы. Дополнительных накладных ногтей нет: используются исходные UV и текстура кожи. [Подробности и видео](fidelity/hands/README_RU.md).
 
-Пять оригинальных PNG 512 × 512: дерево, штукатурка, известняк, латунь и кровля. Они подключены к Principled BSDF и передаются в GLB. Godot извлекает встроенные изображения рядом с моделями; их `.import` относятся к исходным настройкам, а `.godot/` — кэшу.
+## Материалы и происхождение
 
-Латунь: metallic 0.94 / roughness 0.28. Воск: metallic 0 / roughness 0.42. Поддерживаемые текстуры и параметры PBR проверяются в Godot. Фотографии кожи, сторонние модели и HDRI не использованы. Исторические иконы имеют [отдельные источники и сведения о правах](../07_PRODUCTION/ASSET_SOURCES_RU.md).
+Дерево, штукатурка, камень, кровля, ткань, грунт и дерево во дворе используют материалы и модель Poly Haven под CC0. Исходные карты с метаданными находятся в `art/textures/pbr/`; GLB содержат выбранные игровые текстуры. Кожа и анатомическая основа кисти — MakeHuman CC0. Исторические изображения сохранены без перерисовки, с исходным соотношением сторон.
 
-## Что выполняет Godot
+Каменные плиты пола и бордовый ковёр созданы через imagegen. Промпты, исходные изображения и происхождение сохранены в `fidelity/prompts/`, `fidelity/materials/` и игровых `SOURCE.json`. Это карты материалов, а не подмена игровых кадров. Все источники и авторы перечислены в [ASSET_SOURCES_RU.md](../07_PRODUCTION/ASSET_SOURCES_RU.md) и `game/assets/CREDITS_RU.txt`.
 
-`church.tscn` и `church.gd` собирают пространство, добавляют коллизии, дверь, столик, точки действий, руку, свет и звук. Двор, дорожка, невысокая ограда и деревья — простая геометрия Godot. Импортированные модели остаются заменяемыми.
+Латунь получает отдельный Godot-шейдер с патиной, мелкими пятнами и переменной шероховатостью. Пламя — небольшой прозрачный billboard с мягким градиентом; свет каждой свечи исчезает при догорании. Растительность использует настоящую геометрию, экземпляры и маску листвы.
 
-`candle.gd` уменьшает высоту воска сверху вниз, сохраняя основание и диаметр. Фитиль, пламя, область зажигания и источник света следуют за верхушкой. Все 11 начальных горящих свечей имеют разный конечный остаток; свеча игрока использует тот же расчёт. При нуле огонь и его свет исчезают, остаётся негорящий остаток.
+## Освещение
 
-Масштаб времени 1:1, пауза исключена из монотонного отсчёта. По решению пользователя полный срок новой свечи — 20 минут (1200 с) активного горения. Статичные примеры из листа предметов не заменяют непрерывное горение.
+Неподвижный интерьер использует LightmapGI. `tools/stage_lightmaps.gd` собирает те же модели, сохраняет UV2 и материалы в `game/assets/lighting/meshes/`, записывает соответствие узлов и создаёт `game/scenes/nave_bake.tscn`. Тёплое заполнение в сцене запекания приближает отражённый свет светлых стен. Дверь, рука, воск и латунь получают свет от probes в режиме `GI_MODE_DYNAMIC`; в статическую геометрию они не запекаются.
 
-## Запуск и воспроизведение
+Запускать команды последовательно и ждать завершения каждой:
 
 ```sh
-./tools/godot --path game
-./tools/godot --path game res://scenes/asset_review.tscn
 ./tools/godot --headless --editor --path game --import
+./tools/godot --headless --path game --script ../tools/stage_lightmaps.gd -- --stage-lightmaps
+./tools/godot --editor --path game res://scenes/nave_bake.tscn -- --bake-nave
+```
+
+Последняя команда использует нативное запекание редактора через проектный `nave_baker`. Во время запекания не изменять игровые файлы. Проверить журнал и `LIGHTMAP_EDITOR_BAKE_DONE`, затем запустить игру. После изменения геометрии, размещения статичных моделей или их материалов повторить всю последовательность. GPU-ресурсы освещения нельзя пересохранять из headless Dummy renderer.
+
+## Воспроизведение ассетов
+
+Команды работают в отдельных процессах Blender. Перед повторной генерацией сохранить ручные изменения соответствующих `.blend` отдельно.
+
+```sh
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_candle_assets.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/rebuild_interior.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_church_decor.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_church_exterior.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_courtyard_ground.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_courtyard_tree.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_hand.py
+```
+
+Выборочная пересборка интерьера: добавить, например, `-- candle_table icon_case` к команде `rebuild_interior.py`. Исходные карты, дерево и MakeHuman уже сохранены в проекте; `fetch_art_materials.py` и `fetch_feast_icons.py` документируют их получение.
+
+Экспорт: метры, unit scale 1.0, выбранная иерархия, GLB +Y up, без студийных камер и света. Корень предмета — на опоре; у кисти корень задаёт позу, а `GripAnchor` — контакт пальцев. Подвижные узлы не объединять. Неподвижную резьбу и мелкие детали объединять по материалу. Pivots створок сохранять.
+
+## Проверка игры
+
+```sh
 ./tools/godot --headless --path game --script res://tests/check_candle_assets.gd
 ./tools/godot --headless --path game --script res://tests/check_game.gd
+python3 tools/capture_concept_views.py
+./tools/export_macos.sh
 ```
 
-Вторая команда открывает независимый просмотр: ползунок изменяет геометрию воска, кнопка меняет ракурс. Он сохраняется как удобная проверка масштаба и посадки; игра запускается первой командой.
+Скрипт кадров выполняет реальные взаимодействия лучом и снимает девять видов 1920×1080. `--app` снимает отдельную macOS-сборку; `--pack builds/macos/Svecha.app/Contents/Resources/Свеча.pck` запускает её экспортированные ресурсы установленным движком Godot. Манифест указывает источник каждого кадра. Статичные PNG не проверяют плавность и удобство: для этого нужен запуск `./tools/godot --path game`. Отдельный инспектор воска: `./tools/godot --path game res://scenes/asset_review.tscn`.
 
-Пересборка всей геометрии и текстур:
-
-```sh
-./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_church_assets.py
-python3 tools/build_audio.py
-```
-
-Скрипт перестраивает 13 именованных ассетов и preview. Ручные правки в этих `.blend` необходимо предварительно сохранить отдельно. Текстуры упакованы внутрь `.blend` для переносимости. Blender-студии входят в исходники для просмотра, но исключаются из GLB. Файлы `*_blender.png` — Cycles-render; `*_godot.png` — кадры движка, не image_gen.
-
-## Сохранённые задания
-
-1. [Свеча и остаток](prompts/01_candle_set.md).
-2. [Подсвечник](prompts/02_candle_stand.md).
-3. [Дверь и фурнитура](prompts/03_door_and_hardware.md).
-4. [Столик и лоток](prompts/04_table_and_tray.md).
-5. [Архитектура, свод и кровля](prompts/05_church_architecture.md).
-6. [Иконостас и киот](prompts/06_iconostasis_and_case.md).
-7. [Рука и материалы](prompts/07_hand_and_materials.md).
-
-## Правила дальнейшего экспорта
-
-Метры, unit scale 1.0, корень на опоре, отдельные подвижные части. Экспортировать выбранное дерево ассета в GLB, +Y up, без камер и света. Преобразование осей выполняет glTF-exporter; повторный ручной поворот не нужен. Не применять преобразования, которые уничтожают pivot двери.
-
-После изменения выполнить импорт, проверки и просмотр с высоты глаз. Отсутствие ошибок в headless не подтверждает художественное качество или удобство. Концепт-арт остаётся ориентиром; нынешние модели — первый игровой вариант, пригодный для дальнейшей художественной доработки.
+Все свечи конечны. Горение начинается при зажигании, продолжается вне кадра, останавливается в паузе и при потере фокуса. Воск укорачивается сверху вниз, основание и диаметр сохраняются; при нуле гаснут пламя и свет, остаётся воск и фитиль. Ожидать догорания для завершения эпизода не нужно.

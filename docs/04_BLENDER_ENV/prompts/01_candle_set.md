@@ -4,7 +4,7 @@ Create two separate original game assets for «Свеча», following the candl
 
 ## Candle
 
-- Wax body: 0.25 m tall and 0.007 m in diameter. Origin at the base, local Blender Z is up.
+- Wax body: 0.25 m tall and 0.010 m in diameter. Origin at the base, local Blender Z is up.
 - Separate nodes: `Candle` root, `Wax`, `WickAnchor` at the top, `Wick` below that anchor, and `FlameAnchor` near the wick tip.
 - The runtime can shorten `Wax` only along its vertical axis while leaving its base and diameter fixed. The wick anchor must move with the current top; it must not be embedded in the same mesh as the whole body.
 - No flame mesh, emissive glow or baked lighting in the exported model. Godot will own the finite burn-time simulation and flame effects.
@@ -15,11 +15,11 @@ Save `art/blender/candle.blend`; export selected asset nodes to `game/assets/mod
 ## Burnt residue
 
 - A separate small irregular cooled wax remnant and charred wick, with no intact candle shaft, fire or glow.
-- For this first model, fit the residue within a 9 mm socket bore, with a total height below 5 mm. Origin at its base.
+- For this first model, fit the residue within a 11 mm socket bore, with a total height below 5 mm. Origin at its base.
 - Name the root `CandleRemnant`; keep wax and wick separately inspectable.
 
 Save `art/blender/candle_remnant.blend`; export `game/assets/models/candle_remnant.glb`.
 
 ## Acceptance
 
-GLB, +Y up, selected asset only, no studio cameras/lights. In Godot verify the 25 cm wax height and 7 mm diameter, base anchoring at intermediate heights, a wick that follows the moving top, and replacement by the small non-burning residue at zero. A static comparison of three candle sizes does not implement continuous consumption. The visual inspector does not calibrate burn duration.
+GLB, +Y up, selected asset only, no studio cameras/lights. In Godot verify the 25 cm wax height and 10 mm diameter, base anchoring at intermediate heights, a wick that follows the moving top, and replacement by the small non-burning residue at zero. A static comparison of three candle sizes does not implement continuous consumption. The visual inspector does not calibrate burn duration.

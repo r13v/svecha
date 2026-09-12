@@ -106,7 +106,7 @@ func set_wax_fraction(fraction: float) -> void:
 	remnant.visible = amount == 0.0
 	wax.scale.y = maxf(amount, 0.00001)
 	wick_anchor.position.y = 0.25 * amount
-	length_label.text = "Воск: %.1f см  ·  диаметр 7 мм  ·  гнезд 19" % (25.0 * amount)
+	length_label.text = "Воск: %.1f см  ·  диаметр 10 мм  ·  гнезд 19" % (25.0 * amount)
 
 
 func _set_view(close: bool) -> void:

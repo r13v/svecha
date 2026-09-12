@@ -29,20 +29,34 @@ func _ready() -> void:
 	add_child(model)
 	residue = preload("res://assets/models/candle_remnant.glb").instantiate()
 	add_child(residue)
+	# Keep consumable wax out of static GI/reflection captures.
+	for mesh: MeshInstance3D in find_children("*", "MeshInstance3D", true, false):
+		mesh.layers = 2
+		mesh.gi_mode = GeometryInstance3D.GI_MODE_DYNAMIC
 	wax = model.find_child("Wax", true, false)
+	var wax_material := wax.get_active_material(0) as StandardMaterial3D
+	wax_material.subsurf_scatter_enabled = true
+	wax_material.subsurf_scatter_strength = 0.22
+	wax_material.subsurf_scatter_transmittance_enabled = true
+	wax_material.subsurf_scatter_transmittance_color = Color("e7a434")
+	wax_material.subsurf_scatter_transmittance_depth = 0.008
 	wick_anchor = model.find_child("WickAnchor", true, false)
 	var anchor := model.find_child("FlameAnchor", true, false) as Node3D
 	flame = MeshInstance3D.new()
-	flame.mesh = _flame_mesh()
-	var material := StandardMaterial3D.new()
-	material.albedo_color = Color("ffd991")
-	material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	material.emission_enabled = true
-	material.emission = Color("ffac43")
-	material.emission_energy_multiplier = 5.0
+	flame.layers = 2
+	flame.gi_mode = GeometryInstance3D.GI_MODE_DISABLED
+	var flame_mesh := QuadMesh.new()
+	flame_mesh.size = Vector2(0.016, 0.035)
+	flame_mesh.center_offset.y = 0.0175
+	flame.mesh = flame_mesh
+	var material := ShaderMaterial.new()
+	material.shader = preload("res://shaders/candle_flame.gdshader")
 	flame.material_override = material
 	anchor.add_child(flame)
 	light = OmniLight3D.new()
+	light.layers = 2
+	light.light_cull_mask = 3
+	light.light_bake_mode = Light3D.BAKE_DISABLED
 	light.light_color = Color("ffb958")
 	light.light_energy = 0.075
 	light.omni_range = 0.42
@@ -117,24 +131,10 @@ func update_visuals() -> void:
 	model.visible = fraction > 0.0
 	residue.visible = fraction <= 0.0
 	wax.scale.y = maxf(fraction, 0.00001)
+	var drips := wax.get_node_or_null("WaxDrips") as Node3D
+	if drips != null:
+		drips.visible = fraction < 0.995
 	wick_anchor.position.y = 0.25 * fraction
 	flame.visible = burn_state == BurnState.BURNING
 	light.visible = flame.visible
 	fire_target.collision_layer = 4 if flame.visible and location == Location.PLACED else 0
-
-
-func _flame_mesh() -> ArrayMesh:
-	var surface := SurfaceTool.new()
-	surface.begin(Mesh.PRIMITIVE_TRIANGLES)
-	var profile := [Vector2(0.0, 0.0), Vector2(0.0038, 0.005), Vector2(0.0028, 0.013), Vector2(0.0012, 0.021), Vector2(0.0, 0.028)]
-	for ring in range(profile.size() - 1):
-		for segment in range(12):
-			var a := TAU * segment / 12.0
-			var b := TAU * (segment + 1) / 12.0
-			var lower: Vector2 = profile[ring]
-			var upper: Vector2 = profile[ring + 1]
-			var vertices := [Vector3(cos(a) * lower.x, lower.y, sin(a) * lower.x), Vector3(cos(b) * lower.x, lower.y, sin(b) * lower.x), Vector3(cos(a) * upper.x, upper.y, sin(a) * upper.x), Vector3(cos(b) * upper.x, upper.y, sin(b) * upper.x)]
-			for index in [0, 2, 1, 1, 2, 3]:
-				surface.add_vertex(vertices[index])
-	surface.generate_normals()
-	return surface.commit()

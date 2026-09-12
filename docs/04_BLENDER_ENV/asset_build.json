@@ -1,20 +1,20 @@
 {
   "blender_version": "5.2.1 LTS",
-  "status": "first_pass",
+  "status": "exported",
   "assets": [
     {
       "asset": "candle",
       "source": "art/blender/candle.blend",
       "model": "game/assets/models/candle.glb",
-      "triangles": 384,
+      "triangles": 1012,
       "blender_bounds_m": [
         [
-          -0.0035000001080334187,
-          0.0035000001080334187
+          -0.004999999888241291,
+          0.00559999980032444
         ],
         [
-          -0.0035000001080334187,
-          0.0035000001080334187
+          -0.0055981893092393875,
+          0.004999999888241291
         ],
         [
           0.0,
@@ -24,6 +24,10 @@
       "nodes": [
         "Candle",
         "Wax",
+        "WaxDrips",
+        "WaxTrail",
+        "WaxTrail.001",
+        "WaxTrail.002",
         "WickAnchor",
         "FlameAnchor",
         "Wick"
@@ -61,16 +65,16 @@
       "triangles": 20024,
       "blender_bounds_m": [
         [
-          -0.2800000011920929,
-          0.2800000011920929
+          -0.3400000035762787,
+          0.3400000035762787
         ],
         [
-          -0.2800000011920929,
-          0.2800000011920929
+          -0.3400000035762787,
+          0.3400000035762787
         ],
         [
           0.0,
-          1.0
+          1.1459499597549438
         ]
       ],
       "nodes": [

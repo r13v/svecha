@@ -1,0 +1,10 @@
+{
+	"adapter": "Apple M3 (Apple9)",
+	"frames": 180,
+	"median_fps": 51.4350375475774,
+	"median_ms": 19.442,
+	"p95_ms": 19.631,
+	"renderer": "Forward+",
+	"resolution": "(1920.0, 1080.0)",
+	"view": "outside"
+}

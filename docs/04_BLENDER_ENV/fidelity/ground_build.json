@@ -1,0 +1,75 @@
+[
+  {
+    "asset": "courtyard_ground",
+    "source": "art/blender/courtyard_ground.blend",
+    "model": "game/assets/models/courtyard_ground.glb",
+    "triangles": 32768,
+    "blender_bounds_m": [
+      [
+        -80.0,
+        80.0
+      ],
+      [
+        -80.0,
+        80.0
+      ],
+      [
+        0.0,
+        4.950864315032959
+      ]
+    ],
+    "nodes": [
+      "CourtyardGround",
+      "Soil"
+    ]
+  },
+  {
+    "asset": "stone_approach",
+    "source": "art/blender/stone_approach.blend",
+    "model": "game/assets/models/stone_approach.glb",
+    "triangles": 10812,
+    "blender_bounds_m": [
+      [
+        -1.25,
+        1.25
+      ],
+      [
+        -20.75,
+        -5.75
+      ],
+      [
+        0.0,
+        0.08379849046468735
+      ]
+    ],
+    "nodes": [
+      "StoneApproach",
+      "LimestoneSurface",
+      "PackedEarthSurface"
+    ]
+  },
+  {
+    "asset": "grass_tuft",
+    "source": "art/blender/grass_tuft.blend",
+    "model": "game/assets/models/grass_tuft.glb",
+    "triangles": 48,
+    "blender_bounds_m": [
+      [
+        -0.06238503009080887,
+        0.059817638248205185
+      ],
+      [
+        -0.08541379868984222,
+        0.10930952429771423
+      ],
+      [
+        0.0,
+        0.23068679869174957
+      ]
+    ],
+    "nodes": [
+      "GrassTuft",
+      "Grass"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "file": "game/assets/textures/limestone/floor_albedo.png",
+    "generator": "built-in image_gen",
+    "prompt": "docs/04_BLENDER_ENV/fidelity/prompts/floor_albedo.txt",
+    "sha256": "5124ba8a7c63e32036d8d4362db33516790236407476a2987e98c54a9e3f19df",
+    "reference": "docs/02_CONCEPT_ART/generated_images/03_first_interior_view.png"
+  },
+  {
+    "file": "game/assets/textures/limestone/floor_normal.png",
+    "generator": "built-in image_gen",
+    "prompt": "docs/04_BLENDER_ENV/fidelity/prompts/floor_normal.txt",
+    "sha256": "242570d548db776ad530a72980c200de20c0b47e5e0bab05c765cd72dde65311",
+    "reference": "game/assets/textures/limestone/floor_albedo.png"
+  }
+]

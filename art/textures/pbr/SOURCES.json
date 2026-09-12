@@ -1,0 +1,631 @@
+[
+  {
+    "asset": "monastery_stone_floor",
+    "source": "https://polyhaven.com/a/monastery_stone_floor",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "dimensions_mm": [
+      1799.9999523162842,
+      1799.9999523162842
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/monastery_stone_floor/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/monastery_stone_floor/monastery_stone_floor_diff_2k.jpg",
+        "sha256": "aa12137fff1728bbbfe98b30480e33a34cba3b5c096575702c1d66939214e14a"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/monastery_stone_floor/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/monastery_stone_floor/monastery_stone_floor_nor_gl_2k.jpg",
+        "sha256": "8f3e131a9d6d9c3a95c872173393830f7c1de389cd60d4878b2211058d706d2c"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/monastery_stone_floor/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/monastery_stone_floor/monastery_stone_floor_rough_2k.jpg",
+        "sha256": "61f87f8049b21153b6db25fdcd184c4297642ada2e31c07db03f6810c9f952c3"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/monastery_stone_floor/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/monastery_stone_floor/monastery_stone_floor_disp_2k.jpg",
+        "sha256": "164d97eb875ba7500f3d03f571d0187619cdd8ddfa2abad6851b04be83ff337e"
+      },
+      "AO": {
+        "file": "art/textures/pbr/monastery_stone_floor/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/monastery_stone_floor/monastery_stone_floor_ao_2k.jpg",
+        "sha256": "47751b7e429bbd8b6103c6d1170b5146202fd976be5eca0a70a321398166f1dd"
+      }
+    }
+  },
+  {
+    "asset": "stone_floor",
+    "source": "https://polyhaven.com/a/stone_floor",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "dimensions_mm": [
+      1849.9999046325684,
+      1849.9999046325684
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/stone_floor/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_floor/stone_floor_diff_2k.jpg",
+        "sha256": "ce19d3cb1e683419b6a596e1baffbf2b429f970f8ddba81e391ad9a38f310ed8"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/stone_floor/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_floor/stone_floor_nor_gl_2k.jpg",
+        "sha256": "978242067a8b6d421ea6ef12f7757f8ba137e21914c71b259502a4582daa0122"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/stone_floor/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_floor/stone_floor_rough_2k.jpg",
+        "sha256": "cd8e7c6f7e7a9f483e45286b65c0ba7308bc943e7dc51ee9fd4532158cf44612"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/stone_floor/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_floor/stone_floor_disp_2k.jpg",
+        "sha256": "12eff4e09929180e3b807dec94b5a72ff9183455b56b7ab90900999e3bc12717"
+      },
+      "AO": {
+        "file": "art/textures/pbr/stone_floor/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/stone_floor/stone_floor_ao_2k.jpg",
+        "sha256": "6cce3abcf8221c7fa3ec6737de3512b2457fd0a95e909ac74d20f50b9bae52a8"
+      }
+    }
+  },
+  {
+    "asset": "slab_tiles",
+    "source": "https://polyhaven.com/a/slab_tiles",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dario Barresi": "Processing",
+      "Dimitrios Savva": "Photography"
+    },
+    "dimensions_mm": [
+      2369.999885559082,
+      2370.000123977661
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/slab_tiles/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/slab_tiles/slab_tiles_diff_2k.jpg",
+        "sha256": "4d783b04cbe612f292871cd98514e9d13db1892cb0378e65aeefddff47524d1e"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/slab_tiles/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/slab_tiles/slab_tiles_nor_gl_2k.jpg",
+        "sha256": "69764ef7c91f12508930112356dd8e5edc4bed8f50e07aa9a4322af6807bc62c"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/slab_tiles/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/slab_tiles/slab_tiles_rough_2k.jpg",
+        "sha256": "5892d9e64b2d2338451819d9d1ebb33d895541b895d4f6966ab894f6e6618db2"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/slab_tiles/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/slab_tiles/slab_tiles_disp_2k.jpg",
+        "sha256": "b2adf49f8c1c75495b39ede81d59f769dd9a14085e257ce47e4e30dc54f132c2"
+      },
+      "AO": {
+        "file": "art/textures/pbr/slab_tiles/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/slab_tiles/slab_tiles_ao_2k.jpg",
+        "sha256": "33b79584e4b9b60798a706605c261816cf929c4ed3cd66473bf2b03da5e80812"
+      }
+    }
+  },
+  {
+    "asset": "white_plaster_02",
+    "source": "https://polyhaven.com/a/white_plaster_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      1000,
+      1000
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/white_plaster_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_02/white_plaster_02_diff_2k.jpg",
+        "sha256": "0ca5245ba70777d3e41ff4566c9f8d363855461891802c55cb7dc0f6f85f084e"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/white_plaster_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_02/white_plaster_02_nor_gl_2k.jpg",
+        "sha256": "083579b03a8f31ec1886512e5972f3b893610bf26a2098f97910e0f46745cdc9"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/white_plaster_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_02/white_plaster_02_rough_2k.jpg",
+        "sha256": "a3dc1911f6e25d88fdb0031fe0cfb602eec5496084c508774c60691bed087417"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/white_plaster_02/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_02/white_plaster_02_disp_2k.jpg",
+        "sha256": "7a477010377e267bbf3c650037f0659c9b5b0c7860f8056e0145600145ef66fc"
+      },
+      "AO": {
+        "file": "art/textures/pbr/white_plaster_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_02/white_plaster_02_ao_2k.jpg",
+        "sha256": "4dd72e594056fae1653118bdc86638381c65605edcbdf37e6a27c762782d55fe"
+      }
+    }
+  },
+  {
+    "asset": "white_plaster_rough_02",
+    "source": "https://polyhaven.com/a/white_plaster_rough_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      1000,
+      1000
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/white_plaster_rough_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_rough_02/white_plaster_rough_02_diff_2k.jpg",
+        "sha256": "36491f4237808049b438cfce7aea34db30e3c2c3e14ee17ff97b1357d7d04f2b"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/white_plaster_rough_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_rough_02/white_plaster_rough_02_nor_gl_2k.jpg",
+        "sha256": "e3085595e98121f25e34f395f21cbf5113e816099b405eb8ec20bffaaaf3c64b"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/white_plaster_rough_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_rough_02/white_plaster_rough_02_rough_2k.jpg",
+        "sha256": "3e84d3b5e50e4587312495ae087f48c0216bf61a593341ca987a2c2607ff24f6"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/white_plaster_rough_02/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_rough_02/white_plaster_rough_02_disp_2k.jpg",
+        "sha256": "3eaabe05ed7ce652c5e84120984b7c032075fc8bb3107a29c3e569c631765c65"
+      },
+      "AO": {
+        "file": "art/textures/pbr/white_plaster_rough_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_rough_02/white_plaster_rough_02_ao_2k.jpg",
+        "sha256": "cc4cd4b031409f0124ebdcc94dcc6fc5dc50500e3dac09ab4a7c52c1b25dcff8"
+      }
+    }
+  },
+  {
+    "asset": "worn_cracked_plaster",
+    "source": "https://polyhaven.com/a/worn_cracked_plaster",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "dimensions_mm": [
+      1799.9999523162842,
+      1799.9999523162842
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/worn_cracked_plaster/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_cracked_plaster/worn_cracked_plaster_diff_2k.jpg",
+        "sha256": "26b3771611b553d87b8411d5dd20c64aec79e295b87f4f5f1b94dcb04157988a"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/worn_cracked_plaster/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_cracked_plaster/worn_cracked_plaster_nor_gl_2k.jpg",
+        "sha256": "879136c54b32fa9029a5393d49b848f8a6039501a699c847f754388d69ead70a"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/worn_cracked_plaster/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_cracked_plaster/worn_cracked_plaster_rough_2k.jpg",
+        "sha256": "c1f0fb3b0b9ec37f5ff630b72ccb2fcdafbdbc9142a730cd98ec460da3caae2d"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/worn_cracked_plaster/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_cracked_plaster/worn_cracked_plaster_disp_2k.jpg",
+        "sha256": "d6288f5cb84022adba67a4f94a262ac2d05cb7117a6a0c20ab9a26b4e6342b3e"
+      },
+      "AO": {
+        "file": "art/textures/pbr/worn_cracked_plaster/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_cracked_plaster/worn_cracked_plaster_ao_2k.jpg",
+        "sha256": "17043504e404ae8d566fa8831dcbe965ca7a3579f35bbc36e1cceef521decab7"
+      }
+    }
+  },
+  {
+    "asset": "wood_table_worn",
+    "source": "https://polyhaven.com/a/wood_table_worn",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "dimensions_mm": [
+      549.9999523162842,
+      550.0000715255737
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/wood_table_worn/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_worn/wood_table_worn_diff_2k.jpg",
+        "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/wood_table_worn/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_worn/wood_table_worn_nor_gl_2k.jpg",
+        "sha256": "a90aaa321194fb41d6e44776c6ee88134e4be416051357a3c9e323cc447c4cf0"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/wood_table_worn/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_worn/wood_table_worn_rough_2k.jpg",
+        "sha256": "4263780c4b7737b8714eefcbda1b43c28f8e1e0ee2b797c125521cbe6e3889dd"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/wood_table_worn/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_worn/wood_table_worn_disp_2k.jpg",
+        "sha256": "6cd07277b91fcbe6567d72b1a86f581ae26765f810ffabe4a4d1451e22c3c901"
+      },
+      "AO": {
+        "file": "art/textures/pbr/wood_table_worn/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_worn/wood_table_worn_ao_2k.jpg",
+        "sha256": "df58964c1648d12332210f2a94491563b9d051f88cb574e467703db6fe40a3fd"
+      }
+    }
+  },
+  {
+    "asset": "wood_cabinet_worn_long",
+    "source": "https://polyhaven.com/a/wood_cabinet_worn_long",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "dimensions_mm": [
+      1000,
+      500
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/wood_cabinet_worn_long/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_diff_2k.jpg",
+        "sha256": "de86a6c12fed2284c57be666abfabfa6601dcd5226bd56e70fd6c9722df3291a"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/wood_cabinet_worn_long/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_nor_gl_2k.jpg",
+        "sha256": "c39684e3d84e9e639a9f5e53008d1efab9d3661f8bcdd385eadbd0dc67d14775"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/wood_cabinet_worn_long/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_rough_2k.jpg",
+        "sha256": "0f63854881c9c94145c9b06a9299493d74cd8d7bfd2ec12875573cd23dd14508"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/wood_cabinet_worn_long/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_disp_2k.jpg",
+        "sha256": "efcbe393405358d46d1b2cbcbc8436f9b782a28e8bf245ca51fac89bf5aed266"
+      },
+      "AO": {
+        "file": "art/textures/pbr/wood_cabinet_worn_long/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_ao_2k.jpg",
+        "sha256": "e08c3c39552f834b40e8603a596ca3af6434b050b9651ce14c2dde2651a26022"
+      }
+    }
+  },
+  {
+    "asset": "rough_wood",
+    "source": "https://polyhaven.com/a/rough_wood",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      500,
+      500
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/rough_wood/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_diff_2k.jpg",
+        "sha256": "0bd2b3195db9b54d55aa0f842801220ec5e1d389f5fc1e670b378bdaca3f8e7b"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/rough_wood/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_nor_gl_2k.jpg",
+        "sha256": "b75cb1e989407e442c3255f3e05ea8c40162c0e5dc2efc9ef2515fce61319194"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/rough_wood/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_rough_2k.jpg",
+        "sha256": "38343cb062e7fadcda513ded0b17271c9d7f1da56765d03508dc84c8ff1bd475"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/rough_wood/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_disp_2k.jpg",
+        "sha256": "f41a9053cd5404e439edc6b2f901b322e9d6e43c1d775abfc7ae70439a96f522"
+      },
+      "AO": {
+        "file": "art/textures/pbr/rough_wood/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_ao_2k.jpg",
+        "sha256": "3bf2da279765a3e183686b0c27f9a5322361092980a259a0f634a75189a742e2"
+      }
+    }
+  },
+  {
+    "asset": "roof_slates_02",
+    "source": "https://polyhaven.com/a/roof_slates_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      3000,
+      3000
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/roof_slates_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_diff_2k.jpg",
+        "sha256": "5be7e739997e9f5560b07ee42f335d7ad70213359d48cbffc9c04ad129e9a2c4"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/roof_slates_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_nor_gl_2k.jpg",
+        "sha256": "4ff2618aa5f2eac52f728b8b4f7e715d87c410719effc66eb6f528378ef9f49e"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/roof_slates_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_rough_2k.jpg",
+        "sha256": "641b51370745e7e990c93542716bf46219e7415808a4cea999bb3f0683ec01bf"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/roof_slates_02/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_disp_2k.jpg",
+        "sha256": "d52ed3632a3336fe18c6b55807bc7fbecb4472ff9afeff98f9f1a4a37eb5fe17"
+      },
+      "AO": {
+        "file": "art/textures/pbr/roof_slates_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/roof_slates_02/roof_slates_02_ao_2k.jpg",
+        "sha256": "45f4853c971b3ac9c9a8a66d11461c382b2e78c2a5da8d270eeb947080024f27"
+      }
+    }
+  },
+  {
+    "asset": "wool_boucle",
+    "source": "https://polyhaven.com/a/wool_boucle",
+    "license": "CC0-1.0",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "dimensions_mm": [
+      314.78237097288206,
+      390.10000228881836
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/wool_boucle/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_diff_2k.jpg",
+        "sha256": "4776e044f74963c2e93d5ca85a53307cb3946c290c6dd397711b119536e4046a"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/wool_boucle/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_nor_gl_2k.jpg",
+        "sha256": "ec411e071e64cc84f83f51e12a74922c4a3429d07f4cad7387141a05fcc4a9e7"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/wool_boucle/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_rough_2k.jpg",
+        "sha256": "3b7e40007d85d78b3ad572708388bd7cbd9e7b07f5f91bdac85654614d4aa7ee"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/wool_boucle/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_disp_2k.jpg",
+        "sha256": "e5aba25b5ef669277b9c1a77b5ef0f3b0090a3d43786587fca4ccc2e0df92298"
+      },
+      "AO": {
+        "file": "art/textures/pbr/wool_boucle/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_ao_2k.jpg",
+        "sha256": "69a9c42b8bc15c9feb816c1128747cfbc0a04e88ec27a409ad3e690e585a85b0"
+      }
+    }
+  },
+  {
+    "asset": "poly_wool_herringbone",
+    "source": "https://polyhaven.com/a/poly_wool_herringbone",
+    "license": "CC0-1.0",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "dimensions_mm": [
+      270.0788548673393,
+      275.70000290870667
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/poly_wool_herringbone/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/poly_wool_herringbone/poly_wool_herringbone_diff_2k.jpg",
+        "sha256": "ca21de8e2e7f43178f8290361bfb2271eb264af0d2887c7c93e76a113ff3cc64"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/poly_wool_herringbone/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/poly_wool_herringbone/poly_wool_herringbone_nor_gl_2k.jpg",
+        "sha256": "bd68cd14cafdb033dccb80ff8aff2600317e66ef11eb37ef7f224e420075f1fd"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/poly_wool_herringbone/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/poly_wool_herringbone/poly_wool_herringbone_rough_2k.jpg",
+        "sha256": "8678dfb7f474440c12a5f317fe01802dd1aabbb205a6c947bb044ade72294fa7"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/poly_wool_herringbone/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/poly_wool_herringbone/poly_wool_herringbone_disp_2k.jpg",
+        "sha256": "2d4eab1072b770717e78ce01906f9f6d547df0543f9996aa4da7139cc5cca095"
+      },
+      "AO": {
+        "file": "art/textures/pbr/poly_wool_herringbone/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/poly_wool_herringbone/poly_wool_herringbone_ao_2k.jpg",
+        "sha256": "4ae5af1f17824cf708f391772afd5d2f0dc7733f810fd93c82aebd252030aee9"
+      }
+    }
+  },
+  {
+    "asset": "large_floor_tiles_02",
+    "source": "https://polyhaven.com/a/large_floor_tiles_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "dimensions_mm": [
+      3000,
+      3000
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/large_floor_tiles_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/large_floor_tiles_02/large_floor_tiles_02_diff_2k.jpg",
+        "sha256": "a18c67aedef1099f5ad24abd4e65d9a9fcc44e2b9e60aba27ec255f9220708cd"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/large_floor_tiles_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/large_floor_tiles_02/large_floor_tiles_02_nor_gl_2k.jpg",
+        "sha256": "436117e6fc10a4e76a7d2d31ebb1e56372709068b52875baa9468ae414330ea3"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/large_floor_tiles_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/large_floor_tiles_02/large_floor_tiles_02_rough_2k.jpg",
+        "sha256": "0838441397c114faecb89c4e1fae56ce8df195748b2128d0eb1a9bb116407731"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/large_floor_tiles_02/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/large_floor_tiles_02/large_floor_tiles_02_disp_2k.jpg",
+        "sha256": "faa2e995dacfb2a3f85bb3fca6c6deb80b5c61ccc0df6470c60ee1fa0cb47e72"
+      },
+      "AO": {
+        "file": "art/textures/pbr/large_floor_tiles_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/large_floor_tiles_02/large_floor_tiles_02_ao_2k.jpg",
+        "sha256": "ceb98043a24a92fcb42b7589560006b52595298d04ac8374db3f089f4d61c779"
+      }
+    }
+  },
+  {
+    "asset": "rock_tile_floor_02",
+    "source": "https://polyhaven.com/a/rock_tile_floor_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "dimensions_mm": [
+      2400.0000953674316,
+      2400.0000953674316
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/rock_tile_floor_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_tile_floor_02/rock_tile_floor_02_diff_2k.jpg",
+        "sha256": "cdd0125bc1f2b6d71d8d024e4ccfab175b3233df4b529ff54039a8ed09339dbb"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/rock_tile_floor_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_tile_floor_02/rock_tile_floor_02_nor_gl_2k.jpg",
+        "sha256": "8002f5141d67cf1be42833a51aba4a8c040d5e1e9a873f9d26746044a0a886aa"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/rock_tile_floor_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_tile_floor_02/rock_tile_floor_02_rough_2k.jpg",
+        "sha256": "1e7fafd2ef647a502bb2ec7cc42078f1edfb5ce906454c2130dd9b228e35a8f9"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/rock_tile_floor_02/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_tile_floor_02/rock_tile_floor_02_disp_2k.jpg",
+        "sha256": "d2e3474fbe566838fbfc1fd7cb11f12c83cdfa0f2e5906a4735959b8d3f536b7"
+      },
+      "AO": {
+        "file": "art/textures/pbr/rock_tile_floor_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_tile_floor_02/rock_tile_floor_02_ao_2k.jpg",
+        "sha256": "18058fc7b9c75de4b65c6dfe756a4aae700650ee5931382b56890adeeb92a47c"
+      }
+    }
+  },
+  {
+    "asset": "sparse_grass",
+    "source": "https://polyhaven.com/a/sparse_grass",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/sparse_grass/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sparse_grass/sparse_grass_diff_2k.jpg",
+        "sha256": "3b655de96161164bf2324e136b3409ad8417c9f94750bc008e9c93ee507c2fac"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/sparse_grass/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sparse_grass/sparse_grass_nor_gl_2k.jpg",
+        "sha256": "5539a5913653a106a4e8a699a1d288f0b41907775b5fb36156ef5be2e937718b"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/sparse_grass/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sparse_grass/sparse_grass_rough_2k.jpg",
+        "sha256": "b023f187999956449b5f25df19f4eaae1c891f474e0a599b23d986118fe706d7"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/sparse_grass/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sparse_grass/sparse_grass_disp_2k.jpg",
+        "sha256": "84301f04bb98bb87a2101bd6923142d17d070a97227f01c55aa3a383ec823297"
+      },
+      "AO": {
+        "file": "art/textures/pbr/sparse_grass/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sparse_grass/sparse_grass_ao_2k.jpg",
+        "sha256": "92641df46170082a9cfeb42efee5b0ae7a5f30ab2125f8d593cd8fd3daaecd7b"
+      }
+    }
+  },
+  {
+    "asset": "old_sandstone_02",
+    "source": "https://polyhaven.com/a/old_sandstone_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "dimensions_mm": [
+      1529.9999713897705,
+      1529.9999713897705
+    ],
+    "files": {
+      "Diffuse": {
+        "file": "art/textures/pbr/old_sandstone_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_sandstone_02/old_sandstone_02_diff_2k.jpg",
+        "sha256": "6cb1d16af8cbcfccc72e1466e3f288f1e74a8befb1281460b8520ab754becb0a"
+      },
+      "nor_gl": {
+        "file": "art/textures/pbr/old_sandstone_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_sandstone_02/old_sandstone_02_nor_gl_2k.jpg",
+        "sha256": "79a498bba79483ce16d2d7271bf2e120a069fd6829bc0e0f38fe8ed1ce681a75"
+      },
+      "Rough": {
+        "file": "art/textures/pbr/old_sandstone_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_sandstone_02/old_sandstone_02_rough_2k.jpg",
+        "sha256": "45f4411cfe86daa1637c0a38510a1a27683e71f06037b84543b85a569b76d1cf"
+      },
+      "Displacement": {
+        "file": "art/textures/pbr/old_sandstone_02/Displacement.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_sandstone_02/old_sandstone_02_disp_2k.jpg",
+        "sha256": "190c2dc83f8b0f53706d04f68d5665f2d5af22767402f07c090e8eced00e49c4"
+      },
+      "AO": {
+        "file": "art/textures/pbr/old_sandstone_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/old_sandstone_02/old_sandstone_02_ao_2k.jpg",
+        "sha256": "a1ab22ee1099eb64ef52e563a408f35033ea57f7c51996d0a58d03a140de7f67"
+      }
+    }
+  }
+]

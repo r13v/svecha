@@ -1,11 +1,14 @@
 extends CharacterBody3D
 
+const HAND_REST := Vector3(0.24, -0.38, -0.52)
+
 @export var walk_speed: float = 1.65
 @export var mouse_sensitivity: float = 0.0022
 var enabled: bool = false
 var camera: Camera3D
 var ray: RayCast3D
 var hand: Node3D
+var hand_skin: MeshInstance3D
 var steps: AudioStreamPlayer
 var step_distance: float = 0.0
 var walk_phase: float = 0.0
@@ -25,8 +28,11 @@ func _ready() -> void:
 	camera = Camera3D.new()
 	camera.name = "Camera"
 	camera.position.y = 1.65
-	camera.fov = 66.0
+	camera.fov = 55.0
 	camera.near = 0.025
+	var exposure := CameraAttributesPractical.new()
+	exposure.exposure_multiplier = 1.0
+	camera.attributes = exposure
 	add_child(camera)
 	ray = RayCast3D.new()
 	ray.target_position = Vector3(0, 0, -1.65)
@@ -35,13 +41,30 @@ func _ready() -> void:
 	ray.add_exception(self)
 	camera.add_child(ray)
 	hand = preload("res://assets/models/hand_grip.glb").instantiate()
-	hand.position = Vector3(0.19, -0.49, -0.43)
+	hand_skin = hand.find_child("HandSkin", true, false) as MeshInstance3D
+	for mesh: MeshInstance3D in hand.find_children("*", "MeshInstance3D", true, false):
+		mesh.layers = 2
+		mesh.gi_mode = GeometryInstance3D.GI_MODE_DYNAMIC
+		for index in range(mesh.get_surface_override_material_count()):
+			var mat := mesh.get_active_material(index) as StandardMaterial3D
+			if mat != null and mat.resource_name.begins_with("WoolSleeve"):
+				mat.albedo_color = Color(0.85, 0.76, 0.55)
+			elif mat != null and mat.resource_name.begins_with("Skin"):
+				mat.subsurf_scatter_enabled = true
+				mat.subsurf_scatter_strength = 0.16
+				mat.subsurf_scatter_skin_mode = true
+	hand.position = HAND_REST
 	hand.visible = false
 	camera.add_child(hand)
+	set_grip(1.0)
 	steps = AudioStreamPlayer.new()
 	steps.stream = preload("res://assets/audio/footstep.wav")
 	steps.volume_db = -16
 	add_child(steps)
+
+
+func set_grip(amount: float) -> void:
+	hand_skin.set_blend_shape_value(0, clampf(amount, 0.0, 1.0))
 
 
 func _unhandled_input(event: InputEvent) -> void:

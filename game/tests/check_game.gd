@@ -100,7 +100,7 @@ func _run() -> void:
 	Input.action_release("move_forward")
 	check(church.player.position.z < 4.6, "Open doorway must allow real movement into the nave")
 	await walk_to(Vector2(0, 4.4))
-	await walk_to(Vector2(2.5, 4.4))
+	await walk_to(Vector2(2.5, 4.0))
 	await aim(church.player.position, church.table.global_position + Vector3(0, 0.82, 0))
 	check(church.action_for(church.current_target()) == "Взять свечу", "Tray must be reachable from player height")
 	church.interact()
@@ -111,33 +111,37 @@ func _run() -> void:
 		quit(1)
 		return
 	var first := church.held
+	check(church.player.hand_skin.mesh.get_blend_shape_count() == 1, "The hand must retain its open-to-grip deformation after GLB import")
+	check(is_equal_approx(church.player.hand_skin.get_blend_shape_value(0), 1.0), "Pickup must close the fingers around the candle")
+	check(is_equal_approx(first.burn_duration_seconds, 1200.0) and is_equal_approx(first.remaining_seconds, 1200.0), "A fresh candle must provide the requested twenty active minutes")
 	check(church.tray_candles.size() == 11, "Repeated E must take exactly one candle")
 	remaining = first.remaining_seconds
 	first.advance_burn(1000.0)
 	check(first.remaining_seconds == remaining, "Unlit wax must not be consumed")
 	await walk_to(Vector2(1.5, 4.4))
-	await walk_to(Vector2(1.5, -1.45))
-	await walk_to(Vector2(2.5, -1.45))
+	await walk_to(Vector2(1.5, 2.4))
+	await walk_to(Vector2(2.3, 2.4))
 	await aim(church.player.position, church.seat.global_position + Vector3(0, 0.03, 0))
 	check(church.action_for(church.current_target()).is_empty(), "Unlit candle must not complete placement")
 	# Aim at a real flame, using the same ray and validation as keyboard E.
-	await walk_to(Vector2(2.9, -1.9))
+	await walk_to(Vector2(2.85, 2.02))
 	await aim(church.player.position, source.wick_anchor.global_position)
 	check(church.action_for(church.current_target()) == "Зажечь свечу", "A nearby burning wick must be a usable source")
 	church.interact()
 	church.interact()
 	await finish_action()
 	check(first.burn_state == Candle.BurnState.BURNING, "Valid ignition must light the candle")
-	await walk_to(Vector2(2.5, -1.55))
+	await walk_to(Vector2(2.3, 2.4))
 	await aim(church.player.position, church.seat.global_position + Vector3(0, 0.03, 0))
 	check(church.action_for(church.current_target()) == "Поставить свечу", "Empty near socket must be selectable")
 	church.interact()
 	church.interact()
 	await finish_action()
 	check(church.held == null and church.placed == first, "Placement must move the same instance out of the hand")
+	check(is_zero_approx(church.player.hand_skin.get_blend_shape_value(0)), "The fingers must open when the player releases the placed candle")
 	check(church.placement_completed, "Successful placement must persist")
 	check(first.global_position.distance_to(church.seat.global_position) < 0.001, "Placed base must match the socket floor")
-	await walk_to(Vector2(1.5, -1.55))
+	await walk_to(Vector2(1.5, 2.4))
 	await walk_to(Vector2(0, 4.0))
 	first.visible = false
 	remaining = first.remaining_seconds
@@ -185,9 +189,9 @@ func _run() -> void:
 	church.player.position.z = 7.0
 	await process_frame
 	check(not church.episode_completed and church.held == null and church.placed == null, "Restart must reset the full episode")
-	await aim(Vector3(4.1, 0.172, 3.8), church.table.global_position + Vector3.UP * 0.8)
+	await aim(Vector3(4.1, 0.172, 2.8), church.table.global_position + Vector3.UP * 0.8)
 	check(church.action_for(church.current_target()).is_empty(), "A wall must block interaction")
-	await aim(Vector3(2.5, 0.172, 4.8), church.table.global_position + Vector3.UP * 0.8)
+	await aim(Vector3(2.5, 0.172, 3.8), church.table.global_position + Vector3.UP * 0.8)
 	church.interact()
 	await finish_action()
 	check(church.held != null, "Fresh table must allow pickup")
@@ -199,7 +203,7 @@ func _run() -> void:
 	check(church.held.get_instance_id() != old_id and church.held.burn_state == Candle.BurnState.UNLIT, "A candle burnt in the hand must be replaceable")
 	for candle: Candle in church.background_candles:
 		candle.advance_burn(1e9)
-	await aim(Vector3(2.9, 0.172, -1.9), church.background_candles[0].global_position)
+	await aim(Vector3(2.85, 0.172, 2.02), church.background_candles[0].global_position)
 	check(church.action_for(church.current_target()).is_empty(), "Dead candles must not provide fire")
 	church.queue_free()
 	await process_frame

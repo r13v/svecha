@@ -9,7 +9,7 @@
 | [01_PROJECT_BRIEF](../01_PROJECT_BRIEF/PROJECT_BRIEF_RU.md) | Концепция, сценарий, ограничения | Концепция согласована |
 | [02_CONCEPT_ART](../02_CONCEPT_ART/README_RU.md) | Девять кадров, полные промпты, изображения и manifest | Первый визуальный вариант |
 | [03_OBJECT_SHEETS](../03_OBJECT_SHEETS/README_RU.md) | Лист интерактивных предметов, промпты и детали | Первый лист готов, v3 с полным догоранием свечи |
-| [04_BLENDER_ENV](../04_BLENDER_ENV/ASSET_PIPELINE_RU.md) | Модели, задания, материалы, pivots и экспорт | 13 моделей, материалы и игровые кадры |
+| [04_BLENDER_ENV](../04_BLENDER_ENV/ASSET_PIPELINE_RU.md) | Модели, задания, материалы, pivots и экспорт | 31 модель, PBR, LightmapGI и девять игровых кадров |
 | [05_GODOT_PROMPT](../05_GODOT_PROMPT/MASTER_GAME_PROMPT_RU.md) | ТЗ для сборки проходимого эпизода | Реализовано в прототипе 0.1.0 |
 | [06_GODOT_STARTER](../06_GODOT_STARTER/README_RU.md) | Проект и команды запуска | Проходимый эпизод и отдельный просмотр ассетов |
 | [07_PRODUCTION](../07_PRODUCTION/STEP_BY_STEP_RU.md) | План, настройка инструментов, источники | Локальная сборка macOS и отчёт проверки |

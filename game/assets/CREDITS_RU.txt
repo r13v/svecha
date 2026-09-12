@@ -1,22 +1,115 @@
-Свеча — прототип 0.1.0
+Свеча — прототип 0.2.1
 
-Геометрия, процедурные текстуры, интерфейс и синтезированные звуки созданы для этого проекта. Храм — художественная композиция, а не реконструкция конкретного здания.
+Храм — художественная композиция по концептам проекта. Архитектура, мебель, одежда, интерфейс, шейдеры и синтезированные звуки созданы для игры.
 
-Исторические иконы. Авторы неизвестны. Изображения на Wikimedia Commons отмечены как public domain / PD-Art / PD-old-100:
+ИСТОРИЧЕСКИЕ ИКОНЫ
+Репродукции сохранены без ретуши. Пропорции изображений сохранены при размещении на моделях.
 
-Христос Синайский, VI век. Монастырь Святой Екатерины, Синай; источник репродукции K. Weitzmann, «Die Ikone».
+christ_sinai.jpg
+Unknown
+Public domain; PD-Art / PD-old-100 on the linked Commons file page
 https://commons.wikimedia.org/wiki/File:Christ_Icon_Sinai_6th_century.jpg
 
-Владимирская Богоматерь, XII век. Государственная Третьяковская галерея.
+theotokos_vladimir.jpg
+Unknown
+Public domain; PD-Art / PD-old-100 on the linked Commons file page
 https://commons.wikimedia.org/wiki/File:Vladimirskaya.jpg
 
-Святитель Николай, первая половина XIII века. Монастырь Святой Екатерины, Синай; K. Weitzmann, «Die Ikone».
+nicholas_sinai.jpg
+Unknown
+Public domain; PD-Art / PD-old-100 on the linked Commons file page
 https://commons.wikimedia.org/wiki/File:St_Nicholas_Icon_Sinai_13th_century.jpg
 
-Иоанн Предтеча, Ангел Пустыни, XVI век. Ярославский художественный музей; источник icon-art.info.
-https://commons.wikimedia.org/wiki/File:Icon_of_John_the_Baptist_(Yaroslavl,_XVI_c.).jpg
+john_baptist.jpg
+Unknown
+Public domain; PD-Art / PD-old-100 on the linked Commons file page
+https://commons.wikimedia.org/wiki/File:Icon_of_John_the_Baptist_%28Yaroslavl%2C_XVI_c.%29.jpg
 
-Файлы репродукций сохранены без ретуши и кадрирования; в моделях сохраняются исходные пропорции. Визуальный стиль разных эпох объединён для прототипа.
+feast_birth_mary.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_01_-_Birth_of_Mary.jpg
+
+feast_presentation.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_02_-_Presentation.jpg
+
+feast_nativity.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_04_-_Nativity.jpg
+
+feast_baptism.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_07_-_Baptism.jpg
+
+feast_last_supper.jpg
+Simon Ushakov (1626–1686)
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Simon_ushakov_last_supper_1685.jpg
+
+feast_transfiguration.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_08_-_Transfiguration.jpg
+
+feast_harrowing.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_20_-_Harrowing.jpg
+
+feast_thomas.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_21_-_Doubting_Thomas.jpg
+
+feast_dormition.jpg
+Anonymous Russian icon painter, 1497
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_24_-_Dormition.jpg
+
+hodegetria_dionysius.jpg
+Dionysius and workshop (1440–1502)
+Public domain / PD-Art; see archived original source page
+https://commons.wikimedia.org/wiki/File:Dionysius_and_Workshop_-_The_Mother_of_God_Hodigitria_-_Google_Art_Project.jpg
+
+МАТЕРИАЛЫ И ПРИРОДА
+Ассеты Poly Haven распространяются по CC0 1.0: https://polyhaven.com/license
+
+white_plaster_02 — Rob Tuytel
+https://polyhaven.com/a/white_plaster_02
+
+wood_table_worn — Dimitrios Savva, Rico Cilliers
+https://polyhaven.com/a/wood_table_worn
+
+wood_cabinet_worn_long — Dimitrios Savva, Rico Cilliers
+https://polyhaven.com/a/wood_cabinet_worn_long
+
+roof_slates_02 — Rob Tuytel
+https://polyhaven.com/a/roof_slates_02
+
+poly_wool_herringbone — colormass, Rico Cilliers
+https://polyhaven.com/a/poly_wool_herringbone
+
+sparse_grass — Amal Kumar
+https://polyhaven.com/a/sparse_grass
+
+old_sandstone_02 — Dimitrios Savva
+https://polyhaven.com/a/old_sandstone_02
+
+Tree Small 02 — Rico Cilliers; сетка упрощена для игры.
+https://polyhaven.com/a/tree_small_02
+
+Kloofendal 48d Partly Cloudy (Pure Sky) — Greg Zaal (original), Jarod Guest (sky edits).
+https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky
+
+Кисть и часть предплечья, исходные веса суставов и текстура кожи — MakeHuman Team, CC0. Кисть извлечена из базовой сетки; поза, хват и рукав созданы для проекта.
+https://static.makehumancommunity.org/about/license.html
+https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html
+
+Концепты, текстура ковра и карты известнякового пола созданы встроенным image_gen по промптам проекта. Полные промпты, оригинальные изображения и контрольные суммы находятся в документации и manifests проекта.
 
 Godot Engine 4.7.2 — MIT. Полные сведения о движке и встроенных компонентах: GODOT_LICENSES.txt.
 https://godotengine.org/license/

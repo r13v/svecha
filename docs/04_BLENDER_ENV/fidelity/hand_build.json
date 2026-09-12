@@ -1,0 +1,27 @@
+{
+  "asset": "hand_grip",
+  "source": "art/blender/hand_grip.blend",
+  "model": "game/assets/models/hand_grip.glb",
+  "triangles": 55096,
+  "blender_bounds_m": [
+    [
+      -0.07291267067193985,
+      0.07363098859786987
+    ],
+    [
+      -0.07045544683933258,
+      0.07483434677124023
+    ],
+    [
+      -0.5,
+      0.31992340087890625
+    ]
+  ],
+  "nodes": [
+    "HandGrip",
+    "CoatSleeve",
+    "CuffSeam",
+    "GripAnchor",
+    "HandSkin"
+  ]
+}

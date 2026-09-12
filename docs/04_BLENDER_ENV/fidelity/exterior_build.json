@@ -1,0 +1,140 @@
+[
+  {
+    "asset": "church_roof",
+    "source": "art/blender/church_roof.blend",
+    "model": "game/assets/models/church_roof.glb",
+    "triangles": 152570,
+    "blender_bounds_m": [
+      [
+        -3.9769999980926514,
+        3.9769999980926514
+      ],
+      [
+        -6.199999809265137,
+        6.123499393463135
+      ],
+      [
+        0.0,
+        5.489999771118164
+      ]
+    ],
+    "nodes": [
+      "ChurchRoof",
+      "AgedBrassSurface",
+      "Cupola",
+      "DrumNiche",
+      "DrumNiche.001",
+      "DrumNiche.002",
+      "DrumNiche.003",
+      "DrumNiche.004",
+      "DrumNiche.005",
+      "DrumNiche.006",
+      "DrumNiche.007",
+      "DarkWindowSurface",
+      "LimestoneSurface",
+      "PatinatedCopperSurface",
+      "PlasterSurface",
+      "RoofSlateSurface",
+      "RoofSlateSurface.001",
+      "WalnutSurface"
+    ]
+  },
+  {
+    "asset": "stone_facade",
+    "source": "art/blender/stone_facade.blend",
+    "model": "game/assets/models/stone_facade.glb",
+    "triangles": 7128,
+    "blender_bounds_m": [
+      [
+        -3.7699999809265137,
+        3.7699999809265137
+      ],
+      [
+        -5.924999713897705,
+        5.724999904632568
+      ],
+      [
+        0.0,
+        4.803000450134277
+      ]
+    ],
+    "nodes": [
+      "StoneFacade",
+      "LimestoneSurface"
+    ]
+  },
+  {
+    "asset": "entry_steps",
+    "source": "art/blender/entry_steps.blend",
+    "model": "game/assets/models/entry_steps.glb",
+    "triangles": 324,
+    "blender_bounds_m": [
+      [
+        -1.350000023841858,
+        1.350000023841858
+      ],
+      [
+        -1.2200000286102295,
+        0.0
+      ],
+      [
+        0.0,
+        0.36000001430511475
+      ]
+    ],
+    "nodes": [
+      "EntrySteps",
+      "LimestoneSurface"
+    ]
+  },
+  {
+    "asset": "garden_wall",
+    "source": "art/blender/garden_wall.blend",
+    "model": "game/assets/models/garden_wall.glb",
+    "triangles": 5672,
+    "blender_bounds_m": [
+      [
+        -1.0499999523162842,
+        1.094158411026001
+      ],
+      [
+        -0.24436359107494354,
+        0.24920791387557983
+      ],
+      [
+        1.4901161193847656e-08,
+        0.6499750018119812
+      ]
+    ],
+    "nodes": [
+      "GardenWall",
+      "LimestoneSurface"
+    ]
+  },
+  {
+    "asset": "entrance_lantern",
+    "source": "art/blender/entrance_lantern.blend",
+    "model": "game/assets/models/entrance_lantern.glb",
+    "triangles": 256,
+    "blender_bounds_m": [
+      [
+        -0.10499999672174454,
+        0.10499999672174454
+      ],
+      [
+        -0.3050000071525574,
+        0.10250000655651093
+      ],
+      [
+        0.0,
+        0.4839498698711395
+      ]
+    ],
+    "nodes": [
+      "EntranceLantern",
+      "ForgedIronSurface",
+      "LanternGlassSurface",
+      "LightAnchor"
+    ]
+  }
+]

@@ -29,18 +29,18 @@ func _bounds(node: Node3D) -> AABB:
 func _run() -> void:
 	var stand := (load("res://assets/models/candle_stand.glb") as PackedScene).instantiate() as Node3D
 	root.add_child(stand)
-	_expect(_bounds(stand).size.is_equal_approx(Vector3(0.56, 1.0, 0.56)), "Stand scale/axis conversion changed")
+	_expect(_bounds(stand).size.is_equal_approx(Vector3(0.68, 1.14595, 0.68)), "Stand scale/axis conversion changed")
 	_expect(absf(_bounds(stand).position.y) < 0.0001, "Stand base must rest on the floor")
 	var seats := stand.find_children("Seat*", "Node3D", true, false)
 	_expect(seats.size() == 19, "All nineteen candle seats must survive export")
 	for seat in seats:
-		_expect(is_equal_approx((seat as Node3D).position.y, 0.974), "Seat must match the socket floor")
+		_expect(is_equal_approx((seat as Node3D).position.y, 1.10495), "Seat must match the socket floor")
 	var player_seat := stand.find_child("Seat00", true, false) as Node3D
-	_expect(player_seat.position.is_equal_approx(Vector3(0, 0.974, 0.228)), "Player socket must face the visitor")
+	_expect(player_seat.position.is_equal_approx(Vector3(0, 1.10495, 0.27685714)), "Player socket must face the visitor")
 	var candle := (load("res://assets/models/candle.glb") as PackedScene).instantiate() as Node3D
 	player_seat.add_child(candle)
 	var wax := candle.find_child("Wax", true, false) as MeshInstance3D
-	_expect(wax.get_aabb().size.is_equal_approx(Vector3(0.007, 0.25, 0.007)), "Candle must retain its 25 cm x 7 mm wax body")
+	_expect(wax.get_aabb().size.is_equal_approx(Vector3(0.010, 0.25, 0.010)), "Candle must retain its 25 cm x 10 mm wax body")
 	_expect(candle.find_child("FlameAnchor", true, false) != null, "Flame needs an exported attachment point")
 	var review := (load("res://scenes/asset_review.tscn") as PackedScene).instantiate() as AssetReview
 	root.add_child(review)
@@ -49,7 +49,7 @@ func _run() -> void:
 		review.set_wax_fraction(amount)
 		var box: AABB = review.wax.global_transform * review.wax.get_aabb()
 		_expect(is_equal_approx(box.position.y, base_y), "Shortening wax must not lift the base")
-		_expect(is_equal_approx(box.size.x, 0.007), "Burning must not change the candle diameter")
+		_expect(is_equal_approx(box.size.x, 0.010), "Burning must not change the candle diameter")
 		_expect(is_equal_approx(box.size.y, 0.25 * amount), "Wax height must reflect the selected fraction")
 		_expect(is_equal_approx(box.end.y, review.wick_anchor.global_position.y), "Wick must follow the wax surface continuously")
 	review.set_wax_fraction(0.0)
@@ -57,7 +57,7 @@ func _run() -> void:
 	review.queue_free()
 	var remnant := (load("res://assets/models/candle_remnant.glb") as PackedScene).instantiate() as Node3D
 	player_seat.add_child(remnant)
-	_expect(_bounds(remnant).size.x < 0.009 and _bounds(remnant).size.z < 0.009, "Burnt residue must fit inside the socket bore")
+	_expect(_bounds(remnant).size.x < 0.011 and _bounds(remnant).size.z < 0.011, "Burnt residue must fit inside the socket bore")
 	_expect(_bounds(remnant).size.y < 0.005, "Burnt residue must not remain a full candle")
 	var tray := stand.find_child("Tray", true, false) as MeshInstance3D
 	var brass := tray.get_active_material(0) as StandardMaterial3D

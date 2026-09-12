@@ -1,0 +1,26 @@
+{
+  "asset": "courtyard_tree",
+  "source": "art/blender/courtyard_tree.blend",
+  "model": "game/assets/models/courtyard_tree.glb",
+  "triangles": 159890,
+  "blender_bounds_m": [
+    [
+      -1.2344368696212769,
+      1.5638750791549683
+    ],
+    [
+      -2.8858768939971924,
+      1.3684636354446411
+    ],
+    [
+      0.0,
+      4.539032459259033
+    ]
+  ],
+  "nodes": [
+    "CourtyardTree",
+    "tree_small_02_LOD0",
+    "tree_small_02_LOD0.001",
+    "tree_small_02_LOD0.002"
+  ]
+}

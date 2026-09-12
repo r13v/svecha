@@ -42,5 +42,115 @@
     "changes": "Unmodified original file; aspect ratio preserved on the 3D panel",
     "accessed": "2026-09-12",
     "sha256": "a442fa9989495a62e1470e103f1a18a20c243024fa97a8cfc841460036eec4e4"
+  },
+  {
+    "file": "game/assets/icons/feast_birth_mary.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_01_-_Birth_of_Mary.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Kirillo-Belozersky_iconostasis_01_-_Birth_of_Mary.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 875587,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "05611e57f365ce184afe287487e0857658692f402d4d95f7c39460ed88e8fa1b"
+  },
+  {
+    "file": "game/assets/icons/feast_presentation.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_02_-_Presentation.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kirillo-Belozersky_iconostasis_02_-_Presentation.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 592551,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "91517de0c798a2a62954f357515c3a0b2f217690f77b51713d3d4400ea045136"
+  },
+  {
+    "file": "game/assets/icons/feast_nativity.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_04_-_Nativity.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kirillo-Belozersky_iconostasis_04_-_Nativity.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 973333,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "71c1c7e03d18d766861207ad8e320a1edee95a2952875c03c1c4a058e6c72ee6"
+  },
+  {
+    "file": "game/assets/icons/feast_baptism.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_07_-_Baptism.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Kirillo-Belozersky_iconostasis_07_-_Baptism.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 737587,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "47246e8ade871291018d38c6c18b4fef1a0cdad89376a1cb2280b63f1575d2cf"
+  },
+  {
+    "file": "game/assets/icons/feast_last_supper.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Simon_ushakov_last_supper_1685.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Simon_ushakov_last_supper_1685.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 460972,
+    "author": "Simon Ushakov (1626–1686)",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "50e7b8d72146c96240870cd22ce2dedd62f0963660e7209d44ba2503a8284246"
+  },
+  {
+    "file": "game/assets/icons/feast_transfiguration.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_08_-_Transfiguration.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kirillo-Belozersky_iconostasis_08_-_Transfiguration.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 737162,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "c5e00a58d9305e50acdb156fc95911c5577fbf28d709c98baff7a7c31e7a4a5c"
+  },
+  {
+    "file": "game/assets/icons/feast_harrowing.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_20_-_Harrowing.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Kirillo-Belozersky_iconostasis_20_-_Harrowing.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 741261,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "9fabdddab27e374c864fc41f7ec13063e376f57f267b8b622c7b9c2a64ce8da5"
+  },
+  {
+    "file": "game/assets/icons/feast_thomas.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_21_-_Doubting_Thomas.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Kirillo-Belozersky_iconostasis_21_-_Doubting_Thomas.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 758471,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "2023d8e6d85c4b83eead23833e9c897504e12d13e001eb21c69ef79d1ba90020"
+  },
+  {
+    "file": "game/assets/icons/feast_dormition.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_24_-_Dormition.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kirillo-Belozersky_iconostasis_24_-_Dormition.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 662378,
+    "author": "Anonymous Russian icon painter, 1497",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "b381f7001d26319178720535f2b648087a7aab8287e538a0d7d33c590fcbca51"
+  },
+  {
+    "file": "game/assets/icons/hodegetria_dionysius.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dionysius_and_Workshop_-_The_Mother_of_God_Hodigitria_-_Google_Art_Project.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Dionysius_and_Workshop_-_The_Mother_of_God_Hodigitria_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "size": 3932328,
+    "author": "Dionysius and workshop (1440–1502)",
+    "rights": "Public domain / PD-Art; see archived original source page",
+    "changes": "Original file unmodified; aspect ratio preserved on panel",
+    "accessed": "2026-09-12",
+    "sha256": "ce19141a5ffb422b9769b95095d9d9854b32d81410e7a6d1f3f83937b4790733"
   }
 ]

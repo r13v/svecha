@@ -1,0 +1,65 @@
+[
+  {
+    "view": "outside",
+    "title": "Подход к храму",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/01_approach.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/01_church_approach.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "door",
+    "title": "Открытие двери",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/02_door.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/02_opening_the_door.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "inside",
+    "title": "Первый взгляд внутрь",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/03_interior.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/03_first_interior_view.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "taking",
+    "title": "Взятие свечи",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/04_taking.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/04_taking_a_candle.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "walk",
+    "title": "Проход по храму",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/05_walk.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/05_walking_through_nave.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "stand",
+    "title": "Перед подсвечником",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/06_stand.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/06_at_the_candle_stand.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "lighting",
+    "title": "Зажигание",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/07_lighting.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/07_lighting_the_candle_v2.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "placing",
+    "title": "Установка",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/08_placing.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/08_placing_the_candle.png",
+    "renderer": "Godot native; exported PCK"
+  },
+  {
+    "view": "still",
+    "title": "Минута тишины",
+    "image": "docs/04_BLENDER_ENV/fidelity/game_frames/09_still.png",
+    "reference": "docs/02_CONCEPT_ART/generated_images/09_a_moment_of_stillness.png",
+    "renderer": "Godot native; exported PCK"
+  }
+]

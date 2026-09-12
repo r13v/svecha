@@ -1,0 +1,454 @@
+[
+	{
+		"mesh": "res://assets/lighting/meshes/be9475cddf01d003.res",
+		"node_path": "ChurchShell00/ChurchShell/FloorStoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4c5b83f0a7e42939.res",
+		"node_path": "ChurchShell00/ChurchShell/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/fd129fad075932ab.res",
+		"node_path": "ChurchShell00/ChurchShell/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/b00499e6255226ee.res",
+		"node_path": "ChurchVault00/ChurchVault/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/522db57255ae281e.res",
+		"node_path": "ChurchRoof00/ChurchRoof/DarkWindowSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/b550ff2fd94c36d2.res",
+		"node_path": "ChurchRoof00/ChurchRoof/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/102231c0ae596cc2.res",
+		"node_path": "ChurchRoof00/ChurchRoof/PatinatedCopperSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/fe836c7901e7ebb2.res",
+		"node_path": "ChurchRoof00/ChurchRoof/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/8823f639c7f45e05.res",
+		"node_path": "ChurchRoof00/ChurchRoof/RoofSlateSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/bb25eda1362f5643.res",
+		"node_path": "ChurchRoof00/ChurchRoof/RoofSlateSurface_001"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/d61921ce273bdaf5.res",
+		"node_path": "ChurchRoof00/ChurchRoof/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/abfc16283936fae3.res",
+		"node_path": "WindowBay00/WindowBay/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/58afd6f3af32cfba.res",
+		"node_path": "WindowBay00/WindowBay/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/e714218223114a9c.res",
+		"node_path": "WindowBay00/WindowBay/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/5ef26ba54c265de5.res",
+		"node_path": "WindowBay00/WindowBay/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/5d25d1d7b05c1c7d.res",
+		"node_path": "WindowBay01/WindowBay/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/9a52c6cb86152a25.res",
+		"node_path": "WindowBay01/WindowBay/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/8add79033d2c6565.res",
+		"node_path": "WindowBay01/WindowBay/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a909217780632c10.res",
+		"node_path": "WindowBay01/WindowBay/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/61bfb80c90172b1b.res",
+		"node_path": "WindowBay02/WindowBay/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/9c43107340141971.res",
+		"node_path": "WindowBay02/WindowBay/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/6726d1719f19e731.res",
+		"node_path": "WindowBay02/WindowBay/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/338f384bf6beac63.res",
+		"node_path": "WindowBay02/WindowBay/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c36c5681b46d2149.res",
+		"node_path": "WindowBay03/WindowBay/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/e446872f888dc168.res",
+		"node_path": "WindowBay03/WindowBay/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4df78f9c43a998c0.res",
+		"node_path": "WindowBay03/WindowBay/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/49c09d8d9c2d537f.res",
+		"node_path": "WindowBay03/WindowBay/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c53b43cbeee38e16.res",
+		"node_path": "WindowBay04/WindowBay/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/96574c5335651223.res",
+		"node_path": "WindowBay04/WindowBay/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a9072701cd737e0d.res",
+		"node_path": "WindowBay04/WindowBay/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a1ca72892ada903a.res",
+		"node_path": "WindowBay04/WindowBay/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/108d19e5f19f3f9f.res",
+		"node_path": "WindowBay05/WindowBay/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/adf988136ed75234.res",
+		"node_path": "WindowBay05/WindowBay/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/81cc51d73058d938.res",
+		"node_path": "WindowBay05/WindowBay/PlasterSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4d6a5dc4a0bc143a.res",
+		"node_path": "WindowBay05/WindowBay/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/267b278732a4a5d5.res",
+		"node_path": "StoneFacade00/StoneFacade/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/68057c2bc7c7528f.res",
+		"node_path": "EntrySteps00/EntrySteps/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/06c55c42926e05cf.res",
+		"node_path": "FlowerVase00/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/715255e1a83962da.res",
+		"node_path": "FlowerVase00/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/361a6335a25e0fbd.res",
+		"node_path": "FlowerVase00/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c341bd6126fed1b6.res",
+		"node_path": "FlowerVase00/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/768c153340510941.res",
+		"node_path": "FlowerVase00/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/d622a05f3f6cd05f.res",
+		"node_path": "FlowerVase01/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/cad22001a1cc49b7.res",
+		"node_path": "FlowerVase01/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/febc1abc2245411d.res",
+		"node_path": "FlowerVase01/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/6aac6fb25893b25a.res",
+		"node_path": "FlowerVase01/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/f3674e0095570628.res",
+		"node_path": "FlowerVase01/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/2e69d35b7ee710ab.res",
+		"node_path": "CandleTable00/CandleTable/TrayAnchor/CandleTray00/CandleTray/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/640e182065e6dcef.res",
+		"node_path": "CandleTable00/CandleTable/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/371e48cbc65a2e97.res",
+		"node_path": "CandleTable00/FlowerVase04/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/de4368e8548b0b1b.res",
+		"node_path": "CandleTable00/FlowerVase04/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/82f619675fc90210.res",
+		"node_path": "CandleTable00/FlowerVase04/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/fddcc242b8c2b1f3.res",
+		"node_path": "CandleTable00/FlowerVase04/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/39c6d3feb60825e4.res",
+		"node_path": "CandleTable00/FlowerVase04/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/ed7d8f6a33caa8e6.res",
+		"node_path": "IconCase00/IconCase/TheotokosIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/fb798646e851f556.res",
+		"node_path": "IconCase00/IconCase/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/fe46e5988304f0be.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_001Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/216ee7421aebf3a1.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_002Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c2cf9f567b1c36c0.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_003Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/49a5520de92f8875.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_004Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/0be813d0e370a02e.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_005Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/115e3c1e20cc6908.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_006Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c7ba7cd69f820d1a.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_007Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c954f1e4aa9aba4d.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIcon_008Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/6d5d2f12b3b14ab6.res",
+		"node_path": "Iconostasis00/Iconostasis/FeastIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/be0f4ade3ab196b9.res",
+		"node_path": "Iconostasis00/Iconostasis/MainIcon_001Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/63f89094b833885b.res",
+		"node_path": "Iconostasis00/Iconostasis/MainIcon_002Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/bf82e6ce530bc4c6.res",
+		"node_path": "Iconostasis00/Iconostasis/MainIcon_003Surface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/11172fd6463e37e5.res",
+		"node_path": "Iconostasis00/Iconostasis/MainIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/3ac3024d06988c77.res",
+		"node_path": "Iconostasis00/Iconostasis/WalnutBoardsSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/855cb982a0823a16.res",
+		"node_path": "Iconostasis00/Iconostasis/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c90ab2b5b1e078c9.res",
+		"node_path": "ChancelSteps00/ChancelSteps/LimestoneSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a22c9d899271483d.res",
+		"node_path": "ChancelCarpet00/ChancelCarpet/BurgundyWoolSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/0953526cc93d470f.res",
+		"node_path": "WallBench00/WallBench/WalnutBoardsSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/34d160d1a6f98f0e.res",
+		"node_path": "WallBench00/WallBench/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4f23e5f7680ec95a.res",
+		"node_path": "SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/927547d465f12000.res",
+		"node_path": "SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/74808619c9520b62.res",
+		"node_path": "SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/c9c57df92d6f6e85.res",
+		"node_path": "SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/5a2b3610d81f2a58.res",
+		"node_path": "SideTable00/SideTable/VaseAnchor/FlowerVase02/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/915befe856168807.res",
+		"node_path": "SideTable00/SideTable/WalnutBoardsSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/df3cbd9b9f1e73d8.res",
+		"node_path": "SideTable00/SideTable/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/df57f0336290224e.res",
+		"node_path": "SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/d5ba7a1bb5ec14b9.res",
+		"node_path": "SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/7fdc6bc301cc1b09.res",
+		"node_path": "SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a8c36a33405eab08.res",
+		"node_path": "SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/5169e0fc2709d6a8.res",
+		"node_path": "SideTable01/SideTable/VaseAnchor/FlowerVase03/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a81b5d2505cf8818.res",
+		"node_path": "SideTable01/SideTable/WalnutBoardsSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/72dda132ea25e0cd.res",
+		"node_path": "SideTable01/SideTable/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/aa4e41f8a6fef0e0.res",
+		"node_path": "FlowerVase05/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4326a3fb2aded1e0.res",
+		"node_path": "FlowerVase05/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/da240f6031f9b80b.res",
+		"node_path": "FlowerVase05/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/997947c7ab99a33f.res",
+		"node_path": "FlowerVase05/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/a0293857d13d8058.res",
+		"node_path": "FlowerVase05/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/12cb2fd72781b476.res",
+		"node_path": "FlowerVase06/FlowerVase/AgedCeramicSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/30a4c6ec3005bd88.res",
+		"node_path": "FlowerVase06/FlowerVase/DriedLavenderSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/7de81fb9f143ca80.res",
+		"node_path": "FlowerVase06/FlowerVase/DryStemSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/ed959fe63d26e19e.res",
+		"node_path": "FlowerVase06/FlowerVase/OliveLeafSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/952a6b8d03716d1d.res",
+		"node_path": "FlowerVase06/FlowerVase/TinyWhiteFlowerSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4c99350c659b0333.res",
+		"node_path": "Chandelier00/Chandelier/ForgedIronSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4f325ce096ef5409.res",
+		"node_path": "HangingLamp00/HangingLamp/RubyGlassSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/e4791218ea2da29b.res",
+		"node_path": "WallIcon00/WallIcon/ChristIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/b6467dc2c1e090ac.res",
+		"node_path": "WallIcon00/WallIcon/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/8182e91c1a35bc9d.res",
+		"node_path": "WallIcon01/WallIcon/ChristIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/578eefffbde3f858.res",
+		"node_path": "WallIcon01/WallIcon/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/931435a1f5434ea2.res",
+		"node_path": "WallIcon02/WallIcon/ChristIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/f716fd3a67563441.res",
+		"node_path": "WallIcon02/WallIcon/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/b9ca42b1db03ebb9.res",
+		"node_path": "HangingBanner00/HangingBanner/BannerIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/52241f3cf5d23202.res",
+		"node_path": "HangingBanner00/HangingBanner/BurgundyClothSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/64dee5323eb65a24.res",
+		"node_path": "HangingBanner00/HangingBanner/WalnutSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/4d3eaff5a8fca551.res",
+		"node_path": "HangingBanner01/HangingBanner/BannerIconSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/015435152455f046.res",
+		"node_path": "HangingBanner01/HangingBanner/BurgundyClothSurface"
+	},
+	{
+		"mesh": "res://assets/lighting/meshes/b610cca862a8fedd.res",
+		"node_path": "HangingBanner01/HangingBanner/WalnutSurface"
+	}
+]

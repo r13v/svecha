@@ -52,3 +52,22 @@
 Godot 4.7.2 и шаблон macOS получены из [официального выпуска](https://godotengine.org/download/archive/4.7.2-stable/). Лицензия Godot — MIT; сведения о встроенных компонентах извлечены из установленного движка в [GODOT_LICENSES.txt](../../game/assets/GODOT_LICENSES.txt) и добавлены в приложение.
 
 `church_*_godot.png` в `docs/04_BLENDER_ENV/previews/` — реальные кадры игрового прототипа в Forward+ / Metal. Изображения концепт-арта не подставляются вместо 3D-сцены.
+
+## Источники для соответствия концептам — в работе
+
+Для переработки поверхностей выбраны PBR-материалы Poly Haven: monastery_stone_floor, white_plaster_rough_02, worn_cracked_plaster, wood_table_worn, wood_cabinet_worn_long, rough_wood, roof_slates_02, wool_boucle, sparse_grass и old_sandstone_02. Лицензия всех ассетов — [CC0](https://polyhaven.com/license). Источники карт, авторы, исходный масштаб и SHA-256 фиксируются скриптом `tools/fetch_art_materials.py` в `art/textures/pbr/SOURCES.json`. Изображения скачиваются без изменения; настройка цвета/масштаба выполняется материалом в 3D.
+
+Для анатомической модели кисти получена базовая сетка [MakeHuman](https://github.com/makehumancommunity/makehuman/blob/master/makehuman/data/3dobjs/base.obj). Автор — MakeHuman Team. [Лицензия графических ресурсов — CC0](https://static.makehumancommunity.org/about/license.html); текст сохранён в `art/references/makehuman/LICENSE.ASSETS.md`. Использован фрагмент кисти/предплечья с оригинальной топологией и двумя новыми позами. Сторонний программный код MakeHuman в игру не включается.
+
+Для неба выбран [Autumn Field Pure Sky](https://polyhaven.com/a/autumn_field_puresky), для внешнего окружения — [Tree Small 02](https://polyhaven.com/a/tree_small_02), оба CC0. Исходники и сведения об авторах сохранены в `game/assets/sky/SOURCES.json` и `art/references/polyhaven/tree_small_02/SOURCES.json`. Сетка дерева будет оптимизирована для игры, исходные текстуры сохранены.
+
+
+### Дополнения при переработке
+
+Новый ковёр `game/assets/textures/carpet/burgundy_runner.png` создан встроенным image_gen по концепту № 03. Это отдельная плоская текстура орнамента; полный промпт — `docs/04_BLENDER_ENV/fidelity/prompts/carpet.txt`, копия исходной генерации — `fidelity/carpet_albedo.png`. Цвет и пропорции применены к трёхмерной дорожке на ступенях.
+
+Для рукава выбран скан Poly Haven `poly_wool_herringbone`; для каменного пола — `large_floor_tiles_02`. Для кожи используется оригинальная карта MakeHuman `young_lightskinned_male_diffuse.png` из официального набора системных ассетов CC0. Архив, путь внутри него и SHA-256 записаны в `game/assets/textures/skin/SOURCES.json`. Файл не ретушировался; `tools/build_hand.py` сохраняет исходные UV только на извлечённой кисти и части предплечья. Исходная топология и веса суставов — MakeHuman, CC0; поза, рукав и хват созданы для игры.
+
+Праздничный ряд использует девять исторических изображений: восемь икон Кирилло-Белозерского иконостаса 1497 года и «Тайную вечерю» Симона Ушакова 1685 года. В киоте — «Богоматерь Одигитрия» Дионисия и мастерской, начало XVI века, из Русского музея / Google Art Project. Все выбранные страницы Commons содержат public domain / PD-Art. Исходные URL, авторы и SHA-256 каждого файла добавлены в `game/assets/icons/sources.json`; `tools/fetch_feast_icons.py` повторяет загрузку без обработки изображений.
+
+Новые модели убранства, портала, кровли, ограды, дорожки и травы созданы проектными скриптами Blender. Шейдеры пламени, мелкой патины латуни и травы написаны для игры; они не изменяют оригинальные сканы и исторические изображения. Контрольные игровые PNG в `fidelity/` снимаются из настоящего Godot-процесса. Промежуточные кадры `*_pass_*` фиксируют итерации и не являются итоговой галереей соответствия.
