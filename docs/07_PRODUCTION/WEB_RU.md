@@ -1,5 +1,7 @@
 # Браузерная версия
 
+[Играть в «Свечу»](https://r13v.github.io/svecha/). Опубликовано 13 сентября 2026 года; [успешная сборка и проверки](https://github.com/r13v/svecha/actions/runs/34726030755).
+
 Целевая платформа — браузер на компьютере с клавиатурой и мышью. Управление: WASD, мышь, E, Esc. Сенсорное управление пока не добавлено.
 
 ## Сборка
@@ -28,5 +30,7 @@ Workflow `.github/workflows/pages.yml` собирает игру на Godot 4.7.
 Проверка скриптов и автоматический игровой маршрут выполняются отдельно от браузерного запуска. CI использует программный SwiftShader и проверяет загрузку движка и отсутствие ошибок через `./tools/check_web.sh --load-only`. Это не проверка производительности на видеокарте.
 
 `./tools/check_web.sh` без параметров также проверяет захват мыши, движение и паузу и сохраняет кадры. Нужен установленный `agent-browser` 0.37.1 и разблокированный рабочий стол. Первая локальная проверка показала меню и изображение WebGL, но захват мыши был заблокирован вместе с Mac; полная проверка управления остаётся открытой.
+
+Проверено: импорт и экспорт, проверка скриптов, `CANDLE_ASSET_CHECK: PASS`, `GAME_CHECK: PASS`, загрузка WebGL в Chromium без ошибок, успешный deploy Pages, HTTP 200 для HTML/PCK/WASM и `application/wasm` для движка. Сервер отдаёт ресурсы с gzip. Размер до HTTP-сжатия — около 184 МиБ PCK и 38 МиБ WASM.
 
 Официальные ограничения: [экспорт Godot для Web](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html), [workflow GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
