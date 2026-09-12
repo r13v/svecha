@@ -50,7 +50,7 @@ func _ready() -> void:
 			if mat != null and mat.resource_name.begins_with("WoolSleeve"):
 				mat.albedo_color = Color(0.85, 0.76, 0.55)
 			elif mat != null and mat.resource_name.begins_with("Skin"):
-				mat.subsurf_scatter_enabled = true
+				mat.subsurf_scatter_enabled = RenderingServer.get_current_rendering_method() == "forward_plus"
 				mat.subsurf_scatter_strength = 0.16
 				mat.subsurf_scatter_skin_mode = true
 	hand.position = HAND_REST

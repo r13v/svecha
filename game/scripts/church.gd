@@ -105,7 +105,7 @@ func _build_lighting() -> void:
 	environment.ssao_intensity = 1.4
 	environment.glow_enabled = true
 	environment.glow_intensity = 0.35
-	environment.volumetric_fog_enabled = true
+	environment.volumetric_fog_enabled = RenderingServer.get_current_rendering_method() == "forward_plus"
 	environment.volumetric_fog_density = 0.003
 	environment.volumetric_fog_albedo = Color("e6e4dc")
 	environment.volumetric_fog_anisotropy = 0.55
@@ -495,7 +495,7 @@ func _build_ui() -> void:
 	credits.add_theme_color_override("font_color", Color("a7a495"))
 	column.add_child(credits)
 	var quit := Button.new()
-	quit.text = "Выйти из игры"
+	quit.text = "В главное меню" if OS.has_feature("web") else "Выйти из игры"
 	quit.pressed.connect(quit_game)
 	column.add_child(quit)
 
@@ -833,6 +833,9 @@ func _exit_tree() -> void:
 
 
 func quit_game(exit_code: int = 0) -> void:
+	if OS.has_feature("web"):
+		restart_game()
+		return
 	if quitting:
 		return
 	quitting = true

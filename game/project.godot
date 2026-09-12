@@ -29,5 +29,6 @@ enabled=PackedStringArray("res://addons/nave_baker/plugin.cfg")
 
 [rendering]
 
+renderer/rendering_method.web="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 anti_aliasing/quality/msaa_3d=2
