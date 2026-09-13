@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-13T20:32:13.201287+00:00",
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation",
+  "output_format": "mp3_44100_128",
+  "request": {
+    "text": "One single quiet footstep of a person wearing ordinary soft leather shoes on a smooth old limestone floor. Natural close microphone foley: a soft weighty heel contact followed immediately by a light sole brush, one complete step only, relaxed and gentle. Dry isolated recording, clean silent background, short natural decay. No rhythm, no music, no voices, no cinematic bass, no metallic click, no gravel.",
+    "duration_seconds": 0.5,
+    "prompt_influence": 0.55,
+    "model_id": "eleven_text_to_sound_v2",
+    "loop": false
+  },
+  "request_id": null,
+  "sha256": "eb32622ebd4df4362a0dbe64b100908eed113a608c58cc77dc917cdde231518d"
+}

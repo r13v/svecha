@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#141612">
+	<title>$GODOT_PROJECT_NAME</title>
+	<style>
+		* { box-sizing: border-box; }
+		html, body { margin: 0; width: 100%; height: 100%; background: #141612; color: #eadbbb; }
+		body { overflow: hidden; font-family: Georgia, 'Times New Roman', serif; }
+		#canvas { display: block; border: 0; outline: none; }
+		#status {
+			position: fixed; inset: 0; display: grid; place-items: center;
+			padding: 24px; overflow: auto;
+			background: radial-gradient(ellipse at 50% 42%, #302a1c 0%, #1b1d16 32%, #141612 70%);
+		}
+		.loading { width: min(100%, 360px); text-align: center; }
+		.candle { display: block; width: 180px; height: 232px; margin: 0 auto 28px; overflow: visible; }
+		.flame { transform-origin: 90px 95px; animation: flicker 3s ease-in-out infinite alternate; }
+		h1 { margin: 0; padding-left: .22em; font-size: clamp(38px, 6vw, 52px); font-weight: 400; letter-spacing: .22em; }
+		.subtitle { margin: 18px 0 52px; color: #b9ae91; font-size: 16px; letter-spacing: .035em; }
+		#status-label { margin: 0 0 15px; font: 13px/1.5 Arial, sans-serif; color: #c5bca6; }
+		progress { display: block; width: 240px; max-width: 100%; height: 2px; margin: auto; border: 0; border-radius: 2px; background: #464334; color: #ccb478; appearance: none; }
+		progress::-webkit-progress-bar { background: #464334; border-radius: 2px; }
+		progress::-webkit-progress-value { background: #ccb478; box-shadow: 0 0 10px #ccb47855; }
+		progress::-moz-progress-bar { background: #ccb478; }
+		progress:indeterminate { opacity: .55; }
+		#status-notice { margin-top: 24px; font: 14px/1.6 Arial, sans-serif; color: #d3cebf; }
+		#status-notice p { margin: 0 0 16px; }
+		details { margin-top: 20px; font-size: 12px; color: #b9ae91; }
+		summary { cursor: pointer; }
+		#failure-detail { white-space: pre-wrap; overflow-wrap: anywhere; }
+		button { padding: 12px 22px; border: 1px solid #a69565; border-radius: 2px; background: transparent; color: #eadbbb; font: inherit; cursor: pointer; }
+		button:hover { background: #a6956522; }
+		button:focus-visible { outline: 2px solid #eadbbb; outline-offset: 4px; }
+		noscript { position: fixed; inset: auto 20px 24px; z-index: 2; text-align: center; font: 14px/1.5 Arial, sans-serif; }
+		@keyframes flicker { from { transform: scale(1, 1) rotate(-2deg); opacity: .88; } to { transform: scale(.96, 1.04) rotate(2deg); opacity: 1; } }
+		@media (prefers-reduced-motion: reduce) { .flame { animation: none; } }
+		@media (max-height: 600px) { .candle { width: 110px; height: 142px; margin-bottom: 16px; } .subtitle { margin: 12px 0 24px; } }
+	</style>
+	$GODOT_HEAD_INCLUDE
+</head>
+<body>
+	<canvas id="canvas">Для игры нужен браузер с поддержкой Canvas.</canvas>
+	<div id="status">
+		<main class="loading">
+			<svg class="candle" viewBox="0 0 180 232" fill="none" aria-hidden="true">
+				<defs>
+					<radialGradient id="halo"><stop stop-color="#e9b75e" stop-opacity=".18"/><stop offset="1" stop-color="#e9b75e" stop-opacity="0"/></radialGradient>
+					<linearGradient id="wax"><stop stop-color="#917039"/><stop offset=".45" stop-color="#ddbd78"/><stop offset="1" stop-color="#b18b48"/></linearGradient>
+					<linearGradient id="fire" x1="90" y1="52" x2="90" y2="96" gradientUnits="userSpaceOnUse"><stop stop-color="#d99543"/><stop offset=".65" stop-color="#f3d799"/><stop offset="1" stop-color="#fff1c8"/></linearGradient>
+				</defs>
+				<path d="M24 208V86a66 66 0 0 1 132 0v122" stroke="#a69565" stroke-opacity=".2"/>
+				<circle cx="90" cy="80" r="82" fill="url(#halo)"/>
+				<ellipse cx="90" cy="216" rx="34" ry="3" fill="#a69565" fill-opacity=".24"/>
+				<path d="M83 109h14v104c-4 3-10 3-14 0Z" fill="url(#wax)"/>
+				<path d="M83 110c3-3 10-3 14 0v19c-3 4-4-1-4-7s-4-7-4-1v12c-2 4-4 0-4-4Z" fill="#e0c78e"/>
+				<path d="m90 110-1-13" stroke="#473a25" stroke-width="2" stroke-linecap="round"/>
+				<g class="flame"><path d="M91 52c2 19 12 25 9 35-3 13-21 12-21 0 0-11 10-19 12-35Z" fill="url(#fire)"/><path d="M89 78c1 8 6 10 5 15-1 5-8 4-8-1 0-4 2-8 3-14Z" fill="#fff3cc"/></g>
+			</svg>
+			<h1>Свеча</h1>
+			<p class="subtitle">Немного света. Немного тишины.</p>
+			<p id="status-label" role="status">Готовимся войти…</p>
+			<progress id="status-progress" aria-label="Загрузка игры"></progress>
+			<div id="status-notice" role="alert" hidden>
+				<p id="failure-message"></p>
+				<button type="button" onclick="window.location.reload()">Попробовать снова</button>
+				<details><summary>Подробности ошибки</summary><p id="failure-detail"></p></details>
+			</div>
+		</main>
+	</div>
+	<noscript>Включите JavaScript в настройках браузера, чтобы войти в игру.</noscript>
+	<script src="$GODOT_URL"></script>
+	<script>
+const GODOT_CONFIG = $GODOT_CONFIG;
+const GODOT_THREADS_ENABLED = $GODOT_THREADS_ENABLED;
+
+(function () {
+	const overlay = document.getElementById('status');
+	const progress = document.getElementById('status-progress');
+	const label = document.getElementById('status-label');
+
+	function fail(error, message) {
+		console.error(error);
+		label.textContent = 'Не удалось войти в храм';
+		progress.style.display = 'none';
+		document.getElementById('failure-message').textContent = message;
+		document.getElementById('failure-detail').textContent = error instanceof Error ? error.message : String(error);
+		document.getElementById('status-notice').hidden = false;
+	}
+
+	if (typeof Engine === 'undefined') {
+		fail('Не загружен файл движка.', 'Проверьте соединение с интернетом и попробуйте ещё раз.');
+		return;
+	}
+	const missing = Engine.getMissingFeatures({ threads: GODOT_THREADS_ENABLED });
+	if (missing.length) {
+		fail(missing.join('\n'), 'Браузер не поддерживает необходимые возможности. Попробуйте открыть игру в обновлённом браузере на компьютере.');
+		return;
+	}
+	const engine = new Engine(GODOT_CONFIG);
+	engine.startGame({
+		onProgress(current, total) {
+			if (total > 0) {
+				progress.max = total;
+				progress.value = current;
+				label.textContent = current >= total ? 'Входим в храм…' : 'Загружаем храм · ' + Math.floor(current / total * 100) + '%';
+			} else {
+				progress.removeAttribute('value');
+				label.textContent = 'Загружаем храм…';
+			}
+		},
+	}).then(() => overlay.remove()).catch(error => {
+		fail(error, 'Не удалось загрузить игру. Проверьте соединение и попробуйте ещё раз.');
+	});
+}());
+	</script>
+</body>
+</html>

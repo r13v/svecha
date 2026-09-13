@@ -1,0 +1,32 @@
+[
+  {
+    "file": "game/assets/audio/footstep.wav",
+    "source": "art/audio/elevenlabs/footstep_01.mp3",
+    "generation": "art/audio/elevenlabs/footstep_01.json",
+    "processing": "highpass=f=75,lowpass=f=6500,atrim=end=0.38",
+    "gain_db": -8.075,
+    "duration_seconds": 0.38,
+    "peak_dbfs": -9.0,
+    "sha256": "02b86d7e2cf7644ec2ca16a8852ad4ccaa5e3652ca65e048b78548f262f20525"
+  },
+  {
+    "file": "game/assets/audio/footstep_03.wav",
+    "source": "art/audio/elevenlabs/footstep_03.mp3",
+    "generation": "art/audio/elevenlabs/footstep_03.json",
+    "processing": "highpass=f=75,lowpass=f=6500,atrim=end=0.38",
+    "gain_db": 0.922,
+    "duration_seconds": 0.38,
+    "peak_dbfs": -9.0,
+    "sha256": "62528d8b7a48dc55603f5fce513651a6ad66f62dc1d7fd97847c06304fdee2f9"
+  },
+  {
+    "file": "game/assets/audio/door.wav",
+    "source": "art/audio/elevenlabs/door.mp3",
+    "generation": "art/audio/elevenlabs/door.json",
+    "processing": "atrim=end=1.04,atempo=0.8,highpass=f=55,lowpass=f=7000",
+    "gain_db": 12.993,
+    "duration_seconds": 1.2746,
+    "peak_dbfs": -6.0,
+    "sha256": "42b71397142ab6eddf9058a71679721cef08c4e69d4a99d73c1131828546a374"
+  }
+]

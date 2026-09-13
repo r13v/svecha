@@ -713,6 +713,9 @@ func interact() -> void:
 
 func play_sound(slug: String, at: Vector3) -> void:
 	sound.global_position = at
+	sound.volume_db = -15.0 if slug == "door" else -9.0
+	# Keep proximity amplification restrained when the camera reaches the handle.
+	sound.max_db = -10.0 if slug == "door" else 3.0
 	sound.stream = load("res://assets/audio/%s.wav" % slug)
 	sound.play()
 

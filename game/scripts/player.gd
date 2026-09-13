@@ -58,8 +58,14 @@ func _ready() -> void:
 	camera.add_child(hand)
 	set_grip(1.0)
 	steps = AudioStreamPlayer.new()
-	steps.stream = preload("res://assets/audio/footstep.wav")
-	steps.volume_db = -16
+	var variations := AudioStreamRandomizer.new()
+	variations.playback_mode = AudioStreamRandomizer.PLAYBACK_RANDOM_NO_REPEATS
+	variations.random_pitch = 1.025
+	variations.random_volume_offset_db = 0.8
+	variations.add_stream(-1, preload("res://assets/audio/footstep.wav"))
+	variations.add_stream(-1, preload("res://assets/audio/footstep_03.wav"))
+	steps.stream = variations
+	steps.volume_db = -12
 	add_child(steps)
 
 
@@ -90,7 +96,6 @@ func _physics_process(delta: float) -> void:
 	step_distance += distance
 	walk_phase += distance * 7.0
 	if step_distance > 0.68 and is_on_floor():
-		steps.pitch_scale = randf_range(0.94, 1.06)
 		steps.play()
 		step_distance = 0.0
 	camera.position.y = lerpf(camera.position.y, 1.65 + (sin(walk_phase) * 0.008 if distance > 0.001 else 0.0), 0.15)

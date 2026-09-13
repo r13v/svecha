@@ -1,12 +1,12 @@
-"""Original synthesized foley for the prototype; Python standard library only."""
+"""Archived prototype sketches. Does not overwrite the game's edited foley."""
 import math
 import random
 import struct
 import wave
 from pathlib import Path
 
-FOLDER = Path(__file__).resolve().parents[1] / 'game/assets/audio'
-FOLDER.mkdir(exist_ok=True)
+FOLDER = Path(__file__).resolve().parents[1] / '.tools/audio_sketches'
+FOLDER.mkdir(parents=True, exist_ok=True)
 RATE = 22050
 rng = random.Random(73)
 

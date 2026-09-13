@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-14",
+  "engine": "Godot 4.7.2 stable",
+  "source_game_check": "PASS / 0 failures",
+  "source_audio_walk": "0 failures",
+  "exported_audio_walk": "0 failures",
+  "mix_peak_dbfs": -19.2,
+  "movie_duration_seconds": 10.3,
+  "renderer": "Forward+ / Metal",
+  "codesign": "verified",
+  "known_warning": "7 Texture RIDs at shutdown with ReflectionProbe",
+  "listening_review": "Требуется повторное прослушивание пользователем после замечания о шипении",
+  "revision": "После исключения шумных дублей 02 и 04",
+  "selected_footsteps": [
+    "footstep.wav",
+    "footstep_03.wav"
+  ]
+}

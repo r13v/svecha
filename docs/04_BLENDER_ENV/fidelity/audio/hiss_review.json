@@ -1,0 +1,18 @@
+{
+  "footstep.wav": {
+    "high_band_mean_dbfs": -62.3,
+    "selected": true
+  },
+  "footstep_02.wav": {
+    "high_band_mean_dbfs": -45.4,
+    "selected": false
+  },
+  "footstep_03.wav": {
+    "high_band_mean_dbfs": -63.5,
+    "selected": true
+  },
+  "footstep_04.wav": {
+    "high_band_mean_dbfs": -56.0,
+    "selected": false
+  }
+}
