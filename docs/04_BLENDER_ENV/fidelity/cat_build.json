@@ -1,0 +1,29 @@
+{
+  "asset": "sleeping_cat",
+  "source": "art/blender/sleeping_cat.blend",
+  "model": "game/assets/models/sleeping_cat.glb",
+  "triangles": 81046,
+  "blender_bounds_m": [
+    [
+      -0.22617800533771515,
+      0.2689761221408844
+    ],
+    [
+      -0.17305703461170197,
+      0.1368020921945572
+    ],
+    [
+      0.0,
+      0.2482256293296814
+    ]
+  ],
+  "nodes": [
+    "SleepingCat",
+    "Body",
+    "CurledTail",
+    "FaceAndPaws",
+    "Head",
+    "RestingEyelid",
+    "WatchfulEye"
+  ]
+}

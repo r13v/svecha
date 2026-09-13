@@ -111,5 +111,7 @@ https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.
 
 Концепты, текстура ковра и карты известнякового пола созданы встроенным image_gen по промптам проекта. Полные промпты, оригинальные изображения и контрольные суммы находятся в документации и manifests проекта.
 
+Кот-смотритель — оригинальные геометрия и цвета шерсти, созданные Codex для «Свечи» в Blender через tools/build_sleeping_cat.py. Сторонние ассеты не использованы.
+
 Godot Engine 4.7.2 — MIT. Полные сведения о движке и встроенных компонентах: GODOT_LICENSES.txt.
 https://godotengine.org/license/

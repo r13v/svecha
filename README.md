@@ -8,6 +8,8 @@
 
 [Исправление руки: кадры и видео](docs/04_BLENDER_ENV/fidelity/hands/README_RU.md) · [Сравнение девяти концептов с игрой](docs/04_BLENDER_ENV/fidelity/compare.html) · [Ассеты и воспроизведение](docs/04_BLENDER_ENV/ASSET_PIPELINE_RU.md)
 
+**В локальный проект и macOS-сборку добавлена пасхалка — кот-смотритель.** Он спит снаружи на подоконнике первого окна справа от входа. Подойдите и задержитесь: кот приоткроет один глаз и снова уснёт. [Игровые кадры и проверка](docs/04_BLENDER_ENV/fidelity/cat/README_RU.md). Опубликованная веб-версия пока не обновлена.
+
 **Запустить:** открыть [Svecha.app](builds/macos/Svecha.app) или выполнить из корня `./tools/godot --path game`. Кнопка «Войти в тишину» начинает эпизод. WASD — ходьба, мышь — обзор, E — действие, Esc — пауза и продолжение.
 
 **[Играть в браузере](https://r13v.github.io/svecha/)** — для компьютера с клавиатурой и мышью. Первое открытие требует загрузки ресурсов. [Сборка, ограничения и GitHub Pages](docs/07_PRODUCTION/WEB_RU.md).
@@ -20,6 +22,7 @@
 ./tools/godot --headless --editor --path game --import
 ./tools/godot --headless --path game --script res://tests/check_candle_assets.gd
 ./tools/godot --headless --path game --script res://tests/check_game.gd
+./tools/godot --headless --path game --script res://tests/check_sleeping_cat.gd
 ./tools/export_macos.sh
 ```
 

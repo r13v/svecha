@@ -1,0 +1,46 @@
+{
+  "index.apple-touch-icon.png": {
+    "raw": 4998,
+    "gzip": 4859
+  },
+  "index.wasm": {
+    "raw": 39514754,
+    "gzip": 10114291
+  },
+  "index.icon.png": {
+    "raw": 6409,
+    "gzip": 6110
+  },
+  "CREDITS_RU.txt": {
+    "raw": 5524,
+    "gzip": 1876
+  },
+  "index.html": {
+    "raw": 5443,
+    "gzip": 2210
+  },
+  "index.png": {
+    "raw": 21443,
+    "gzip": 19338
+  },
+  "index.audio.worklet.js": {
+    "raw": 7298,
+    "gzip": 2204
+  },
+  "GODOT_LICENSES.txt": {
+    "raw": 107634,
+    "gzip": 29601
+  },
+  "index.js": {
+    "raw": 279815,
+    "gzip": 68740
+  },
+  "index.audio.position.worklet.js": {
+    "raw": 2973,
+    "gzip": 1167
+  },
+  "index.pck": {
+    "raw": 195079824,
+    "gzip": 162715266
+  }
+}

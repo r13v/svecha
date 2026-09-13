@@ -1,0 +1,22 @@
+{
+  "baseline": true,
+  "benchmark_size": "(1600.0, 900.0)",
+  "failures": [
+    "The roof must block direct sunlight on the sheltered plaster even without a real-time shadow",
+    "The roof must block direct sunlight on the sheltered plaster even without a real-time shadow"
+  ],
+  "frames": 260,
+  "renderer": "gl_compatibility",
+  "route_median_ms": 36.4,
+  "route_p95_ms": 56.1,
+  "shadow_luminance_differences": [
+    0.0184545109349488,
+    0
+  ],
+  "size": "(960, 540)",
+  "sunlight_leaks": [
+    0.512862338304667,
+    0.215655801309084
+  ],
+  "window_daylight": 0.439951646786106
+}

@@ -781,6 +781,7 @@ omni_attenuation = 0.8
 layers = 3
 bounces = 4
 directional = true
+shadowmask_mode = 2
 use_texture_for_bounces = false
 max_texture_size = 2048
 environment_mode = 2

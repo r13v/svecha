@@ -3,7 +3,7 @@ name: Опубликовать игру
 on:
   push:
     branches: [main]
-    paths: ["game/**", "tools/godot", "tools/export_web.sh", "tools/check_web.sh", ".github/workflows/pages.yml"]
+    paths: ["game/**", "tools/godot", "tools/export_web.sh", "tools/prepare_web.py", "tools/compact_web.py", "tools/test_web_export.py", "tools/check_web.sh", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -27,9 +27,11 @@ jobs:
           mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
           unzip -j -q "$RUNNER_TEMP/templates.tpz" 'templates/web*.zip' -d "$HOME/.local/share/godot/export_templates/4.7.2.stable"
       - name: Собрать Web
-        run: ./tools/export_web.sh
+        run: |
+          python3 tools/test_web_export.py
+          ./tools/export_web.sh
       - name: Проверить игровой маршрут
-        run: ./tools/godot --headless --path .tools/web-project --script res://tests/check_game.gd
+        run: ./tools/godot --headless --path .tools/web-project --main-pack "$PWD/builds/web/index.pck" --script "$PWD/game/tests/check_game.gd"
       - name: Установить браузер для проверки
         run: |
           npm install --global agent-browser@0.37.1

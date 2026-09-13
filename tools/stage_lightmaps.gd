@@ -85,6 +85,7 @@ func _run() -> void:
 	lightmaps.quality = LightmapGI.BAKE_QUALITY_MEDIUM
 	lightmaps.bounces = 4
 	lightmaps.directional = true
+	lightmaps.shadowmask_mode = LightmapGIData.SHADOWMASK_MODE_OVERLAY
 	lightmaps.interior = false
 	lightmaps.layers = 3
 	lightmaps.environment_mode = LightmapGI.ENVIRONMENT_MODE_CUSTOM_SKY

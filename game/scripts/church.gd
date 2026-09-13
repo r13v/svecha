@@ -56,6 +56,12 @@ func _ready() -> void:
 	player = Player.new()
 	add_child(player)
 	player.position = Vector3(0, OUTSIDE_Y, 14.5)
+	var cat := preload("res://scenes/sleeping_cat.tscn").instantiate()
+	cat.visitor = player
+	cat.position = Vector3(3.68, 1.29, 3.22)
+	cat.rotation.y = PI / 2.0
+	cat.scale = Vector3.ONE * 0.78
+	add_child(cat)
 	_build_ui()
 	sound = AudioStreamPlayer3D.new()
 	sound.volume_db = -9.0
@@ -184,6 +190,9 @@ func _apply_lightmaps() -> void:
 	lightmaps.name = "NaveLightmap"
 	lightmaps.layers = 1
 	lightmaps.directional = true
+	# Keep static shadows when a real-time shadow fades or its caster is culled.
+	if RenderingServer.get_current_rendering_method() == "gl_compatibility":
+		lightmaps.shadowmask_mode = LightmapGIData.SHADOWMASK_MODE_OVERLAY
 	lightmaps.light_data = load("res://assets/lighting/nave.lmbake")
 	add_child(lightmaps)
 

@@ -7,6 +7,8 @@ func _enter_tree() -> void:
 		_bake.call_deferred()
 
 func _bake() -> void:
+	# Smaller dispatches keep shadowmask baking below Metal's fence timeout.
+	ProjectSettings.set_setting("rendering/lightmapping/bake_performance/region_size", 128)
 	var editor := get_editor_interface()
 	for frame in range(30):
 		await get_tree().process_frame

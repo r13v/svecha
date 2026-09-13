@@ -1,0 +1,53 @@
+{
+  "pck_before_bytes": 76268356,
+  "pck_after_bytes": 62585860,
+  "duplicate_bytes_removed": 13682496,
+  "gzip_level": 6,
+  "gzip_total_bytes": 52347364,
+  "files": {
+    "CREDITS_RU.txt": {
+      "raw_bytes": 5524,
+      "gzip_bytes": 1876
+    },
+    "GODOT_LICENSES.txt": {
+      "raw_bytes": 107634,
+      "gzip_bytes": 29601
+    },
+    "index.apple-touch-icon.png": {
+      "raw_bytes": 8675,
+      "gzip_bytes": 8698
+    },
+    "index.audio.position.worklet.js": {
+      "raw_bytes": 2973,
+      "gzip_bytes": 1167
+    },
+    "index.audio.worklet.js": {
+      "raw_bytes": 7298,
+      "gzip_bytes": 2204
+    },
+    "index.html": {
+      "raw_bytes": 5442,
+      "gzip_bytes": 2210
+    },
+    "index.icon.png": {
+      "raw_bytes": 12719,
+      "gzip_bytes": 12657
+    },
+    "index.js": {
+      "raw_bytes": 279815,
+      "gzip_bytes": 68740
+    },
+    "index.pck": {
+      "raw_bytes": 62585860,
+      "gzip_bytes": 42086582
+    },
+    "index.png": {
+      "raw_bytes": 21443,
+      "gzip_bytes": 19338
+    },
+    "index.wasm": {
+      "raw_bytes": 39514754,
+      "gzip_bytes": 10114291
+    }
+  }
+}

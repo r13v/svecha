@@ -1,0 +1,19 @@
+{
+  "baseline": false,
+  "benchmark_size": "(1600.0, 900.0)",
+  "failures": [],
+  "frames": 260,
+  "renderer": "gl_compatibility",
+  "route_median_ms": 38.5,
+  "route_p95_ms": 58.8,
+  "shadow_luminance_differences": [
+    0,
+    0
+  ],
+  "size": "(960, 540)",
+  "sunlight_leaks": [
+    0,
+    0.00693058016731635
+  ],
+  "window_daylight": 0.419404996109856
+}

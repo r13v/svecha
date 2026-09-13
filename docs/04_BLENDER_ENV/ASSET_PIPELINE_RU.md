@@ -1,6 +1,6 @@
 # Ассеты и путь Blender → Godot
 
-В проекте 31 отдельная модель: исходники в `art/blender/`, GLB в `game/assets/models/`. Набор переработан по девяти концептам: резная столярка, оконные ниши, каменный пол, сланцевая кровля и глава, убранство, двор, растения и рука.
+В проекте 32 отдельные модели: исходники в `art/blender/`, GLB в `game/assets/models/`. Набор переработан по девяти концептам: резная столярка, оконные ниши, каменный пол, сланцевая кровля и глава, убранство, двор, растения и рука. Добавлен кот-смотритель на наружном подоконнике.
 
 [Сопоставление девяти ракурсов](fidelity/compare.html) · [Критерии художественной проверки](fidelity/FIDELITY_RU.md) · [Проверки игры](../07_PRODUCTION/VALIDATION_RU.md)
 
@@ -13,6 +13,7 @@
 | Архитектура | `church_shell`, `church_vault`, `window_bay`, `church_roof`, `stone_facade`, `entry_steps` | Замкнутый свод, глубокие арочные ниши, отдельные сланцевые плитки, глава с патиной, каменный портал и ступени |
 | Убранство | `iconostasis`, `icon_case`, `wall_bench`, `side_table`, `flower_vase`, `hanging_lamp`, `chandelier`, `chancel_steps`, `chancel_carpet`, `wall_icon`, `hanging_banner`, `wall_sconce` | Резьба и рамы, 14 исторических изображений, лампады, цветы, ковёр по ступеням |
 | Двор | `courtyard_ground`, `stone_approach`, `grass_tuft`, `courtyard_tree`, `garden_wall`, `entrance_lantern` | Рельеф, каменная дорожка, трава, дерево, кладка и фонари |
+| Пасхалка | `sleeping_cat` | Полосатая шерсть, свёрнутый хвост, отдельные корпус, глаз и закрытое веко; поведение в `sleeping_cat.tscn` |
 
 Каждому имени соответствует `.blend` и `.glb`. Точные габариты, треугольники и узлы записаны в [asset_build.json](asset_build.json), [church_asset_build.json](church_asset_build.json) и отчётах `fidelity/*_build.json`. Это размеры художественной модели, не стандарты церковных предметов.
 
@@ -31,6 +32,8 @@
 ## Освещение
 
 Неподвижный интерьер использует LightmapGI. `tools/stage_lightmaps.gd` собирает те же модели, сохраняет UV2 и материалы в `game/assets/lighting/meshes/`, записывает соответствие узлов и создаёт `game/scenes/nave_bake.tscn`. Тёплое заполнение в сцене запекания приближает отражённый свет светлых стен. Дверь, рука, воск и латунь получают свет от probes в режиме `GI_MODE_DYNAMIC`; в статическую геометрию они не запекаются.
+
+Для Compatibility дополнительно запекается `nave_shadow.png`: режим Shadowmask Overlay сохраняет тени неподвижной архитектуры при исчезновении динамической карты. Он задаётся и в сцене запекания, и при загрузке игровых lightmaps. Солнце остаётся `BAKE_DYNAMIC`, дверь исключена из запекания, свет расходуемых свечей — `BAKE_DISABLED`. В Forward+ маска отключена. Проектный baker обрабатывает области по 128 пикселей, чтобы избегать тайм-аута Metal; разрешение карт и качество лучей сохраняются.
 
 Запускать команды последовательно и ждать завершения каждой:
 
@@ -54,6 +57,7 @@
 ./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_courtyard_ground.py
 ./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_courtyard_tree.py
 ./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_hand.py
+./tools/blender --background --factory-startup --python-exit-code 1 --python tools/build_sleeping_cat.py
 ```
 
 Выборочная пересборка интерьера: добавить, например, `-- candle_table icon_case` к команде `rebuild_interior.py`. Исходные карты, дерево и MakeHuman уже сохранены в проекте; `fetch_art_materials.py` и `fetch_feast_icons.py` документируют их получение.
