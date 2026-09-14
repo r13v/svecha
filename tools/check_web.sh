@@ -13,7 +13,10 @@ else
 	agent-browser --headed open http://127.0.0.1:8788
 fi
 agent-browser set viewport 640 360
-agent-browser wait --fn '!document.getElementById("status")' --timeout 120000
+# Single-threaded WebGL startup can outlast CDP's own command timeout on CI.
+# Retry once; persistent hangs and browser errors still fail the check.
+agent-browser wait --fn '!document.getElementById("status")' --timeout 120000 ||
+	agent-browser wait --fn '!document.getElementById("status")' --timeout 120000
 agent-browser console --json > .tools/checks/web-console.json
 agent-browser errors --json > .tools/checks/web-errors.json
 python3 - <<'PY'
