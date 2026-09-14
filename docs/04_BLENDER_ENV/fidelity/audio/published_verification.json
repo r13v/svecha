@@ -1,0 +1,55 @@
+{
+  "index.html": {
+    "status": 200,
+    "bytes": 7247,
+    "sha256": "17ad658aed92648b8d9a09b5bd5329f6a662c9a4228f3c9032b1d7aa79467cf7"
+  },
+  "CREDITS_RU.txt": {
+    "status": 200,
+    "bytes": 6508,
+    "sha256": "83977f4df4193077df0a9b751447c868c8a6dc21dd675a50d9eae4d9b4316265"
+  },
+  "index.pck": {
+    "status": 200,
+    "bytes": 62612704,
+    "sha256": "11a98e69061fef29cb06ba32acca5271d3108600533c315096334d18844ed2c2"
+  },
+  "index.wasm": {
+    "status": 200,
+    "content_type": "application/wasm"
+  },
+  "audio": {
+    ".godot/imported/door.wav-44917a986749810eab0efbb8873b8ccb.sample": {
+      "sha256": "bb5ac073acbf67358dbeb2a8170cb96a40d3bb2ec65dc8c8da20ef03300391c9",
+      "matches_local": true
+    },
+    ".godot/imported/footstep.wav-1bf931290d10f06d867c94e89a3de372.sample": {
+      "sha256": "786eedf9ae9973ac500496163b93cad58f7709519ed6e430b5b036ba75a0e5f6",
+      "matches_local": true
+    },
+    ".godot/imported/footstep_03.wav-3366b9e71302ab2bb68a51cd7d744adc.sample": {
+      "sha256": "6d79a5238327e5d6fa409faa56cf24e083b0ecdedccc4e31b9c38f48d96756a9",
+      "matches_local": true
+    },
+    "assets/audio/door.wav.import": {
+      "sha256": "6503d3dfb18eb7c736328edd2eaa51f647279984f3d7ec75801ee92db817f770",
+      "matches_local": true
+    },
+    "assets/audio/footstep.wav.import": {
+      "sha256": "a8826bd4a3481ddcafe3156ce35b85a526ad1bc95b317ec4269fa9a344acb339",
+      "matches_local": true
+    },
+    "assets/audio/footstep_03.wav.import": {
+      "sha256": "b539e5062fbbbedf94511339922bcecfec225c3954c6c68e432aabaccfdf7c05",
+      "matches_local": true
+    }
+  },
+  "source_commit": "e8ab4d5fb3f35606930266b01b8aeeef0184bc47",
+  "workflow": "https://github.com/r13v/svecha/actions/runs/34819663585",
+  "browser": {
+    "errors": [],
+    "first_wait_timed_out_seconds": 60,
+    "second_wait_succeeded": true,
+    "scene_rendered": true
+  }
+}
