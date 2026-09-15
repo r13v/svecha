@@ -7,6 +7,7 @@ from pathlib import Path
 import struct
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from compact_web import compact, finish_export, read_pack
 from prepare_web import prepare
@@ -63,6 +64,24 @@ class WebExportTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 finish_export(root, root / "report.json")
             self.assertEqual((root / "index.pck").read_bytes(), original)
+
+    def test_download_budget_rejects_even_an_overflow_hidden_by_rounding(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder) / "web"
+            root.mkdir()
+            (root / "index.pck").write_bytes(fixture())
+            (root / "index.html").write_text('const GODOT_CONFIG = {"fileSizes":{"index.pck":9999}};')
+            report = Path(folder) / "sizes.json"
+            # Two files at exactly 100 MiB pass; two extra bytes still fail,
+            # even though the human-readable total rounds to 100.00 MiB.
+            for extra in (0, 1):
+                with self.subTest(extra=extra), patch("compact_web.gzip.compress", return_value=bytes(50 * 2**20 + extra)):
+                    if extra:
+                        with self.assertRaisesRegex(SystemExit, "by 2 bytes"):
+                            finish_export(root, report)
+                    else:
+                        finish_export(root, report)
+                    self.assertEqual(json.loads(report.read_text())["gzip_total_bytes"], 100 * 2**20 + extra * 2)
 
     def test_profile_preserves_closeups_and_full_resolution_shadow_mask(self):
         with tempfile.TemporaryDirectory() as folder:

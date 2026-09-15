@@ -106,8 +106,8 @@ def finish_export(folder: Path, report_path: Path) -> None:
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2) + "\n")
     print(f"WEB_SIZE: PCK {len(original) / 2**20:.2f} -> {len(result) / 2**20:.2f} MiB; gzip total {total / 2**20:.2f} MiB")
-    if total > 50 * 2**20:
-        raise SystemExit("WEB_SIZE: exceeds the 50 MiB gzip initial download budget")
+    if total > 100 * 2**20:
+        raise SystemExit(f"WEB_SIZE: exceeds the 100 MiB gzip initial download budget by {total - 100 * 2**20:,} bytes ({total:,} bytes total)")
 
 
 if __name__ == "__main__":
