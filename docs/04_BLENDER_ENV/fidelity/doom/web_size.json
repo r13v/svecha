@@ -1,0 +1,80 @@
+{
+  "pck_before_bytes": 76832304,
+  "pck_after_bytes": 63090992,
+  "duplicate_bytes_removed": 13741312,
+  "gzip_level": 6,
+  "gzip_total_bytes": 52826447,
+  "files": {
+    "CREDITS_RU.txt": {
+      "raw_bytes": 7538,
+      "gzip_bytes": 2787
+    },
+    "GODOT_LICENSES.txt": {
+      "raw_bytes": 107634,
+      "gzip_bytes": 29601
+    },
+    "doom_bridge.js": {
+      "raw_bytes": 2865,
+      "gzip_bytes": 1073
+    },
+    "index.apple-touch-icon.png": {
+      "raw_bytes": 8675,
+      "gzip_bytes": 8698
+    },
+    "index.audio.position.worklet.js": {
+      "raw_bytes": 2973,
+      "gzip_bytes": 1167
+    },
+    "index.audio.worklet.js": {
+      "raw_bytes": 7298,
+      "gzip_bytes": 2204
+    },
+    "index.html": {
+      "raw_bytes": 7287,
+      "gzip_bytes": 3240
+    },
+    "index.icon.png": {
+      "raw_bytes": 12719,
+      "gzip_bytes": 12657
+    },
+    "index.js": {
+      "raw_bytes": 279815,
+      "gzip_bytes": 68740
+    },
+    "index.pck": {
+      "raw_bytes": 63090992,
+      "gzip_bytes": 42562651
+    },
+    "index.png": {
+      "raw_bytes": 21443,
+      "gzip_bytes": 19338
+    },
+    "index.wasm": {
+      "raw_bytes": 39514754,
+      "gzip_bytes": 10114291
+    }
+  },
+  "doom_deferred_files": {
+    "default.cfg": {
+      "raw_bytes": 584,
+      "gzip_bytes": 201
+    },
+    "doom.js": {
+      "raw_bytes": 206837,
+      "gzip_bytes": 47151
+    },
+    "doom.wasm": {
+      "raw_bytes": 1982723,
+      "gzip_bytes": 721692
+    },
+    "doom1.wad": {
+      "raw_bytes": 4196020,
+      "gzip_bytes": 1757324
+    },
+    "host.html": {
+      "raw_bytes": 1709,
+      "gzip_bytes": 883
+    }
+  },
+  "doom_deferred_gzip_bytes": 2527251
+}

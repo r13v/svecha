@@ -1,0 +1,149 @@
+{
+  "playing": {
+    "active": true,
+    "audio": "running",
+    "sequence": 2654,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "doom_mode": true,
+      "fuel": 467.809900000001,
+      "page": "service",
+      "paused": true,
+      "position": [
+        -2.03427982330322,
+        0.172772735357285,
+        4.25174808502197
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-0.0, 0.0, -1.0), Y: (0.0, 1.0, 0.0), Z: (1.0, 0.0, -0.0), O: (-2.808957, 1.461, 4.25)]"
+    }
+  },
+  "left": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 2658,
+    "status": "ready",
+    "world": {
+      "active": false,
+      "busy": false,
+      "doom_mode": false,
+      "fuel": 467.342800000001,
+      "page": "home",
+      "paused": false,
+      "position": [
+        -2.03427982330322,
+        0.172772735357285,
+        4.25174808502197
+      ],
+      "target": "Открыть экран",
+      "transitioning": false,
+      "view": "[X: (0.001556, 0.0, -0.999999), Y: (-0.306435, 0.951892, -0.000477), Z: (0.95189, 0.306435, 0.001481), O: (-2.03428, 1.822772, 4.251748)]"
+    }
+  },
+  "left_wait": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 2658,
+    "status": "ready",
+    "world": {
+      "active": false,
+      "busy": false,
+      "doom_mode": false,
+      "fuel": 466.776000000001,
+      "page": "home",
+      "paused": false,
+      "position": [
+        -2.03427982330322,
+        0.172772735357285,
+        4.25174808502197
+      ],
+      "target": "Открыть экран",
+      "transitioning": false,
+      "view": "[X: (0.001556, 0.0, -0.999999), Y: (-0.306435, 0.951892, -0.000477), Z: (0.95189, 0.306435, 0.001481), O: (-2.03428, 1.822772, 4.251748)]"
+    }
+  },
+  "reopened": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 2658,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "doom_mode": false,
+      "fuel": 466.711000000001,
+      "page": "home",
+      "paused": true,
+      "position": [
+        -2.03427982330322,
+        0.172772735357285,
+        4.25174808502197
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-0.0, 0.0, -1.0), Y: (0.0, 1.0, 0.0), Z: (1.0, 0.0, -0.0), O: (-2.808957, 1.461, 4.25)]"
+    }
+  },
+  "single_tap": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 2658,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "doom_mode": false,
+      "fuel": 466.711000000001,
+      "page": "service",
+      "paused": true,
+      "position": [
+        -2.03427982330322,
+        0.172772735357285,
+        4.25174808502197
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-0.0, 0.0, -1.0), Y: (0.0, 1.0, 0.0), Z: (1.0, 0.0, -0.0), O: (-2.808957, 1.461, 4.25)]"
+    }
+  },
+  "resumed": {
+    "active": true,
+    "audio": "running",
+    "sequence": 2680,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "doom_mode": true,
+      "fuel": 466.711000000001,
+      "page": "service",
+      "paused": true,
+      "position": [
+        -2.03427982330322,
+        0.172772735357285,
+        4.25174808502197
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-0.0, 0.0, -1.0), Y: (0.0, 1.0, 0.0), Z: (1.0, 0.0, -0.0), O: (-2.808957, 1.461, 4.25)]"
+    }
+  },
+  "same_runtime": true,
+  "donation_navigation": {
+    "url": "https://purrmacka.org/ru/",
+    "new_tab": "t2",
+    "source_tab": "t1",
+    "verified": "actual click in 3D UI; browser tab inventory"
+  },
+  "initial_lazy_load": {
+    "home_status": "idle",
+    "service_status": "idle",
+    "iframe": false,
+    "doom_requests": 0,
+    "verified": "before first performance-test click"
+  },
+  "pass": true
+}

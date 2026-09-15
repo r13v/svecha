@@ -1,0 +1,149 @@
+{
+  "before": {
+    "active": true,
+    "audio": "running",
+    "sequence": 5334,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "fuel": 444.924999999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-1.0, 0.0, 0.0), Y: (0.0, 0.978148, 0.207912), Z: (-0.0, 0.207912, -0.978148), O: (-1.8, 0.841918, -6.654061)]"
+    }
+  },
+  "input": {
+    "audioPeak": 0.003021240234375,
+    "changed": 147616,
+    "forwarded": true
+  },
+  "after_input": {
+    "active": true,
+    "audio": "running",
+    "sequence": 5375,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "fuel": 444.924999999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-1.0, 0.0, 0.0), Y: (0.0, 0.978148, 0.207912), Z: (-0.0, 0.207912, -0.978148), O: (-1.8, 0.841918, -6.654061)]"
+    }
+  },
+  "exit": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 5396,
+    "status": "ready",
+    "world": {
+      "active": false,
+      "busy": false,
+      "fuel": 444.924999999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "Играть в Doom",
+      "transitioning": false,
+      "view": "[X: (-0.998215, 0.0, 0.059724), Y: (0.030609, 0.858678, 0.511601), Z: (-0.051284, 0.512516, -0.857145), O: (-1.868132, 1.462, -7.498333)]"
+    }
+  },
+  "after_exit_wait": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 5396,
+    "status": "ready",
+    "world": {
+      "active": false,
+      "busy": false,
+      "fuel": 444.924999999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "Играть в Doom",
+      "transitioning": false,
+      "view": "[X: (-0.998215, 0.0, 0.059724), Y: (0.030609, 0.858678, 0.511601), Z: (-0.051284, 0.512516, -0.857145), O: (-1.868132, 1.462, -7.498333)]"
+    }
+  },
+  "reenter": {
+    "active": true,
+    "audio": "running",
+    "sequence": 5436,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "fuel": 444.671299999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-1.0, 0.0, 0.0), Y: (0.0, 0.978148, 0.207912), Z: (-0.0, 0.207912, -0.978148), O: (-1.8, 0.841918, -6.654061)]"
+    }
+  },
+  "same_session": true,
+  "blur": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 5449,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "fuel": 444.671299999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-1.0, 0.0, 0.0), Y: (0.0, 0.978148, 0.207912), Z: (-0.0, 0.207912, -0.978148), O: (-1.8, 0.841918, -6.654061)]"
+    }
+  },
+  "blur_wait": {
+    "active": false,
+    "audio": "suspended",
+    "sequence": 5449,
+    "status": "ready",
+    "world": {
+      "active": true,
+      "busy": true,
+      "fuel": 444.671299999999,
+      "paused": true,
+      "position": [
+        -1.86813163757324,
+        -0.187999993562698,
+        -7.49833297729492
+      ],
+      "target": "",
+      "transitioning": false,
+      "view": "[X: (-1.0, 0.0, 0.0), Y: (0.0, 0.978148, 0.207912), Z: (-0.0, 0.207912, -0.978148), O: (-1.8, 0.841918, -6.654061)]"
+    }
+  },
+  "pass": true
+}

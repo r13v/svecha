@@ -1,0 +1,27 @@
+{
+  "target": "Web, Godot 4.7.2 Compatibility, Chromium",
+  "checks": {
+    "godot_import": "PASS",
+    "laptop_route_pause_restore": "PASS",
+    "main_game_regression": "PASS / 0 failures",
+    "packaging_tests": "PASS / 5 tests",
+    "web_render": "PASS",
+    "doom_input_via_godot": "PASS (DOM keyboard events)",
+    "doom_audio_signal": "PASS (non-zero Web Audio samples)",
+    "same_session_reentry": "PASS",
+    "blur_pause": "PASS",
+    "failed_wad_fetch_retry": "PASS (aborted WAD request, error -> retry -> ready)",
+    "deferred_initial_requests": "PASS / 0 requests before E",
+    "pack_excludes_runtime_and_review": "PASS"
+  },
+  "limitations": [
+    "Physical pointer lock could not be verified: macOS locked session returns WrongDocumentError. Keyboard control and graceful return to the pause menu were verified.",
+    "Audio signal verified; subjective listening and complete Doom episode playthrough not performed.",
+    "Not published."
+  ],
+  "artifacts_sha256": {
+    "builds/web/index.pck": "1466dd00c2f685dfdb48604372bccd9255d596a941a0de2d650bd89f509f4e07",
+    "game/web/doom/doom.wasm": "e9135f2c780dca940df2aa4317786dc1dafcdeccb0a780e6a0399eba2dd4c66a",
+    "game/assets/models/doom_laptop.glb": "c5e810000c91ecdf965322a7fe915d7ff03e1a5b6974862da122aff6f9226f35"
+  }
+}

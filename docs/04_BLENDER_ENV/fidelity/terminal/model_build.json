@@ -1,0 +1,27 @@
+{
+  "asset": "donation_terminal",
+  "source": "art/blender/donation_terminal.blend",
+  "model": "game/assets/models/donation_terminal.glb",
+  "triangles": 1188,
+  "blender_bounds_m": [
+    [
+      -0.20000000298023224,
+      0.20000000298023224
+    ],
+    [
+      -0.04099999740719795,
+      0.07750000059604645
+    ],
+    [
+      7.450580596923828e-09,
+      0.4375
+    ]
+  ],
+  "nodes": [
+    "DonationTerminal",
+    "ScreenAnchor",
+    "TerminalGraphiteSurface",
+    "TerminalIvorySurface",
+    "TerminalMountSurface"
+  ]
+}

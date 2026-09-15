@@ -89,16 +89,25 @@ def finish_export(folder: Path, report_path: Path) -> None:
         for path in sorted(folder.iterdir()) if path.is_file() and not path.name.startswith(".")
     }
     total = sum(size["gzip_bytes"] for size in sizes.values())
+    # Doom is requested only after choosing the hidden performance test, outside the initial pack.
+    deferred = {
+        path.name: {"raw_bytes": path.stat().st_size,
+                    "gzip_bytes": len(gzip.compress(path.read_bytes(), compresslevel=6, mtime=0))}
+        for path in sorted((folder / "doom").glob("*"))
+        if path.name in {"doom.js", "doom.wasm", "doom1.wad", "default.cfg", "host.html"}
+    }
     report = {
         "pck_before_bytes": len(original), "pck_after_bytes": len(result),
         "duplicate_bytes_removed": len(original) - len(result),
         "gzip_level": 6, "gzip_total_bytes": total, "files": sizes,
+        "doom_deferred_files": deferred,
+        "doom_deferred_gzip_bytes": sum(size["gzip_bytes"] for size in deferred.values()),
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2) + "\n")
     print(f"WEB_SIZE: PCK {len(original) / 2**20:.2f} -> {len(result) / 2**20:.2f} MiB; gzip total {total / 2**20:.2f} MiB")
     if total > 50 * 2**20:
-        raise SystemExit("WEB_SIZE: exceeds the 50 MiB gzip download budget")
+        raise SystemExit("WEB_SIZE: exceeds the 50 MiB gzip initial download budget")
 
 
 if __name__ == "__main__":

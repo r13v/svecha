@@ -1,6 +1,6 @@
 # Ассеты и путь Blender → Godot
 
-В проекте 32 отдельные модели: исходники в `art/blender/`, GLB в `game/assets/models/`. Набор переработан по девяти концептам: резная столярка, оконные ниши, каменный пол, сланцевая кровля и глава, убранство, двор, растения и рука. Добавлен кот-смотритель на наружном подоконнике.
+В проекте 33 отдельные модели: исходники в `art/blender/`, GLB в `game/assets/models/`. Набор переработан по девяти концептам: резная столярка, оконные ниши, каменный пол, сланцевая кровля и глава, убранство, двор, растения и рука. Добавлен кот-смотритель на наружном подоконнике.
 
 [Сопоставление девяти ракурсов](fidelity/compare.html) · [Критерии художественной проверки](fidelity/FIDELITY_RU.md) · [Проверки игры](../07_PRODUCTION/VALIDATION_RU.md)
 
@@ -13,6 +13,7 @@
 | Архитектура | `church_shell`, `church_vault`, `window_bay`, `church_roof`, `stone_facade`, `entry_steps` | Замкнутый свод, глубокие арочные ниши, отдельные сланцевые плитки, глава с патиной, каменный портал и ступени |
 | Убранство | `iconostasis`, `icon_case`, `wall_bench`, `side_table`, `flower_vase`, `hanging_lamp`, `chandelier`, `chancel_steps`, `chancel_carpet`, `wall_icon`, `hanging_banner`, `wall_sconce` | Резьба и рамы, 14 исторических изображений, лампады, цветы, ковёр по ступеням |
 | Двор | `courtyard_ground`, `stone_approach`, `grass_tuft`, `courtyard_tree`, `garden_wall`, `entrance_lantern` | Рельеф, каменная дорожка, трава, дерево, кладка и фонари |
+| Терминал | `donation_terminal` | Настенный корпус, крепление, короткий кабель и узел `ScreenAnchor`; страницы и скрытая диагностика создаются в Godot |
 | Пасхалка | `sleeping_cat` | Полосатая шерсть, свёрнутый хвост, отдельные корпус, глаз и закрытое веко; поведение в `sleeping_cat.tscn` |
 
 Каждому имени соответствует `.blend` и `.glb`. Точные габариты, треугольники и узлы записаны в [asset_build.json](asset_build.json), [church_asset_build.json](church_asset_build.json) и отчётах `fidelity/*_build.json`. Это размеры художественной модели, не стандарты церковных предметов.

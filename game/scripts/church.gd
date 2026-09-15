@@ -4,6 +4,8 @@ class PauseLayer:
 	extends CanvasLayer
 
 	func _input(event: InputEvent) -> void:
+		if get_parent().terminal != null and get_parent().terminal.active:
+			return
 		if event.is_action_pressed("ui_cancel") and not event.is_echo():
 			get_parent().toggle_pause()
 			get_viewport().set_input_as_handled()
@@ -43,6 +45,7 @@ var menu_canvas: CanvasLayer
 var tray_candles: Array[Node3D] = []
 var capture_mode: bool = false
 var quitting: bool = false
+var terminal: Node3D
 var model_counts: Dictionary = {}
 
 
@@ -63,6 +66,12 @@ func _ready() -> void:
 	cat.scale = Vector3.ONE * 0.78
 	add_child(cat)
 	_build_ui()
+	terminal = preload("res://scripts/donation_terminal.gd").new()
+	terminal.name = "DonationTerminal"
+	terminal.church = self
+	terminal.position = Vector3(-3.20, FLOOR_Y + 1.01, 4.25)
+	terminal.rotation.y = PI / 2.0
+	add_child(terminal)
 	sound = AudioStreamPlayer3D.new()
 	sound.volume_db = -9.0
 	add_child(sound)
@@ -566,6 +575,8 @@ func action_for(target: Object) -> String:
 	if target == null or not target.has_meta("kind") or busy:
 		return ""
 	match str(target.get_meta("kind")):
+		"terminal":
+			return "Открыть экран"
 		"door":
 			return "Открыть дверь" if not door_open else ""
 		"table":
@@ -590,6 +601,9 @@ func interact() -> void:
 		return
 	var target := current_target()
 	if action_for(target).is_empty():
+		return
+	if str(target.get_meta("kind")) == "terminal":
+		terminal.open()
 		return
 	busy = true
 	player.enabled = false

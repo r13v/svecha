@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-15",
+  "target": "Web / Chromium / Godot 4.7.2",
+  "checks": {
+    "terminal": "DONATION_TERMINAL_CHECK: PASS / []",
+    "main_game": "GAME_CHECK: PASS / 0 failures",
+    "packaging": "5 tests PASS; initial gzip below 50 MiB",
+    "import_export": "PASS, no script errors",
+    "web_ui": "PASS, single tap, diagnostics, 1600x900 and 1280x720",
+    "donation": "actual click opened https://purrmacka.org/ru/ in separate browser tab",
+    "doom": "actual 3D rendering, Esc menu, F10 exit and preserved runtime verified",
+    "lazy_loading": "no runtime iframe or Doom requests on recipient/diagnostic pages before first 1993 click",
+    "pck": "old laptop model, Doom runtime payload and external review scenario absent"
+  },
+  "limitations": [
+    "Physical pointer capture remains unverified: this macOS session rejects Pointer Lock with WrongDocumentError. Normal cursor clicks and keyboard input work.",
+    "Subjective listening and a complete Doom episode were not performed.",
+    "Not published; no donation was submitted."
+  ],
+  "sha256": {
+    "builds/web/index.pck": "fb4a77d5f2de965cf87466b17e788835e6ed5ff89e3bea55c70f86b2e343b8a9",
+    "game/assets/models/donation_terminal.glb": "0b594997c651233bfe59fcbf05daee60be49838ce16d5c3f22adad3dd594863c",
+    "game/web/doom/doom.wasm": "e9135f2c780dca940df2aa4317786dc1dafcdeccb0a780e6a0399eba2dd4c66a"
+  }
+}

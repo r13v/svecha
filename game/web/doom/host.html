@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><title>Doom — исполнитель</title>
+<canvas id="canvas" width="320" height="240"></canvas>
+<script>
+// Separate JS realm keeps the two Emscripten runtimes and SDL events apart.
+const host = parent.SvechaDoom;
+var Module = {
+    canvas: document.getElementById('canvas'),
+    noInitialRun: true,
+    onExit(code) {
+        host.pause();
+        host.runtime = null;
+        host.active = false;
+        host.status = code === 0 ? 'ended' : 'error';
+    },
+    onFrame(frame) { host.publish(frame); },
+    onAbort(reason) { host.fail(String(reason)); },
+    print(text) { console.log('[Doom]', text); },
+    printErr(text) { console.warn('[Doom]', text); },
+    onRuntimeInitialized() {
+        Promise.all(['doom1.wad', 'default.cfg'].map(async name => {
+            const response = await fetch(name);
+            if (!response.ok) throw new Error(name + ': HTTP ' + response.status);
+            Module.FS.writeFile('/' + name, new Uint8Array(await response.arrayBuffer()));
+        })).then(() => {
+            host.runtime = Module;
+            Module.callMain(['-iwad', '/doom1.wad', '-config', '/default.cfg', '-window', '-nogui', '-warp', '1', '1', '-skill', '3']);
+            if (host.status === 'loading') {
+                host.status = 'ready';
+                host.applyActive();
+            }
+        }).catch(error => host.fail(String(error)));
+    },
+};
+window.addEventListener('error', event => host.fail(event.message));
+window.addEventListener('unhandledrejection', event => host.fail(String(event.reason)));
+</script>
+<script src="doom.js" onerror="host.fail('Не удалось загрузить Doom')"></script>
+</html>

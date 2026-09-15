@@ -1,0 +1,15 @@
+{
+  "EMSCRIPTEN_LICENSES.txt": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+  "ENGINE_LICENSE.txt": "aef8b4222b79d0dbf6bf17cfff71c90a6a6bb8917a4162abe417b469ed22da2e",
+  "SDL_LICENSES.txt": "e7a197a5ad15f368ce729e19c66d2481cf664244f1e4c59e77c8125ef3e1357e",
+  "SHAREWARE_LICENSE.txt": "d4fa5c81f319a7265d06ae1e047422187c2774cfc6a41c61b173c8f3eea30f9c",
+  "default.cfg": "c709d20d425ac2f319d0fc1b8c6d14db6c52fff0953f78fe4102bc95ba2018c1",
+  "doom.js": "c50827810ec2cad88afc777b9f63cd642295ae0e4a035bf050a472187af53f3f",
+  "doom.wasm": "e9135f2c780dca940df2aa4317786dc1dafcdeccb0a780e6a0399eba2dd4c66a",
+  "doom1.wad": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771",
+  "host.html": "25e4a5de1e30c861483f8919477f89d83554fb111b1d8d44c386faa93b9acb71",
+  "svecha-adapter-source.tar.gz": "1a7257e4de9a70976c3883af6525a1695fc3e74467cf3e41ed30837353b77645",
+  "upstream-source.tar.gz": "9be6e02bb1f4f4b00f73d21b0c1ba4f2b8087e3c6cb1f477435baa390b3aa482",
+  "upstream_revision": "65e0d3ae2ffa604155eebd96ed40da6567bd08f4",
+  "emscripten": "3.1.64"
+}

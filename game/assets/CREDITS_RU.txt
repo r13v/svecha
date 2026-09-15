@@ -122,3 +122,12 @@ https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.
 
 Godot Engine 4.7.2 — MIT. Полные сведения о движке и встроенных компонентах: GODOT_LICENSES.txt.
 https://godotengine.org/license/
+
+Настенный терминал, экран, рисунок защитной плёнки и диагностический тон — оригинальная работа Codex для «Свечи», tools/build_donation_terminal.py и игровые скрипты. Сторонние ассеты не использованы.
+Получатель внешних пожертвований по выбору автора игры — PurrMačka, помощь бездомным кошкам в Белграде: https://purrmacka.org/ru/
+
+Doom: id Software, Simon Howard и участники Chocolate Doom; Web-порт Cloudflare.
+https://github.com/cloudflare/doom-wasm
+Движок и адаптер — GPL-2.0-or-later. Лицензия и соответствующие исходники: doom/ENGINE_LICENSE.txt, doom/upstream-source.tar.gz, doom/svecha-adapter-source.tar.gz.
+Doom 1.9 shareware, первый эпизод, © id Software. Неизменённый doom1.wad из Debian doom-wad-shareware. Отдельные условия данных и разрешение на распространение: doom/SHAREWARE_LICENSE.txt.
+Emscripten 3.1.64 — MIT / University of Illinois-NCSA; уведомления doom/EMSCRIPTEN_LICENSES.txt. SDL 2.28.4, SDL_mixer 2.8.0, SDL_net version_2 — zlib, doom/SDL_LICENSES.txt.
